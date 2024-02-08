@@ -7,13 +7,14 @@ h1{
     font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
     font-weight: 600;
     font-style: normal;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 h2{
     font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
     font-weight: 500;
     font-style: normal;
-    color: yellow;
+    color: rgba(coral, var(--transparence-h1));
 }
 
 h3{

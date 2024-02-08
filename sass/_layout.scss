@@ -9,10 +9,11 @@ body{
     font-family: 'Protest Riot', sans-serif;
 }
 
+/* Prend tout le contenu de la page */
 .global{
     display: flex;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 40vh; /*chaque division prend 40%*/
 }
 
 /*
@@ -26,7 +27,13 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     /*0 = Ne peut pas grandir en haut de 900px*/
     /*1 = Peut rapetisser en bas de 900px*/
     flex: 0 1 900px;
-    border: 1px solid cornflowerblue;
+    border: 3px dotted darkslateblue;
+    padding: 3rem 1rem;
+    background-color: rgba(255, 255, 255, var(--transparence-section));
+}
+
+#entete, #footer{
+    min-height: 20vh;
 }
 
 #entete{

@@ -17,10 +17,13 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 capable de modifier directement la couleur dans le navigateur */
 :root {
   --couleur-arriere-entete: #8fd2ff;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement: #045;
-  --couleur-arriere-galerie: #045;
-  --couleur-arriere-footer: #630;
+  --couleur-arriere-accueil: #96ff96;
+  --couleur-arriere-evenement: #2a7689;
+  --couleur-arriere-galerie: #ffbc76;
+  --couleur-arriere-footer: #ffb3b35e;
+  /*Niveaux de transparence*/
+  --transparence-h1: 0.8;
+  --transparence-section: 0.3;
 }
 
 * {
@@ -34,10 +37,11 @@ body {
   font-family: "Protest Riot", sans-serif;
 }
 
+/* Prend tout le contenu de la page */
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
+  min-height: 40vh; /*chaque division prend 40%*/
 }
 
 /*
@@ -50,7 +54,13 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   /*0 = Ne peut pas grandir en haut de 900px*/
   /*1 = Peut rapetisser en bas de 900px*/
   flex: 0 1 900px;
-  border: 1px solid cornflowerblue;
+  border: 3px dotted darkslateblue;
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, var(--transparence-section));
+}
+
+#entete, #footer {
+  min-height: 20vh;
 }
 
 #entete {
@@ -82,11 +92,12 @@ h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
   font-style: normal;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
-  color: yellow;
+  color: rgba(255, 127, 80, var(--transparence-h1));
 }/*# sourceMappingURL=styles.css.map */

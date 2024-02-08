@@ -3,8 +3,12 @@ capable de modifier directement la couleur dans le navigateur */
 
 :root {
     --couleur-arriere-entete: #8fd2ff;
-    --couleur-arriere-accueil: #0f0;
-    --couleur-arriere-evenement: #045;
-    --couleur-arriere-galerie: #045;
-    --couleur-arriere-footer: #630;
+    --couleur-arriere-accueil: #96ff96;
+    --couleur-arriere-evenement: #2a7689;
+    --couleur-arriere-galerie: #ffbc76;
+    --couleur-arriere-footer: #ffb3b35e;
+
+    /*Niveaux de transparence*/
+    --transparence-h1 : 0.8;
+    --transparence-section: 0.3;
 }
