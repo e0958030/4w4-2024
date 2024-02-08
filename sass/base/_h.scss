@@ -11,28 +11,34 @@ h1{
 }
 
 h2{
-    font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+    font-size: 100px;
     font-weight: 500;
     font-style: normal;
-    color: rgba(coral, var(--transparence-h1));
+    color: rgba(rgb(0, 43, 92), var(--transparence-h-sous-titres));
 }
 
 h3{
-
+    font-size: clamp(1rem, 0.7vw + 1.2rem, 3.75rem);
+    font-style: normal;
+    color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
 }
 
 h4{
-
+    font-size: clamp(0.833rem, 0.6rem + 1.2vw, 1.167rem);
+    font-style: normal;
+    font-weight: 200;
+    color: rgba(red, (var(--transparence-h)));
 }
 
 h5{
-
+    font-size: clamp(0.3rem, 1rem, 1.143rem);
+    font-style: normal;
+    color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
 }
 
 h6{
-
-}
-
-h7{
-    
+    font-size: clamp(0.2rem, 0.6vw, 3.75rem);
+    /*font-style: normal;*/
+    font-weight: 300;
+    color: rgba(#4b7a00e5, var(--transparence-h-sous-titres));
 }

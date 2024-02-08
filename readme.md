@@ -15,7 +15,7 @@
 
 ### Ajouter des règles de style Sass pour
 - Chacun des éléments h
-- Utilisation la propriété clamp()
+- Utilisation de la propriété clamp()
 - Changer les couleurs et la transparence de :
     - background-color
     - color
