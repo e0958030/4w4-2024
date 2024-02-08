@@ -6,21 +6,26 @@
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Protest Riot', sans-serif;
 }
 
 .global{
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
 }
 
 /*
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
+
 /*Largeurs des sections*/
 .global > section,
 .global > header, 
 .global > footer{
-    /*Peut grandir jusqu'à 1100px*/
-    flex: 0 1 1100px;
+    /*0 = Ne peut pas grandir en haut de 900px*/
+    /*1 = Peut rapetisser en bas de 900px*/
+    flex: 0 1 900px;
     border: 1px solid cornflowerblue;
 }
 

@@ -13,6 +13,8 @@ Text Domain: theme-camilia
 /*
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
+/* Variables globales CSS et non sass pour être 
+capable de modifier directement la couleur dans le navigateur */
 :root {
   --couleur-arriere-entete: #8fd2ff;
   --couleur-arriere-accueil: #0f0;
@@ -29,10 +31,13 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Protest Riot", sans-serif;
 }
 
 .global {
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
 }
 
 /*
@@ -42,8 +47,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 .global > section,
 .global > header,
 .global > footer {
-  /*Peut grandir jusqu'à 1100px*/
-  flex: 0 1 1100px;
+  /*0 = Ne peut pas grandir en haut de 900px*/
+  /*1 = Peut rapetisser en bas de 900px*/
+  flex: 0 1 900px;
   border: 1px solid cornflowerblue;
 }
 
@@ -73,5 +79,14 @@ h1 {
   https://chrisburnell.com/clamp-calculator/
   */
   /*clamp(dimension minimum, % de la taille de la police, dimension minimum)*/
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-weight: 500;
+  font-style: normal;
+  color: yellow;
 }/*# sourceMappingURL=styles.css.map */
