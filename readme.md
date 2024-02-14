@@ -1,27 +1,21 @@
-# Labo 2 
+# Labo #2
 ## Utilisation de la fonction hsl()
-## Intégration d'effet vague et diagonale
+## Integration d'effet vague et diagonale
 
-### Références utiles 
+### Références utiles
 
 - Références hsl()
+ - https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
+ - https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
+ - https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
 
 
+## Ce que vous devez faire:
 
-## Devis Labo 2 :
-
-### Utiliser la fonction hsl()
+### Utiliser la fonction hsl
 ### Intégrer les vagues
-### Intérer une diagonale
+### Intégrer une diagonale
 
-- Chacun des éléments h
-- Utilisation de la propriété clamp()
-- Changer les couleurs et la transparence de :
-    - background-color
-    - color
-    - Utiliser la fonction rgba()
 
-- Créer de nouvelles variables 
-    - Largeur de la zone centrale .global>header, .global>footer, .global>section
 
 
