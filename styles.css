@@ -17,9 +17,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 capable de modifier directement la couleur dans le navigateur */
 :root {
   /*Calcul des teintes*/
-  --u1: 180; /*Couleur initiale*/
-  --u2: calc(var(--u1) + 180); /*Couleur complémentaire*/
-  --u3: calc(var(--u2) - 30); /*Couleur analogue gauche*/
+  --u1: 203; /*Couleur initiale*/
+  --u2: calc(var(--u1) + 145); /*Couleur complémentaire*/
+  --u3: calc(var(--u2) - 150); /*Couleur analogue gauche*/
   --u4: calc(var(--u2) + 30); /*Couleur analogue droite*/
   /*Saturation*/
   --s-arriere: 100%;
