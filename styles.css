@@ -16,19 +16,29 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 /* Variables globales CSS et non sass pour être 
 capable de modifier directement la couleur dans le navigateur */
 :root {
-  --couleur-arriere-entete: #8fd2ff;
-  --couleur-arriere-accueil: #a996ff;
-  --couleur-arriere-evenement: #2a7689;
-  --couleur-arriere-galerie: #ffbc76;
-  --couleur-arriere-footer: #ffb3b35e;
-  --couleur-sous-titres-autres: #000;
-  /*Niveaux de transparence*/
-  --transparence-h: 0.8;
-  --transparence-h-sous-titres: 0.9;
-  --transparence-section: 0.3;
-  /*Tailles sections*/
-  --largeur-conteneurs: 80vw;
-  --hauteur-sections: 20vh;
+  /*Calcul des teintes*/
+  --u1: 180; /*Couleur initiale*/
+  --u2: calc(var(--u1) + 180); /*Couleur complémentaire*/
+  --u3: calc(var(--u2) - 30); /*Couleur analogue gauche*/
+  --u4: calc(var(--u2) + 30); /*Couleur analogue droite*/
+  /*Saturation*/
+  --s-arriere: 100%;
+  --s-avant: 50%;
+  /*Luminosité*/
+  --l-arriere: 30%;
+  --l-avant: 20%;
+  /*Couleurs d'arrière-plan - background-color*/
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  /*Couleurs d'avant-plan - color*/
+  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
 }
 
 * {
@@ -76,24 +86,38 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 #entete {
   background-color: var(--couleur-arriere-entete);
   padding-bottom: 5vh;
+  color: var(--couleur-avant-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
   max-height: var(--hauteur-sections);
+  color: var(--couleur-avant-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-avant-galerie);
+}
+
+.custom-shape-divider-top-1707919064 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   padding-top: 3vh;
+  color: var(--couleur-avant-footer);
 }
 
 h1 {

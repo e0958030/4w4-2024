@@ -46,22 +46,36 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 #entete{
     background-color: var(--couleur-arriere-entete);
     padding-bottom: 5vh;
+    color: var(--couleur-avant-entete);
 }
 
 #accueil{
     background-color: var(--couleur-arriere-accueil);
     max-height: var(--hauteur-sections);
+    color: var(--couleur-avant-accueil);
 }
 
 #evenement{
     background-color: var(--couleur-arriere-evenement);
+    color: var(--couleur-avant-evenement);
 }
 
 #galerie{
     background-color: var(--couleur-arriere-galerie);
+    color: var(--couleur-avant-galerie);
+}
+
+.custom-shape-divider-top-1707919064 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
 #footer{
     background-color: var(--couleur-arriere-footer);
     padding-top: 3vh;
+    color: var(--couleur-avant-footer);
 }

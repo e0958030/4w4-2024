@@ -2,20 +2,50 @@
 capable de modifier directement la couleur dans le navigateur */
 
 :root {
-    --couleur-arriere-entete: #8fd2ff;
-    --couleur-arriere-accueil: #a996ff;
-    --couleur-arriere-evenement: #2a7689;
-    --couleur-arriere-galerie: #ffbc76;
-    --couleur-arriere-footer: #ffb3b35e;
 
-    --couleur-sous-titres-autres: #000;
+    // --couleur-arriere-entete: #8fd2ff;
+    // --couleur-arriere-accueil: #a996ff;
+    // --couleur-arriere-evenement: #2a7689;
+    // --couleur-arriere-galerie: #ffbc76;
+    // --couleur-arriere-footer: #ffb3b35e;
 
-    /*Niveaux de transparence*/
-    --transparence-h : 0.8;
-    --transparence-h-sous-titres : 0.9;
-    --transparence-section: 0.3;
+    // --couleur-sous-titres-autres: #000;
 
-    /*Tailles sections*/
-    --largeur-conteneurs: 80vw;
-    --hauteur-sections: 20vh;
+    // /*Niveaux de transparence*/
+    // --transparence-h : 0.8;
+    // --transparence-h-sous-titres : 0.9;
+    // --transparence-section: 0.3;
+
+    // /*Tailles sections*/
+    // --largeur-conteneurs: 80vw;
+    // --hauteur-sections: 20vh;
+
+    
+    /*Calcul des teintes*/
+    --u1 : 180; /*Couleur initiale*/
+    --u2 : calc(var(--u1) + 180); /*Couleur complémentaire*/
+    --u3 : calc(var(--u2) - 30); /*Couleur analogue gauche*/
+    --u4 : calc(var(--u2) + 30); /*Couleur analogue droite*/
+    
+    /*Saturation*/
+    --s-arriere : 100%;
+    --s-avant : 50%; 
+    
+    /*Luminosité*/
+    --l-arriere : 30%;
+    --l-avant : 20%;
+
+    /*Couleurs d'arrière-plan - background-color*/
+    --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+
+    /*Couleurs d'avant-plan - color*/
+    --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+    --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+    --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+    --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+    --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
 }
