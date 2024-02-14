@@ -1,0 +1,65 @@
+/* Code SASS pour l'effet de vague */
+
+/* Référence https://www.shapedivider.app/ */
+
+.vague {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.vague svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 177px;
+}
+
+.vague .shape-fill {
+    fill: var(--couleur-arriere-accueil);
+}
+
+// .vague-galerie {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     overflow: hidden;
+//     line-height: 0;
+// }
+
+// .vague-galerie svg {
+//     position: relative;
+//     display: block;
+//     width: calc(177% + 1.3px);
+//     height: 234px;
+// }
+
+// .vague-galerie .shape-fill {
+//     fill: var(couleur-arriere-galerie);
+// }
+
+.vague-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.vague-footer svg {
+    position: relative;
+    display: block;
+    width: calc(101% + 1.3px);
+    height: 104px;
+    transform: rotateY(180deg);
+}
+
+.vague-footer .shape-fill {
+    fill: var(--couleur-arriere-footer);
+}

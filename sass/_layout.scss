@@ -28,7 +28,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     /*0 = Ne peut pas grandir en haut de 900px*/
     /*1 = Peut rapetisser en bas de 900px*/
     flex: 0 1 900px;
-    border: 3px dotted darkslateblue;
+    /*border: 3px dotted darkslateblue;*/
     padding: 3rem 1rem;
     background-color: rgba(purple, var(--transparence-section));    
     min-height: var(--hauteur-sections);    
@@ -47,6 +47,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     background-color: var(--couleur-arriere-entete);
     padding-bottom: 5vh;
     color: var(--couleur-avant-entete);
+    position: relative;
 }
 
 #accueil{
@@ -72,6 +73,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    opacity: 30%;
 }
 
 #footer{

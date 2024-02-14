@@ -70,7 +70,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   /*0 = Ne peut pas grandir en haut de 900px*/
   /*1 = Peut rapetisser en bas de 900px*/
   flex: 0 1 900px;
-  border: 3px dotted darkslateblue;
+  /*border: 3px dotted darkslateblue;*/
   padding: 3rem 1rem;
   background-color: rgba(128, 0, 128, var(--transparence-section));
   min-height: var(--hauteur-sections);
@@ -87,6 +87,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   background-color: var(--couleur-arriere-entete);
   padding-bottom: 5vh;
   color: var(--couleur-avant-entete);
+  position: relative;
 }
 
 #accueil {
@@ -112,6 +113,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  opacity: 30%;
 }
 
 #footer {
@@ -163,4 +165,48 @@ h6 {
   /*font-style: normal;*/
   font-weight: 300;
   color: rgba(75, 122, 0, var(--transparence-h-sous-titres));
+}
+
+/* Code SASS pour l'effet de vague */
+/* Référence https://www.shapedivider.app/ */
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 177px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.vague-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.vague-footer svg {
+  position: relative;
+  display: block;
+  width: calc(101% + 1.3px);
+  height: 104px;
+  transform: rotateY(180deg);
+}
+
+.vague-footer .shape-fill {
+  fill: var(--couleur-arriere-footer);
 }/*# sourceMappingURL=styles.css.map */
