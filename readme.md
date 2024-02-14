@@ -1,19 +1,19 @@
-# Labo 1 
-## Introduction à SASS et révision HTML/CSS
+# Labo 2 
+## Utilisation de la fonction hsl()
+## Intégration d'effet vague et diagonale
 
-- Un dossier Sass contenant :
-    - sous-dossier base
-        - _h.scss
-        - _liens.scss
+### Références utiles 
 
-    - styles.scss
+- Références hsl()
 
-- Création d'une pagination avec Flexbox    
-- Utilisation de polices Google Fonts
 
-## Devis Labo 1 :
 
-### Ajouter des règles de style Sass pour
+## Devis Labo 2 :
+
+### Utiliser la fonction hsl()
+### Intégrer les vagues
+### Intérer une diagonale
+
 - Chacun des éléments h
 - Utilisation de la propriété clamp()
 - Changer les couleurs et la transparence de :
