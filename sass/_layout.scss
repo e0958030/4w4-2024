@@ -62,10 +62,16 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 }
 
 #galerie{
+    display: flex;
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-avant-galerie);
 }
 
+#galerie p{
+    border: 2px solid black;
+}
+
+/*Vague test*/
 .custom-shape-divider-top-1707919064 {
     position: absolute;
     top: 0;

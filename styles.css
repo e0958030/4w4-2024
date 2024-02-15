@@ -18,9 +18,9 @@ capable de modifier directement la couleur dans le navigateur */
 :root {
   /*Calcul des teintes*/
   --u1: 203; /*Couleur initiale*/
-  --u2: calc(var(--u1) + 145); /*Couleur complémentaire*/
-  --u3: calc(var(--u2) - 150); /*Couleur analogue gauche*/
-  --u4: calc(var(--u2) + 30); /*Couleur analogue droite*/
+  --u2: calc(var(--u1) + 203); /*Couleur complémentaire*/
+  --u3: calc(var(--u2) - 15); /*Couleur analogue gauche*/
+  --u4: calc(var(--u2) + 15); /*Couleur analogue droite*/
   /*Saturation*/
   --s-arriere: 100%;
   --s-avant: 50%;
@@ -34,11 +34,19 @@ capable de modifier directement la couleur dans le navigateur */
   --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
   --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
   /*Couleurs d'avant-plan - color*/
-  --couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
-  --couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
-  --couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  --couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  --couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  /*Pour faire apparaître la diagonale*/
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
+  /*Couleurs monochromes*/
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 70%) ;
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
+  /*Couleurs monochromes*/
+  --couleur-avant-entete: hsl(var(--u1), 100%, 30%) ;
+  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
+  --couleur-avant-footer: hsl(var(--u1), 100%, 50%);
 }
 
 * {
@@ -102,10 +110,16 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 }
 
 #galerie {
+  display: flex;
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-avant-galerie);
 }
 
+#galerie p {
+  border: 2px solid black;
+}
+
+/*Vague test*/
 .custom-shape-divider-top-1707919064 {
   position: absolute;
   top: 0;
@@ -131,6 +145,7 @@ h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
   font-style: normal;
+  letter-spacing: -3px;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -190,23 +205,21 @@ h6 {
   fill: var(--couleur-arriere-accueil);
 }
 
-.vague-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.vague-footer svg {
+/*Feuille de style sass pour les effets de diagonales*/
+.diagonal {
   position: relative;
-  display: block;
-  width: calc(101% + 1.3px);
-  height: 104px;
-  transform: rotateY(180deg);
+  z-index: 1;
+  isolation: isolate;
 }
 
-.vague-footer .shape-fill {
-  fill: var(--couleur-arriere-footer);
+.diagonal::after {
+  position: absolute;
+  /*Zone vide pour récupérer tout l'espace de la diagonale*/
+  content: "";
+  /*inset est l'équivalent du code ci-haut*/
+  inset: 0;
+  background-color: hsl(var(--u1), 100%, 50%);
+  z-index: -1;
+  transform: skewY(-5deg);
+  /*opacity: 0.5;*/
 }/*# sourceMappingURL=styles.css.map */
