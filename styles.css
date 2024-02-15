@@ -42,7 +42,7 @@ capable de modifier directement la couleur dans le navigateur */
   --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
   --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
   /*Couleurs monochromes*/
-  --couleur-avant-entete: hsl(var(--u1), 100%, 30%) ;
+  --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
   --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
   --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
   --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
@@ -115,8 +115,15 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   color: var(--couleur-avant-galerie);
 }
 
+#galerie #rectangleGalerie {
+  background-color: hsl(var(--u1), 100%, 30%);
+}
+
 #galerie p {
   border: 2px solid black;
+  padding: 2rem;
+  color: #fff;
+  font-weight: 100;
 }
 
 /*Vague test*/
@@ -134,6 +141,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   background-color: var(--couleur-arriere-footer);
   padding-top: 3vh;
   color: var(--couleur-avant-footer);
+  position: relative;
 }
 
 h1 {
@@ -145,8 +153,9 @@ h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
   font-style: normal;
-  letter-spacing: -3px;
+  letter-spacing: 3px;
   color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
 }
 
 h2 {
@@ -203,6 +212,27 @@ h6 {
 
 .vague .shape-fill {
   fill: var(--couleur-arriere-accueil);
+}
+
+.motif-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.motif-footer svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 80px;
+}
+
+.motif-footer .shape-fill {
+  fill: hsl(var(--u1), 100%, 30%);
 }
 
 /*Feuille de style sass pour les effets de diagonales*/

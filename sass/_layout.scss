@@ -67,8 +67,15 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     color: var(--couleur-avant-galerie);
 }
 
+#galerie #rectangleGalerie{
+    background-color: hsl(var(--u1), 100%, 30%);
+}
+
 #galerie p{
     border: 2px solid black;
+    padding: 2rem;
+    color: #fff;
+    font-weight: 100;
 }
 
 /*Vague test*/
@@ -86,4 +93,5 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     background-color: var(--couleur-arriere-footer);
     padding-top: 3vh;
     color: var(--couleur-avant-footer);
+    position: relative;
 }

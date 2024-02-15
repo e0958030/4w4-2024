@@ -43,23 +43,24 @@
 //     fill: var(couleur-arriere-galerie);
 // }
 
-// .vague-footer {
-//     position: relative;
-//     bottom: 50;
-//     left: 0;
-//     width: 100%;
-//     overflow: hidden;
-//     line-height: 0;
-// }
+.motif-footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
-// .vague-footer svg {
-//     position: relative;
-//     display: block;
-//     width: calc(101% + 1.3px);
-//     height: 104px;
-//     transform: rotateY(180deg);
-// }
+.motif-footer svg {
+    position: relative;
+    display: block;
+    width: calc(200% + 1.3px);
+    height: 80px;
 
-// .vague-footer .shape-fill {
-//     fill: var(--couleur-arriere-galerie);
-// }
+}
+
+.motif-footer .shape-fill {
+    fill: hsl(var(--u1), 100%, 30%);
+}
