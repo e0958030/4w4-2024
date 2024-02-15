@@ -98,17 +98,36 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   position: relative;
 }
 
-#entete button {
+button {
   width: 8vw;
   height: 5vh;
   border-radius: 15px 50px 15px 50px;
-  background-color: var(--couleur-avant-footer);
   border: none;
   text-decoration: none;
 }
 
+button#couleur-entete {
+  background-color: hsl(var(--u1), 100%, 30%);
+}
+
+button#couleur-accueil {
+  background-color: hsl(var(--u1), 100%, 25%);
+}
+
+button#couleur-evenement {
+  background-color: hsl(var(--u1), 100%, 20%);
+}
+
+button#couleur-galerie {
+  background-color: hsl(var(--u1), 100%, 15%);
+}
+
+button#couleur-footer {
+  background-color: hsl(var(--u1), 100%, 50%);
+}
+
 button:hover {
-  background-color: var(--couleur-avant-entete);
+  background-color: hsl(var(--u1), 100%, 50%);
   cursor: pointer;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.507);
 }
