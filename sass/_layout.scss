@@ -45,9 +45,24 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 #entete{
     background-color: var(--couleur-arriere-entete);
-    padding-bottom: 5vh;
+    padding-bottom: 10vh;
     color: var(--couleur-avant-entete);
     position: relative;
+}
+
+#entete button{
+    width: 8vw;
+    height: 5vh;
+    border-radius: 15px 50px 15px 50px;
+    background-color: var(--couleur-avant-footer);
+    border: none;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: var(--couleur-avant-entete);
+    cursor: pointer;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.507);
 }
 
 #accueil{
