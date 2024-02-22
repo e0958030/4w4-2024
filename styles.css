@@ -110,34 +110,6 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   padding-left: 10vw;
 }
 
-button {
-  width: 8vw;
-  height: 5vh;
-  border-radius: 15px 50px 15px 50px;
-  border: none;
-  text-decoration: none;
-}
-
-button#couleur-entete {
-  background-color: hsl(var(--u1), 100%, 30%);
-}
-
-button#couleur-accueil {
-  background-color: hsl(var(--u1), 100%, 25%);
-}
-
-button#couleur-evenement {
-  background-color: hsl(var(--u1), 100%, 20%);
-}
-
-button#couleur-galerie {
-  background-color: hsl(var(--u1), 100%, 15%);
-}
-
-button#couleur-footer {
-  background-color: hsl(var(--u1), 100%, 50%);
-}
-
 button:hover {
   background-color: hsl(var(--u1), 100%, 50%);
   cursor: pointer;
@@ -213,7 +185,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(4rem, 0.722rem + 3.333vw, 1.333rem);
+  font-size: clamp(1.333rem, 0.722rem + 3.333vw, 4rem);
   font-weight: 500;
   font-style: normal;
   color: rgba(0, 43, 92, var(--transparence-h-sous-titres));
@@ -327,8 +299,13 @@ button {
   padding: 12px 24px;
   background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
   margin-bottom: 10vh;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 15px 50px 15px 50px;
+  border: none;
+  text-decoration: none;
 }
 
 button:hover {
-  background-image: linear-gradient(120deg, pink, red);
+  background-image: linear-gradient(120deg, --couleur-arriere-entete, darkslateblue);
 }/*# sourceMappingURL=styles.css.map */

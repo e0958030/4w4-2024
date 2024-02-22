@@ -1,7 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
     scroll-behavior: smooth;
 }
 
@@ -60,33 +59,26 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     padding-left: 10vw;
 }
 
-button{
-    width: 8vw;
-    height: 5vh;
-    border-radius: 15px 50px 15px 50px;
-    border: none;
-    text-decoration: none;
-}
 
-button#couleur-entete{
-    background-color: hsl(var(--u1), 100%, 30%);
-}
+// button#couleur-entete{
+//     background-color: hsl(var(--u1), 100%, 30%);
+// }
 
-button#couleur-accueil{
-    background-color: hsl(var(--u1), 100%, 25%);
-}
+// button#couleur-accueil{
+//     background-color: hsl(var(--u1), 100%, 25%);
+// }
 
-button#couleur-evenement{
-    background-color: hsl(var(--u1), 100%, 20%);
-}
+// button#couleur-evenement{
+//     background-color: hsl(var(--u1), 100%, 20%);
+// }
 
-button#couleur-galerie{
-    background-color: hsl(var(--u1), 100%, 15%);
-}
+// button#couleur-galerie{
+//     background-color: hsl(var(--u1), 100%, 15%);
+// }
 
-button#couleur-footer{
-    background-color: hsl(var(--u1), 100%, 50%);
-}
+// button#couleur-footer{
+//     background-color: hsl(var(--u1), 100%, 50%);
+// }
 
 button:hover{
     background-color: hsl(var(--u1), 100%, 50%);
