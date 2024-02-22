@@ -194,7 +194,7 @@ h1 {
 }
 
 h2 {
-  font-size: 100px;
+  font-size: clamp(2rem, 0.7vw + 2rem, 4rem);
   font-weight: 500;
   font-style: normal;
   color: rgba(0, 43, 92, var(--transparence-h-sous-titres));
@@ -203,6 +203,7 @@ h2 {
 h3 {
   font-size: clamp(1rem, 0.7vw + 1.2rem, 3.75rem);
   font-style: normal;
+  font-weight: 100;
   color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
 }
 
