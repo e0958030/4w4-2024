@@ -1,4 +1,4 @@
-# Labo #2
+<!-- # Labo #2
 ## Utilisation de la fonction hsl()
 ## Integration d'effet vague et diagonale
 
@@ -14,8 +14,22 @@
 
 ### Utiliser la fonction hsl
 ### Intégrer les vagues
-### Intégrer une diagonale
+### Intégrer une diagonale -->
 
+
+# Exercice #1
+## Par Camilia El Moustarih
+## Integration d'effet vague et diagonale
+
+### Références utiles
+
+
+
+## Ce que vous devez faire:
+
+### Utiliser la fonction hsl
+### Intégrer les vagues
+### Intégrer une diagonale
 
 
 
