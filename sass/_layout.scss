@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    
+    scroll-behavior: smooth;
 }
 
 body{
@@ -27,7 +29,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 .global > footer{
     /*0 = Ne peut pas grandir en haut de 900px*/
     /*1 = Peut rapetisser en bas de 900px*/
-    flex: 0 1 900px;
+    flex: 0 1 1100px;
     /*border: 3px dotted darkslateblue;*/
     padding: 3rem 1rem;
     background-color: rgba(purple, var(--transparence-section));    
@@ -36,6 +38,12 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     //padding-top: 3vh;
    // padding-bottom: 3vh;
     padding : 3vh 0;
+}
+
+.global > header{
+    /*Flex à 1 prendra toute la largeur*/
+    flex: 1;
+    min-height: auto;
 }
 
 #entete, #footer{    
@@ -48,6 +56,8 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     padding-bottom: 10vh;
     color: var(--couleur-avant-entete);
     position: relative;
+    min-height: 50vh;
+    padding-left: 10vw;
 }
 
 button{
@@ -93,6 +103,8 @@ button:hover{
 #evenement{
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-avant-evenement);
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid #fff;
 }
 
 #galerie{
@@ -128,4 +140,9 @@ button:hover{
     padding-top: 3vh;
     color: var(--couleur-avant-footer);
     position: relative;
+}
+
+#footer #hautPage{
+    float: right;
+    margin-top: 1.8rem;
 }

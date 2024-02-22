@@ -14,7 +14,7 @@ h1{
 }
 
 h2{
-    font-size: clamp(2rem, 0.7vw + 2rem, 4rem);
+    font-size: clamp(4rem, 0.722rem + 3.333vw, 1.333rem);
     font-weight: 500;
     font-style: normal;
     color: rgba(rgb(0, 43, 92), var(--transparence-h-sous-titres));
@@ -45,4 +45,9 @@ h6{
     /*font-style: normal;*/
     font-weight: 300;
     color: rgba(#4b7a00e5, var(--transparence-h-sous-titres));
+}
+
+span{
+    display: block;
+    margin-top: 2vh;
 }

@@ -66,4 +66,8 @@ capable de modifier directement la couleur dans le navigateur */
     --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
     --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
     --couleur-avant-footer: hsl(var(--u1), 100%, 50%);
+
+    /*Couleurs pour le bouton événement*/
+    --couleur1-bouton-evnt: hsl(var(--u1), 20%, 40%);
+    --couleur2-bouton-evnt: hsl(var(--u1), 80%, 90%);
 }
