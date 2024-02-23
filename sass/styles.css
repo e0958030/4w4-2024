@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/*
+Theme Name: Twenty Camilia
+Author: Camilia El Moustarih
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author URI: https://wordpress.org/
+Description: Thème de base développé dans le cours 4W4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-camilia
+*/
+/*
+https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+*/
+/* Variables globales CSS et non sass pour être 
+capable de modifier directement la couleur dans le navigateur */
+:root {
+  /*Calcul des teintes*/
+  --u1: 203; /*Couleur initiale*/
+  --u2: calc(var(--u1) + 203); /*Couleur complémentaire*/
+  --u3: calc(var(--u2) - 15); /*Couleur analogue gauche*/
+  --u4: calc(var(--u2) + 15); /*Couleur analogue droite*/
+  /*Saturation*/
+  --s-arriere: 100%;
+  --s-avant: 50%;
+  /*Luminosité*/
+  --l-arriere: 30%;
+  --l-avant: 20%;
+  /*Couleurs d'arrière-plan - background-color*/
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  /*Couleurs d'avant-plan - color*/
+  /*Pour faire apparaître la diagonale*/
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
+  /*Couleurs monochromes*/
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 70%) ;
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
+  /*Couleurs monochromes*/
+  --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
+  --couleur-avant-footer: hsl(var(--u1), 100%, 50%);
+  /*Couleurs pour le bouton événement*/
+  --couleur1-bouton-evnt: hsl(var(--u1), 20%, 40%);
+  --couleur2-bouton-evnt: hsl(var(--u1), 80%, 90%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Protest Riot", sans-serif;
+}
+
+/* Prend tout le contenu de la page */
+.global {
+  display: flex;
+  justify-content: center;
+  min-height: 40vh; /*chaque division prend 40%*/
+  padding: 5vh 0;
+}
+
+/*
+https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+*/
+/*Largeurs des sections*/
+.global > section,
+.global > header,
+.global > footer {
+  /*0 = Ne peut pas grandir en haut de 900px*/
+  /*1 = Peut rapetisser en bas de 900px*/
+  flex: 0 1 1100px;
+  /*border: 3px dotted darkslateblue;*/
+  padding: 3rem 1rem;
+  background-color: rgba(128, 0, 128, var(--transparence-section));
+  min-height: var(--hauteur-sections);
+  min-width: var(--largeur-conteneurs);
+  padding: 3vh 0;
+}
+
+.global > header {
+  /*Flex à 1 prendra toute la largeur*/
+  flex: 1;
+  min-height: auto;
+}
+
+#entete, #footer {
+  display: flex;
+  align-items: center;
+}
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+  padding-bottom: 10vh;
+  color: var(--couleur-avant-entete);
+  position: relative;
+  min-height: 50vh;
+  padding-left: 10vw;
+}
+
+button:hover {
+  background-color: hsl(var(--u1), 100%, 50%);
+  cursor: pointer;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+  max-height: var(--hauteur-sections);
+  color: var(--couleur-avant-accueil);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
+  border-top: 15px solid #fff;
+  border-bottom: 15px solid #fff;
+}
+
+#galerie {
+  display: flex;
+  background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-avant-galerie);
+}
+
+#galerie #rectangleGalerie {
+  background-color: hsl(var(--u1), 100%, 30%);
+}
+
+#galerie p {
+  border: 2px solid black;
+  padding: 2rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+/*Vague test*/
+.custom-shape-divider-top-1707919064 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  opacity: 30%;
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+  padding-top: 3vh;
+  color: var(--couleur-avant-footer);
+  position: relative;
+}
+
+#footer #hautPage {
+  float: right;
+  margin-top: 1.8rem;
+}
+
+h1 {
+  /*utiliser un calculateur de valeurs clamp*/
+  /*
+  https://chrisburnell.com/clamp-calculator/
+  */
+  /*clamp(dimension minimum, % de la taille de la police, dimension minimum)*/
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 3px;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
+  /*text-shadow: #4b7a00e5;*/
+}
+
+h2 {
+  font-size: clamp(1.333rem, 0.722rem + 3.333vw, 4rem);
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(0, 43, 92, var(--transparence-h-sous-titres));
+}
+
+h3 {
+  font-size: clamp(1rem, 0.7vw + 1.2rem, 3.75rem);
+  font-style: normal;
+  font-weight: 100;
+  color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
+}
+
+h4 {
+  font-size: clamp(0.833rem, 0.6rem + 1.2vw, 1.167rem);
+  font-style: normal;
+  font-weight: 200;
+  color: rgba(255, 0, 0, var(--transparence-h));
+}
+
+h5 {
+  font-size: 1rem;
+  font-style: normal;
+  color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
+}
+
+h6 {
+  font-size: clamp(0.2rem, 0.6vw, 3.75rem);
+  /*font-style: normal;*/
+  font-weight: 300;
+  color: rgba(75, 122, 0, var(--transparence-h-sous-titres));
+}
+
+span {
+  display: block;
+  margin-top: 2vh;
+}
+
+/* Code SASS pour l'effet de vague */
+/* Référence https://www.shapedivider.app/ */
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 177px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.motif-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.motif-footer svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 80px;
+}
+
+.motif-footer .shape-fill {
+  fill: hsl(var(--u1), 100%, 30%);
+}
+
+/*Feuille de style sass pour les effets de diagonales*/
+.diagonal {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  /*Zone vide pour récupérer tout l'espace de la diagonale*/
+  content: "";
+  /*inset est l'équivalent du code ci-haut*/
+  inset: 0;
+  background-color: hsl(var(--u1), 100%, 50%);
+  z-index: -1;
+  transform: skewY(-5deg);
+  /*opacity: 0.5;*/
+}
+
+/* Feuille de style pour l'entête */
+.entete__header {
+  background-image: url("images/github-octocat-logo-png-transparent.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 95% 50%;
+}
+
+/* Feuille de styles sass pour les boutons */
+button {
+  font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
+  padding: 12px 24px;
+  background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
+  margin-bottom: 10vh;
+  width: 102vw;
+  height: 5vh;
+  border-radius: 15px 50px 15px 50px;
+  border: none;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+
+button:hover {
+  background-image: linear-gradient(120deg, --couleur-arriere-entete, pink);
+  transform: scale(1.5);
+}/*# sourceMappingURL=styles.css.map */
