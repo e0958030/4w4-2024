@@ -138,3 +138,15 @@ button:hover{
     float: right;
     margin-top: 1.8rem;
 }
+
+#footer > p{
+    color: pink;
+    font-size: larger;
+}
+
+/* Media query pour mobile */
+@media screen and (max-width:550px) {
+    .global{
+        background-color: yellow;
+    }
+}
