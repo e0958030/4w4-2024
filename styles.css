@@ -146,6 +146,31 @@ button:hover {
   font-weight: 100;
 }
 
+/*Taille du conteneur div pour les figures & figcaptions*/
+#imagesTableau {
+  background-color: pink;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figcaption {
+  display: flex;
+}
+
+#galerie figure > img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
 /*Vague test*/
 .custom-shape-divider-top-1707919064 {
   position: absolute;
@@ -169,6 +194,13 @@ button:hover {
   margin-top: 1.8rem;
 }
 
+#footer blockquote {
+  background-color: rgba(255, 255, 255, 0.308);
+  color: #fff;
+  padding: 5%;
+}
+
+/*Media query pour la version mobile responsive*/
 h1 {
   /*utiliser un calculateur de valeurs clamp*/
   /*
@@ -296,16 +328,29 @@ span {
 
 button {
   font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
-  padding: 12px 24px;
+  /*padding: 12px 24px;*/
   background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
   margin-bottom: 10vh;
-  width: 10vw;
+  width: 15vw;
   height: 5vh;
   border-radius: 15px 50px 15px 50px;
   border: none;
   text-decoration: none;
+  transition: transform 0.2s;
 }
 
 button:hover {
   background-image: linear-gradient(120deg, --couleur-arriere-entete, darkslateblue);
+  transform: scale(110%);
+}
+
+/*Feuille de style Sass pour les liens*/
+a {
+  color: var(--couleur-lien);
+}
+a:hover {
+  color: var(--couleur-lien-hover);
+}
+a:visited {
+  color: var(--couleur-lien-visited);
 }/*# sourceMappingURL=styles.css.map */

@@ -1,15 +1,17 @@
 button{
     font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
-    padding: 12px 24px;
+    /*padding: 12px 24px;*/
     background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
     margin-bottom: 10vh;
-    width: 10vw;
+    width: 15vw;
     height: 5vh;
     border-radius: 15px 50px 15px 50px;
     border: none;
     text-decoration: none;
+    transition: transform 0.2s;
 }
 
 button:hover{
     background-image: linear-gradient(120deg, --couleur-arriere-entete, darkslateblue);
+    transform: scale(110%);
 }
