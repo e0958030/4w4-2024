@@ -201,6 +201,12 @@ figcaption {
 }
 
 /*Media query pour la version mobile responsive*/
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  button {
+    background-color: pink;
+    width: 350vw;
+  }
+}
 h1 {
   /*utiliser un calculateur de valeurs clamp*/
   /*

@@ -172,5 +172,10 @@ figcaption{
 
 /*Media query pour la version mobile responsive*/
 @media screen and (min-width: 500px) and (max-width:1100px) {
-    
+    button{
+        // display: flex;
+        // align-items: center;
+        background-color: pink;
+        width: 350vw;
+    }
 }
