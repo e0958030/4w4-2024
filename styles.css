@@ -146,31 +146,6 @@ button:hover {
   font-weight: 100;
 }
 
-/*Taille du conteneur div pour les figures & figcaptions*/
-#imagesTableau {
-  background-color: pink;
-  margin-top: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2%;
-}
-
-figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-figcaption {
-  display: flex;
-}
-
-#galerie figure > img {
-  max-width: 50%;
-  max-height: 50%;
-}
-
 /*Vague test*/
 .custom-shape-divider-top-1707919064 {
   position: absolute;
@@ -332,6 +307,7 @@ span {
   background-position: 95% 50%;
 }
 
+/* Feuille de styles sass pour les boutons */
 button {
   font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
   /*padding: 12px 24px;*/
