@@ -13,3 +13,12 @@
     border: 2px solid #fff; /*changer pour une variable de couleur*/
     padding: 2em;
 }
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width:550px) {
+    .carte{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}

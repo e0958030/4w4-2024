@@ -150,15 +150,9 @@ button:hover{
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:550px) {
     #btn-evnt{
-        // display: flex;
-        // align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: darkslateblue;
-    }
-
-    .entete__header{
-        background-image: url("images/github-octocat-logo-png-transparent.png");
-        background-repeat: no-repeat;   
-        background-size: 20%;
-        background-position: 50% 50%;
     }
 }

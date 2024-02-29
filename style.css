@@ -186,13 +186,10 @@ button:hover {
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 550px) {
   #btn-evnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: darkslateblue;
-  }
-  .entete__header {
-    background-image: url("images/github-octocat-logo-png-transparent.png");
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: 50% 50%;
   }
 }
 h1 {
@@ -320,6 +317,20 @@ span {
   background-position: 95% 50%;
 }
 
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 550px) {
+  .entete__header {
+    background-image: url("images/github-octocat-logo-png-transparent.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+    align-items: center;
+  }
+  .global {
+    padding: 2em;
+    text-align: center;
+  }
+}
 /* Feuille de styles sass pour les boutons */
 button {
   font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
@@ -340,6 +351,17 @@ button:hover {
   transform: scale(110%);
 }
 
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 550px) {
+  button {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 50%;
+    margin-top: 40%;
+    align-items: center;
+    float: right;
+  }
+}
 /*Feuille de style Sass pour les liens*/
 a {
   color: var(--couleur-lien);
@@ -365,4 +387,13 @@ a:visited {
   flex: 0 1 20%; /*ne grossit pas mais se comprime*/
   border: 2px solid #fff; /*changer pour une variable de couleur*/
   padding: 2em;
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 550px) {
+  .carte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }/*# sourceMappingURL=style.css.map */
