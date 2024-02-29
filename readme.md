@@ -25,19 +25,19 @@
 
 <h2>Création d'un site WP.<h2>
 <p>- Adaptation du thème de exercice #1</p>
-#- Création du modèle index.php
-#- Création de la branche labo3
-#- minimum 3 commits
-#- Un Readme.md
-#qui contiendra:
-#- Le nom de l'auteur
-#- L'objectif du labo3
-#- Les réalisations
-#- Un lien vers la github-page
+<p>- Création du modèle index.php</p>
+<p>- Création de la branche labo3</p>
+<p>- minimum 3 commits</p>
+<p>- Un Readme.md</p>
+<p>qui contiendra:</p>
+<p>- Le nom de l'auteur</p>
+<p>- L'objectif du labo3</p>
+<p>- Les réalisations</p>
+<p>- Un lien vers la github-page</p>
 
-#La section galerie affichera la liste des cours du TIM en 4 colonnes.
+<p>La section galerie affichera la liste des cours du TIM en 4 colonnes.</p>
 
-#La liste devra s'adapter aux différentes largeurs de fenêtre.
+<p>La liste devra s'adapter aux différentes largeurs de fenêtre.</p>
 
 
 
