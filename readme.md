@@ -12,10 +12,9 @@
 - Minimum 3 commits
 - Un Readme.md qui contiendra:
     - Le nom de l'auteur
-- L'objectif du labo 3
-- Les réalisations
-- Un lien vers la github-page
-- 4 colonnes
+    - L'objectif du labo 3
+    - Les réalisations
+    - Un lien vers la github-page
 
 - Décomposer le titre de chaque cours :
     - sigle du cours (ex:582-4w4)
