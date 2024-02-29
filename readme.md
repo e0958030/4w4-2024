@@ -2,6 +2,7 @@
 ## Par Camilia El Moustarih
 ## Création d'un thème Wordpress personnalisé 
 
+<h2>Lien du Github Page : https://e0958030.github.io/4w4-2024/</h2>
 
 ## Ce que vous devez faire: Création d'un site WP.
 
@@ -12,17 +13,14 @@
 ### - Un Readme.md qui contiendra:
 ### - Le nom de l'auteur
 ### - L'objectif du labo 3
-### 
+### - Les réalisations
+### - Un lien vers la github-page
+### La liste devra s'adapter aux différentes largeurs de fenêtre.
 
 
 
 
-<h2>Lien du Github Page : https://e0958030.github.io/4w4-2024/</h2>
 
-
-<p>- Les réalisations</p>
-<p>- Un lien vers la github-page</p>
-<p>La liste devra s'adapter aux différentes largeurs de fenêtre.</p>
 
 
 
