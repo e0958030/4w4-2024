@@ -62,7 +62,7 @@
                         <div class="carte">
                             <!-- récupère un post à la fois -->
                             <h3><<?php get_the_title(); ?></h3>
-                            <p><?php echo wp_trim_words(get_the_content(), 20);?></p>                                     
+                            <p><?php echo wp_trim_words(get_the_content(), 30);?></p>                                     
                         </div>        
                     <?php endwhile;?>
                     <?php endif; ?>  
