@@ -4,6 +4,8 @@
 
 <h2>Lien du Github Page : https://e0958030.github.io/4w4-2024/</h2>
 
+<p>J'ai modifié le look de la liste de cours dans la galerie avec un box-shadow stylisé pour donner un effet de pile de papiers et corrigé la mise en page en mode mobile</p>
+
 ## Ce que vous devez faire: Création d'un site WP.
 
 - Adaptation du thème de exercice #1
