@@ -313,7 +313,8 @@ button {
   /*padding: 12px 24px;*/
   background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
   margin-bottom: 10vh;
-  width: 10vw;
+  width: auto;
+  padding: 0 2vw;
   height: 5vh;
   border-radius: 15px 50px 15px 50px;
   border: none;

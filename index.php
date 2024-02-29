@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Importation des feuilles de styles et des polices Google -->
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/normalize.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" 
@@ -20,11 +20,11 @@
     <div id="entete" class="global">
         <header class="entete__header">
             <h1>Thème du groupe #1</h1>
-            <h2>4W4 - Conception d'interffsdgfdgdfghdgace <span>et développement Web</span></h2>
+            <h2>4W4 - Conception d'interface <span>et développement Web</span></h2>
             <span>
             <h3>TIM - Collège de Maisonneuve</h3>
             <span>
-            <button id="btn-evnt" >Événementssssss</button>
+            <button id="btn-evnt" >Événements</button>
             <span>
             <!-- <button id="couleur-entete"><a href="https://color.adobe.com/create/color-wheel">Palette</a></button>
             <button id="couleur-accueil">Palette</button>
@@ -44,11 +44,29 @@
     <div id="accueil" class="global">
         <section>
             <h2>Accueil</h2>
-            <h4>Test h4</h4>
-            <span>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit laborum expedita, voluptas delectus in illum aspernatur quaerat sequi nisi ex, nemo repudiandae. Obcaecati, accusantium distinctio itaque asperiores tempore illo facilis!</p>
-            <span>
-            <p>Bacon ipsum dolor amet bacon buffalo pancetta shank strip steak pork belly ground round sausage meatball tail tenderloin landjaeger cow alcatra. Short ribs porchetta capicola ham pork. Beef drumstick spare ribs porchetta jerky, cupim boudin capicola landjaeger ribeye filet mignon pork loin. Buffalo cupim salami andouille ground round, jowl picanha tail. Bresaola chislic meatball, pork loin chicken shank salami ribeye pork chuck pastrami strip steak sausage frankfurter.</p>
+            <div class="cours">             
+            <!-- Boucle if while pour afficher le contenu de la base de données -->
+            <?php
+                // if (have_posts()){
+                //     while(have_posts()){
+                //         the_post(); //extraire un article complet
+                //         the_title('<h3>', '</h3>'); //affiche tous les titres de l'article de la base de données sous forme de h3
+                //         //the_content(); //affiche le contenu/descriptions de chaque cours
+                //         echo wp_trim_words(get_the_content(), 30);  //affiche le contenu tronqué en 30 mots
+                //     }
+                // }
+
+                //Même chose mais standard wordpress .. le : équivault à une ouverture d'accolade
+                if(have_posts()):
+                    while(have_posts()): the_post(); ?> 
+                        <div class="carte">
+                            <!-- récupère un post à la fois -->
+                            <h3><<?php get_the_title(); ?></h3>
+                            <p><?php echo wp_trim_words(get_the_content(), 20);?></p>                                     
+                        </div>        
+                    <?php endwhile;?>
+                    <?php endif; ?>  
+            </div>              
         </section>
     </div>
 
@@ -75,7 +93,6 @@
                 </svg>
             </div>
             <h2>Galerie</h2>
-            <h3>Salut test clamp h3</h3>
             <span>
             <span>
             <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>

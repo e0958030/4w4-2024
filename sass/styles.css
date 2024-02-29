@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: Twenty Camilia
+Theme Name: theme-camilia
 Author: Camilia El Moustarih
 Theme URI: https://wordpress.org/themes/twentytwenty/
 Author URI: https://wordpress.org/
@@ -8,7 +8,7 @@ Description: Thème de base développé dans le cours 4W4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theme-camilia
+Text Domain: 4w4camilia
 */
 /*
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
@@ -169,15 +169,17 @@ button:hover {
   margin-top: 1.8rem;
 }
 
-#footer > p {
-  color: pink;
-  font-size: larger;
+#footer blockquote {
+  background-color: rgba(255, 255, 255, 0.308);
+  color: #fff;
+  padding: 5%;
 }
 
-/* Media query pour mobile */
-@media screen and (max-width: 550px) {
-  .global {
-    background-color: yellow;
+/*Media query pour la version mobile responsive*/
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  button {
+    background-color: pink;
+    width: 350vw;
   }
 }
 h1 {
@@ -308,18 +310,45 @@ span {
 /* Feuille de styles sass pour les boutons */
 button {
   font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
-  padding: 12px 24px;
+  /*padding: 12px 24px;*/
   background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
   margin-bottom: 10vh;
-  width: 10vw;
+  width: auto;
+  padding: 0 2vw;
   height: 5vh;
   border-radius: 15px 50px 15px 50px;
   border: none;
   text-decoration: none;
-  transition: width 0.5s;
+  transition: transform 0.2s;
 }
 
 button:hover {
-  background-image: pink;
-  transform: width(110%);
+  background-image: linear-gradient(120deg, --couleur-arriere-entete, darkslateblue);
+  transform: scale(110%);
+}
+
+/*Feuille de style Sass pour les liens*/
+a {
+  color: var(--couleur-lien);
+}
+a:hover {
+  color: var(--couleur-lien-hover);
+}
+a:visited {
+  color: var(--couleur-lien-visited);
+}
+
+.cours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 20%; /*ne grossit pas mais se comprime*/
+  border: 1px solid darkblue; /*changer pour une variable de couleur*/
 }/*# sourceMappingURL=styles.css.map */
