@@ -43,37 +43,12 @@
 
     <div id="accueil" class="global">
         <section>
-            <h2>Accueil</h2>
-            <div class="cours">             
-            <!-- Boucle if while pour afficher le contenu de la base de données -->
-            <?php
-                // if (have_posts()){
-                //     while(have_posts()){
-                //         the_post(); //extraire un article complet
-                //         the_title('<h3>', '</h3>'); //affiche tous les titres de l'article de la base de données sous forme de h3
-                //         //the_content(); //affiche le contenu/descriptions de chaque cours
-                //         echo wp_trim_words(get_the_content(), 30);  //affiche le contenu tronqué en 30 mots
-                //     }
-                // }
-
-                //Même chose mais standard wordpress .. le : équivault à une ouverture d'accolade
-                if(have_posts()):
-                    while(have_posts()): the_post(); 
-                    $titre = get_the_title();
-                    $sigle = substr($titre,0,7); //Trouver le sigle en 7 caractères
-                    //$duree =
-                    //$titre =
-                    //strpos : fonction pour chercher un
-                    
-                    ?> 
-                        <div class="carte">
-                            <p><?php echo $sigle; ?></p>
-                            <h3><<?php the_title(); ?></h3>
-                            <p><?php echo wp_trim_words(get_the_content(), 30);?></p>                                     
-                        </div>        
-                    <?php endwhile;?>
-                    <?php endif; ?>  
-            </div>              
+            <h2>Accueil</h2> 
+            <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>   
+            <span></span>        
+            <p>Cupcake ipsum dolor sit amet cake cupcake. Ice cream I love chupa chups carrot cake gummies jelly beans I love apple pie. Candy canes donut danish sesame snaps cookie I love I love gummi bears I love.</p>
+            <span></span>
+            <p>Sweet lemon drops macaroon jujubes gingerbread dessert I love. Topping marshmallow toffee chocolate caramels bear claw donut. Dessert jelly-o lemon drops I love shortbread jelly beans soufflé tiramisu brownie.</p>
         </section>
     </div>
 
@@ -102,8 +77,40 @@
             <h2>Galerie</h2>
             <span>
             <span>
+            <div class="cours">             
+            <!-- Boucle if while pour afficher le contenu de la base de données -->
+            <?php
+                // if (have_posts()){
+                //     while(have_posts()){
+                //         the_post(); //extraire un article complet
+                //         the_title('<h3>', '</h3>'); //affiche tous les titres de l'article de la base de données sous forme de h3
+                //         //the_content(); //affiche le contenu/descriptions de chaque cours
+                //         echo wp_trim_words(get_the_content(), 30);  //affiche le contenu tronqué en 30 mots
+                //     }
+                // }
+
+                //Même chose mais standard wordpress .. le : équivault à une ouverture d'accolade
+                if(have_posts()):
+                    while(have_posts()): the_post(); 
+                    $titre = get_the_title();
+                    $sigle = substr($titre,0,7); //Trouver le sigle en 7 caractères
+                    $duree = substr($titre,-6);
+                    $titreTronque = substr($titre, 7, -6);
+                    //$titre =
+                    //strpos : fonction pour chercher un                    
+                    ?> 
+                        <div class="carte">
+                            <h3><?php echo $sigle; ?></h3>
+                            <h4><?php echo $titreTronque; ?></h4>
+                            <h4>-<?php echo $duree; ?>-</h4>
+                            <p><?php echo wp_trim_words(get_the_content(), 30);?></p>                                     
+                        </div>        
+                    <?php endwhile;?>
+                    <?php endif; ?>  
+            </div>     
+            <span></span>         
             <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>
-            
+<!--             
             <div id="imagesTableau">
                 <figure>
                     <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
@@ -117,7 +124,7 @@
                     <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
                     <figcaption>Logo de React</figcaption>
                 </figure>
-            </div>
+            </div> -->
         
         </section>
         <div class="vague-galerie">
@@ -135,7 +142,6 @@
         </div>     
         <footer>            
             <h2>Footer</h2>
-            <p>Texte pour le footer</p>
             <span>
             <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aut, voluptas dolor, veniam harum beatae, quos nostrum obcaecati quibusdam ad porro. Dolorum voluptatum consequatur blanditiis earum tempora provident repellat!</blockquote>
 

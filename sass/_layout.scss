@@ -105,8 +105,10 @@ button:hover{
     color: var(--couleur-avant-galerie);
 }
 
-#galerie #rectangleGalerie{
+#accueil #rectangleGalerie{
     background-color: hsl(var(--u1), 100%, 30%);
+    color: #fff;
+    padding: 2em;
 }
 
 #galerie p{

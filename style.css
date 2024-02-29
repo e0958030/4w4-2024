@@ -141,8 +141,10 @@ button:hover {
   color: var(--couleur-avant-galerie);
 }
 
-#galerie #rectangleGalerie {
+#accueil #rectangleGalerie {
   background-color: hsl(var(--u1), 100%, 30%);
+  color: #fff;
+  padding: 2em;
 }
 
 #galerie p {
@@ -348,7 +350,7 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .carte {
@@ -356,5 +358,6 @@ a:visited {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 1 20%; /*ne grossit pas mais se comprime*/
-  border: 1px solid #fff; /*changer pour une variable de couleur*/
+  border: 2px solid #fff; /*changer pour une variable de couleur*/
+  padding: 2em;
 }/*# sourceMappingURL=style.css.map */
