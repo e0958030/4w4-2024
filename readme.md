@@ -3,26 +3,23 @@
 ## Création d'un thème Wordpress personnalisé 
 
 
-## Ce que vous devez faire:
+## Ce que vous devez faire: Création d'un site WP.
 
-### Utiliser la fonction hsl
-### Intégrer les vagues
-### Intégrer une diagonale
+### - Adaptation du thème de exercice #1
+### - Création du modèle index.php
+### - Création de la branche labo3
+### - Minimum 3 commits
+### - Un Readme.md qui contiendra:
+### - Le nom de l'auteur
+### - L'objectif du labo 3
+### 
 
 
 
 
 <h2>Lien du Github Page : https://e0958030.github.io/4w4-2024/</h2>
 
-<h2>Création d'un site WP.<h2>
-<p>- Adaptation du thème de exercice #1</p>
-<p>- Création du modèle index.php</p>
-<p>- Création de la branche labo3</p>
-<p>- minimum 3 commits</p>
-<p>- Un Readme.md</p>
-<p>qui contiendra:</p>
-<p>- Le nom de l'auteur</p>
-<p>- L'objectif du labo3</p>
+
 <p>- Les réalisations</p>
 <p>- Un lien vers la github-page</p>
 <p>La liste devra s'adapter aux différentes largeurs de fenêtre.</p>
