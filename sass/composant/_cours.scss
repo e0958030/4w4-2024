@@ -10,5 +10,5 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 0 1 20%; /*ne grossit pas mais se comprime*/
-    border: 1px solid darkblue; /*changer pour une variable de couleur*/
+    border: 1px solid --couleur-arriere-footer; /*changer pour une variable de couleur*/
 }
