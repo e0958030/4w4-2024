@@ -17,12 +17,28 @@
 ### Intégrer une diagonale -->
 
 
-# Exercice #1
+# Labo 3
 ## Par Camilia El Moustarih
-## Amélioration et complétion du Labo2
+## Création d'un thème Wordpress personnalisé 
 
 <h2>Lien du Github Page : https://e0958030.github.io/4w4-2024/</h2>
-Désolée pour la remise tardive...
+
+<h2>Création d'un site WP.<h2>
+<p>- Adaptation du thème de exercice #1</p>
+#- Création du modèle index.php
+#- Création de la branche labo3
+#- minimum 3 commits
+#- Un Readme.md
+#qui contiendra:
+#- Le nom de l'auteur
+#- L'objectif du labo3
+#- Les réalisations
+#- Un lien vers la github-page
+
+#La section galerie affichera la liste des cours du TIM en 4 colonnes.
+
+#La liste devra s'adapter aux différentes largeurs de fenêtre.
+
 
 
 
