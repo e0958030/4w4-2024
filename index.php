@@ -8,7 +8,7 @@
     
     <!-- Importation des feuilles de styles et des polices Google -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/normalize.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/styles.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" 
@@ -58,10 +58,17 @@
 
                 //Même chose mais standard wordpress .. le : équivault à une ouverture d'accolade
                 if(have_posts()):
-                    while(have_posts()): the_post(); ?> 
+                    while(have_posts()): the_post(); 
+                    $titre = get_the_title();
+                    $sigle = substr($titre,0,7); //Trouver le sigle en 7 caractères
+                    //$duree =
+                    //$titre =
+                    //strpos : fonction pour chercher un
+                    
+                    ?> 
                         <div class="carte">
-                            <!-- récupère un post à la fois -->
-                            <h3><<?php get_the_title(); ?></h3>
+                            <p><?php echo $sigle; ?></p>
+                            <h3><<?php the_title(); ?></h3>
                             <p><?php echo wp_trim_words(get_the_content(), 30);?></p>                                     
                         </div>        
                     <?php endwhile;?>

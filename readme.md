@@ -23,7 +23,7 @@
 
 - Garder les 30 premiers mots de la description
 
-### La section galerie affichera la liste des cours du TIm en 4 colonnes
+### La section galerie affichera la liste des cours du TIM en 4 colonnes
 - La liste devra s'adapter aux différentes largeurs de fenêtre.
 - Chacune des cartes de cours sera formatée en utilisant les flexbox
 
