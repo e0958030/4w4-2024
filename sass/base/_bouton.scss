@@ -22,11 +22,8 @@ button:hover{
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:550px) {
     button{
-        display: flex;
-        flex-wrap: wrap;
-        flex: 1 0 50%;
         margin-top: 40%;
-        align-items: center;
-        float: right;
+        float: left;
+        margin-left: 35%;
     }
 }

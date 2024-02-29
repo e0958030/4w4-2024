@@ -16,9 +16,13 @@
 
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:550px) {
-    .carte{
+    .cours{
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+    }
+
+    .carte{
+        background-color: var(--couleur-avant-footer); 
+        box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 5px 5px 15px 5px rgba(0,0,0,0);
     }
 }
