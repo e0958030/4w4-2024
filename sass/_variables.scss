@@ -70,4 +70,8 @@ capable de modifier directement la couleur dans le navigateur */
     /*Couleurs pour le bouton événement*/
     --couleur1-bouton-evnt: hsl(var(--u1), 20%, 40%);
     --couleur2-bouton-evnt: hsl(var(--u1), 80%, 90%);
+
+    /*Couleur pour la carte*/
+    --couleur-carte: hsl(var(--u1), 80%, 70%);
+    
 }

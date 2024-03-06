@@ -91,18 +91,21 @@
 
                 //Même chose mais standard wordpress .. le : équivault à une ouverture d'accolade
                 if(have_posts()):
-                    while(have_posts()): the_post(); 
+                    while(have_posts()): the_post(); /* have post = extraire un enregistrement pour chercher ses attributs */
                     $titre = get_the_title();
-                    $sigle = substr($titre,0,7); //Trouver le sigle en 7 caractères
-                    $duree = substr($titre,-6);
-                    $titreTronque = substr($titre, 7, -6);
+                    $sigle = substr($titre,0,7); //Trouver le sigle en 7 caractères                    
+                    //$duree = substr($titre,-6);
+                    $pos_parenthese = strpos($titre, '('); /* trouver la position de la parenthèse dans le $titre */
+                    $duree = substr($titre,$pos_parenthese+1,-1); /* enlever les parenthèses */
+                    //$titreTronque = substr($titre, 7, -6);
+                    $titreTronque = substr($titre,7,$pos_parenthese);
                     //$titre =
-                    //strpos : fonction pour chercher un                    
+                    //strpos : fonction pour chercher un ?                   
                     ?> 
                         <div class="carte">
                             <h3><?php echo $sigle; ?></h3>
                             <h4><?php echo $titreTronque; ?></h4>
-                            <h4>-<?php echo $duree; ?>-</h4>
+                            <h4>Durée : <?php echo $duree; ?></h4>
                             <p><?php echo wp_trim_words(get_the_content(), 30);?></p>                                     
                         </div>        
                     <?php endwhile;?>

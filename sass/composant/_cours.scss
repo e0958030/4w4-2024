@@ -2,14 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .carte{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 0 1 20%; /*ne grossit pas mais se comprime*/
+    flex: 1 0 calc(1000px/4); /*ne grossit pas mais se comprime*/
     border: 2px solid #fff; /*changer pour une variable de couleur*/
     padding: 2em;
 }
@@ -22,7 +22,7 @@
     }
 
     .carte{
-        background-color: var(--couleur-avant-footer); 
+        background-color: var(--couleur-carte); 
         box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 5px 5px 15px 5px rgba(0,0,0,0);
     }
 }
