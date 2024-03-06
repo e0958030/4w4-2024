@@ -24,7 +24,19 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 @import "layout";
 
+/* ///////////////////////////// */
+/* Base */
+/* ///////////////////////////// */
+
 @import "base/h";
+
+@import "base/_bouton";
+
+@import "base/liens";
+
+/* ///////////////////////////// */
+/* Effets */
+/* ///////////////////////////// */
 
 @import "effet/vague";
 
@@ -32,8 +44,10 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 @import "_entete";
 
-@import "base/_bouton";
-
-@import "base/liens";
+/* ///////////////////////////// */
+/* Composants */
+/* ///////////////////////////// */
 
 @import "composant/cours";
+
+@import "composant/menu"

@@ -14,7 +14,7 @@ body{
 .global{
     display: flex;
     justify-content: center;
-    min-height: 40vh; /*chaque division prend 40%*/
+    /*min-height: 40vh; /*chaque division prend 40%*/
     padding: 5vh 0;
 }
 
@@ -39,7 +39,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     padding : 3vh 0;
 }
 
-.global > .hero{
+.global > .entete__header{
     /*Flex à 1 prendra toute la largeur*/
     flex: 1;
     min-height: auto;
@@ -49,6 +49,10 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     display: flex;
     align-items: center;
 }
+
+// #menu{
+
+// }
 
 #entete{
     background-color: var(--couleur-arriere-entete);
@@ -120,6 +124,7 @@ button:hover{
 
 /*Vague test*/
 .custom-shape-divider-top-1707919064 {
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;

@@ -76,7 +76,7 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh; /*chaque division prend 40%*/
+  /*min-height: 40vh; /*chaque division prend 40%*/
   padding: 5vh 0;
 }
 
@@ -98,7 +98,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   padding: 3vh 0;
 }
 
-.global > .hero {
+.global > .entete__header {
   /*Flex à 1 prendra toute la largeur*/
   flex: 1;
   min-height: auto;
@@ -158,6 +158,7 @@ button:hover {
 
 /*Vague test*/
 .custom-shape-divider-top-1707919064 {
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -200,6 +201,9 @@ button:hover {
     margin-top: 10%;
   }
 }
+/* ///////////////////////////// */
+/* Base */
+/* ///////////////////////////// */
 h1 {
   /*utiliser un calculateur de valeurs clamp*/
   /*
@@ -254,6 +258,48 @@ span {
   margin-top: 2vh;
 }
 
+/* Feuille de styles sass pour les boutons */
+button {
+  font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
+  /*padding: 12px 24px;*/
+  background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
+  margin-bottom: 10vh;
+  width: auto;
+  padding: 0 2vw;
+  height: 5vh;
+  border-radius: 15px 50px 15px 50px;
+  border: none;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  background-image: linear-gradient(120deg, --couleur-arriere-entete, darkslateblue);
+  transform: scale(110%);
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 550px) {
+  button {
+    margin-top: 40%;
+    float: left;
+    margin-left: 35%;
+  }
+}
+/*Feuille de style Sass pour les liens*/
+a {
+  color: var(--couleur-lien);
+}
+a:hover {
+  color: var(--couleur-lien-hover);
+}
+a:visited {
+  color: var(--couleur-lien-visited);
+}
+
+/* ///////////////////////////// */
+/* Effets */
+/* ///////////////////////////// */
 /* Code SASS pour l'effet de vague */
 /* Référence https://www.shapedivider.app/ */
 .vague {
@@ -318,7 +364,7 @@ span {
 }
 
 /* Feuille de style pour l'entête */
-.hero {
+.entete__header {
   background-image: url("images/github-octocat-logo-png-transparent.png");
   background-repeat: no-repeat;
   background-size: 20%;
@@ -327,7 +373,7 @@ span {
 
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 550px) {
-  .hero {
+  .entete__header {
     background-image: url("images/github-octocat-logo-png-transparent.png");
     background-repeat: no-repeat;
     background-size: 50%;
@@ -339,45 +385,9 @@ span {
     text-align: center;
   }
 }
-/* Feuille de styles sass pour les boutons */
-button {
-  font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
-  /*padding: 12px 24px;*/
-  background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
-  margin-bottom: 10vh;
-  width: auto;
-  padding: 0 2vw;
-  height: 5vh;
-  border-radius: 15px 50px 15px 50px;
-  border: none;
-  text-decoration: none;
-  transition: transform 0.2s;
-}
-
-button:hover {
-  background-image: linear-gradient(120deg, --couleur-arriere-entete, darkslateblue);
-  transform: scale(110%);
-}
-
-/*Media query pour la version mobile responsive*/
-@media screen and (max-width: 550px) {
-  button {
-    margin-top: 40%;
-    float: left;
-    margin-left: 35%;
-  }
-}
-/*Feuille de style Sass pour les liens*/
-a {
-  color: var(--couleur-lien);
-}
-a:hover {
-  color: var(--couleur-lien-hover);
-}
-a:visited {
-  color: var(--couleur-lien-visited);
-}
-
+/* ///////////////////////////// */
+/* Composants */
+/* ///////////////////////////// */
 .cours {
   display: flex;
   flex-wrap: wrap;
@@ -404,4 +414,25 @@ a:visited {
     background-color: var(--couleur-carte);
     box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   }
+}
+/*
+Feuille de style du menu principal
+*/
+.menu-principal-container {
+  background-color: var(--couleur-arriere-footer);
+  margin-top: 5rem;
+}
+.menu-principal-container .menu {
+  display: flex;
+  list-style-type: none;
+  height: 5rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+}
+.menu-principal-container .menu-item {
+  flex: 1 0 50px;
+}
+.menu-principal-container .menu-item a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

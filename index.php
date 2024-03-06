@@ -17,13 +17,13 @@
     <title>Thème du groupe #1</title>
 </head>
 <body>
-    <div id="menu" class="global">
+    <nav id="menu" class="global">
         <header class="menu__header">
-
+            <?php wp_nav_menu($arg = array("container" => "nav")); ?> <!-- configuration wordpress pour afficher le menu -->
         </header>
-    </div>
-    <div id="entete" class="hero">
-        <header class="entete__header">
+    </nav>
+    <div id="entete" class="global">
+        <section class="entete__header">
             <h1>Thème du groupe #1</h1>
             <h2>4W4 - Conception d'interface <span>et développement Web</span></h2>
             <span>
@@ -31,6 +31,7 @@
             <span>
             <button id="btn-evnt" >Événements</button>
             <span>
+        </section>
             <!-- <button id="couleur-entete"><a href="https://color.adobe.com/create/color-wheel">Palette</a></button>
             <button id="couleur-accueil">Palette</button>
             <button id="couleur-evenement">Palette</button>
@@ -154,7 +155,7 @@
             <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aut, voluptas dolor, veniam harum beatae, quos nostrum obcaecati quibusdam ad porro. Dolorum voluptatum consequatur blanditiis earum tempora provident repellat!</blockquote>
 
             <!-- Bouton pour retour en haut de page -->
-             <a href="#entete"><button id="hautPage">Retour</button></a>
+             <a href="#menu"><button id="hautPage">Retour</button></a>
         </footer>
     </div>
 </body>

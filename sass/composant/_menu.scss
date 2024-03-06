@@ -1,0 +1,30 @@
+/*
+Feuille de style du menu principal
+*/
+
+//nav
+.menu-principal-container{
+    background-color: var(--couleur-arriere-footer);
+    margin-top: 5rem;
+
+    //ul
+    .menu{
+        display: flex;
+        list-style-type: none;
+        height: 5rem;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    //li
+    .menu-item{
+        flex: 1 0 50px;
+    }
+
+    //a du li
+    .menu-item a{
+        color: #fff;
+    }
+}
+
