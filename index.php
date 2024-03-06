@@ -17,7 +17,12 @@
     <title>Thème du groupe #1</title>
 </head>
 <body>
-    <div id="entete" class="global">
+    <div id="menu" class="global">
+        <header class="menu__header">
+
+        </header>
+    </div>
+    <div id="entete" class="hero">
         <header class="entete__header">
             <h1>Thème du groupe #1</h1>
             <h2>4W4 - Conception d'interface <span>et développement Web</span></h2>
@@ -98,7 +103,7 @@
                     $pos_parenthese = strpos($titre, '('); /* trouver la position de la parenthèse dans le $titre */
                     $duree = substr($titre,$pos_parenthese+1,-1); /* enlever les parenthèses */
                     //$titreTronque = substr($titre, 7, -6);
-                    $titreTronque = substr($titre,7,$pos_parenthese);
+                    $titreTronque = substr($titre,7,$pos_parenthese-7);
                     //$titre =
                     //strpos : fonction pour chercher un ?                   
                     ?> 

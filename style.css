@@ -98,7 +98,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   padding: 3vh 0;
 }
 
-.global > header {
+.global > .hero {
   /*Flex à 1 prendra toute la largeur*/
   flex: 1;
   min-height: auto;
@@ -318,7 +318,7 @@ span {
 }
 
 /* Feuille de style pour l'entête */
-.entete__header {
+.hero {
   background-image: url("images/github-octocat-logo-png-transparent.png");
   background-repeat: no-repeat;
   background-size: 20%;
@@ -327,7 +327,7 @@ span {
 
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 550px) {
-  .entete__header {
+  .hero {
     background-image: url("images/github-octocat-logo-png-transparent.png");
     background-repeat: no-repeat;
     background-size: 50%;
