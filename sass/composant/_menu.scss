@@ -5,27 +5,29 @@ Feuille de style du menu principal
 //nav
 .menu-principal-container{
     background-color: var(--couleur-arriere-footer);
-    margin-top: 5rem;
+    // margin-top: 5rem;
 }
 
 //ul
 .menu{
-    z-index: 1;
+    z-index: 100;
     position: absolute;
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    height: 5rem;
+    // height: 5rem;
     align-items: center;
     text-align: center;
-    font-size: 1.2em;
-    transform: translateX(300%);
+    font-size: 1.2em;        
+    background-color: var(--couleur-arriere-footer);
+    // transform: translateX(300%);
 
-        @media (min-width: 700px){
+        @media (min-width: 550px){
         position : static;
         flex-direction: row;
         display : flex;
         transform: translateX(0); 
+        background-color: var(--couleur-arriere-footer);
         }
     }
 
@@ -34,22 +36,23 @@ Feuille de style du menu principal
 }
 
 .menu-item a { // li a
-    color: var(--couleur-arriere-footer);
+    color: #fff;
 }
 
 /* Gestion du label burger*/
 #burger {
-display: block;
-position: absolute;
-top: 10px;
-right : 10px;
-    @media (min-width: 700px){
-        display : none;
-    }
+    z-index: 5000;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right : 10px;
+        @media (min-width: 550px){
+            display : none;
+        }
 }
 
 #chk_burger:checked ~ .menu {
-transform : translateX(0);
+    transform : translateX(-100);
 }
 
 

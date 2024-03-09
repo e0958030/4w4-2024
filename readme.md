@@ -8,6 +8,7 @@
 - Ajout d'un fichier gabarit.php
 - Création d'un menu principal avec des cours
 - Création d'un menu burger en mode adaptatif
+- Je n'ai pas réussi à gérer la translation en X avec le menu burger lorsque le check est cliqué
 
 ### Créer une nouvelle branche « labo4 »
 ### Création du menu principal

@@ -1,27 +1,8 @@
-<!-- Page HTML pour l'exercice 1 par Camilia El Moustarih -->
+<!-- Page HTML pour le labo 4 par Camilia El Moustarih -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Récupérer l'entete php -->
+    <?php get_header(); ?>
     
-    <!-- Importation des feuilles de styles et des polices Google -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/normalize.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" 
-    rel="stylesheet">
-
-    <title>Thème du groupe #1</title>
-</head>
-<body>
-    <nav id="menu" class="global">
-        <header class="menu__header">
-            <?php wp_nav_menu($arg = array("container" => "nav")); ?> <!-- configuration wordpress pour afficher le menu -->
-        </header>
-    </nav>
     <div id="entete" class="global">
         <section class="entete__header">
             <h1>Thème du groupe #1</h1>
