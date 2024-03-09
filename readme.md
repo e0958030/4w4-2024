@@ -1,38 +1,41 @@
-# Labo #3
+# Labo #4
 ## Par Camilia El Moustarih
-## Création d'un thème Wordpress personnalisé 
+## Création d'un menu principal 
 
 <h2>Lien du Github Page : https://e0958030.github.io/4w4-2024/</h2>
 
-<p>J'ai modifié le look de la liste de cours dans la galerie avec un box-shadow stylisé pour donner un effet de pile de papiers et corrigé la mise en page en mode mobile</p>
+## Résumé des étapes éxécutées
+- Ajout d'un fichier gabarit.php
+- Création d'un menu principal avec des cours
+- Création d'un menu burger en mode adaptatif
 
-## Ce que vous devez faire: Création d'un site WP.
+### Créer une nouvelle branche « labo4 »
+### Création du menu principal
+- Ajouter un menu permettant d'accéder
+    -  à vos cinq cours préférés
+    -  à chacune des sections de la page
+- Le menu doit être formatté en utilisant 
+  composant/_menu.scss
+  Le menu doit être adaptatif et être amovible en version mobile.
 
-- Adaptation du thème de exercice #1
-- Création du modèle index.php
-- Création de la branche labo3
-- Minimum 3 commits
-- Un Readme.md qui contiendra:
-    - Le nom de l'auteur
-    - L'objectif du labo 3
-    - Les réalisations
-    - Un lien vers la github-page
+### Création d'un header.php
+- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules du thème
 
-- Décomposer le titre de chaque cours :
-    - sigle du cours (ex:582-4w4)
-    - titre du cours (ex: Conception d'interfaces et développement web)
-    - durée du cours (ex: 90 heures)
+### Création d'un « template-part » (gabarit)
+- Créer un template-part qui permettra d'afficher les vagues.
 
-- Garder les 30 premiers mots de la description
+## Barème de correction
+### Intégration et codification (1 point)
+- Intégration de chacun des éléments précédents de façon structurée. (1 point)
 
-### La section galerie affichera la liste des cours du TIM en 4 colonnes
-- La liste devra s'adapter aux différentes largeurs de fenêtre.
-- Chacune des cartes de cours sera formatée en utilisant les flexbox
+### Design général de la page et organisation (1 point)
+- Création d'une github-page à partir de index.htm
+- Création du readme.md avec:
+ - Le nom de l'auteur
+ - Un résumé des étapes du labo-4
+ - Un lien vers votre github-page
+- Production de 5 commits
 
-### Barème de corretion
-- Organisation du code, 3 commits minimum (1 point)
-- Résultat sous forme de Github Page (.5 point)
-- Design global de la page (.5 point)
 
 
 

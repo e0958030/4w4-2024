@@ -201,6 +201,28 @@ button:hover {
     margin-top: 10%;
   }
 }
+/* Feuille de style pour l'entête */
+.entete__header {
+  background-image: url("images/github-octocat-logo-png-transparent.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 95% 50%;
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 550px) {
+  .entete__header {
+    background-image: url("images/github-octocat-logo-png-transparent.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+    align-items: center;
+  }
+  .global {
+    padding: 2em;
+    text-align: center;
+  }
+}
 /* ///////////////////////////// */
 /* Base */
 /* ///////////////////////////// */
@@ -363,28 +385,6 @@ a:visited {
   /*opacity: 0.5;*/
 }
 
-/* Feuille de style pour l'entête */
-.entete__header {
-  background-image: url("images/github-octocat-logo-png-transparent.png");
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: 95% 50%;
-}
-
-/*Media query pour la version mobile responsive*/
-@media screen and (max-width: 550px) {
-  .entete__header {
-    background-image: url("images/github-octocat-logo-png-transparent.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 50% 50%;
-    align-items: center;
-  }
-  .global {
-    padding: 2em;
-    text-align: center;
-  }
-}
 /* ///////////////////////////// */
 /* Composants */
 /* ///////////////////////////// */
@@ -422,17 +422,49 @@ Feuille de style du menu principal
   background-color: var(--couleur-arriere-footer);
   margin-top: 5rem;
 }
-.menu-principal-container .menu {
+
+.menu {
+  z-index: 1;
+  position: absolute;
   display: flex;
+  flex-direction: column;
   list-style-type: none;
   height: 5rem;
   align-items: center;
   text-align: center;
   font-size: 1.2em;
+  transform: translateX(300%);
 }
-.menu-principal-container .menu-item {
+@media (min-width: 700px) {
+  .menu {
+    position: static;
+    flex-direction: row;
+    display: flex;
+    transform: translateX(0);
+  }
+}
+
+.menu-item {
   flex: 1 0 50px;
 }
-.menu-principal-container .menu-item a {
-  color: #fff;
+
+.menu-item a {
+  color: var(--couleur-arriere-footer);
+}
+
+/* Gestion du label burger*/
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu {
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */

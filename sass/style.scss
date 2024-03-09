@@ -24,6 +24,8 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 @import "layout";
 
+@import "_entete";
+
 /* ///////////////////////////// */
 /* Base */
 /* ///////////////////////////// */
@@ -41,8 +43,6 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 @import "effet/vague";
 
 @import "effet/diagonal";
-
-@import "_entete";
 
 /* ///////////////////////////// */
 /* Composants */

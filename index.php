@@ -143,6 +143,8 @@
         </div>
     </div>
 
+    <?php  get_template_part('gabarits/vague'); ?>
+
     <div id="footer" class="global">   
         <div class="motif-footer">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

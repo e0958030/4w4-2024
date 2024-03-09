@@ -6,25 +6,50 @@ Feuille de style du menu principal
 .menu-principal-container{
     background-color: var(--couleur-arriere-footer);
     margin-top: 5rem;
+}
 
-    //ul
-    .menu{
-        display: flex;
-        list-style-type: none;
-        height: 5rem;
-        align-items: center;
-        text-align: center;
-        font-size: 1.2em;
+//ul
+.menu{
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    height: 5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    transform: translateX(300%);
+
+        @media (min-width: 700px){
+        position : static;
+        flex-direction: row;
+        display : flex;
+        transform: translateX(0); 
+        }
     }
 
-    //li
-    .menu-item{
-        flex: 1 0 50px;
-    }
+.menu-item { //li
+    flex: 1 0 50px;
+}
 
-    //a du li
-    .menu-item a{
-        color: #fff;
+.menu-item a { // li a
+    color: var(--couleur-arriere-footer);
+}
+
+/* Gestion du label burger*/
+#burger {
+display: block;
+position: absolute;
+top: 10px;
+right : 10px;
+    @media (min-width: 700px){
+        display : none;
     }
 }
+
+#chk_burger:checked ~ .menu {
+transform : translateX(0);
+}
+
 
