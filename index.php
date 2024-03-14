@@ -2,7 +2,7 @@
 
     <!-- Récupérer l'entete php -->
     <?php get_header(); ?>
-    
+    <h1>index.php</h1>
     <div id="entete" class="global">
         <section class="entete__header">
             <h1>Thème du groupe #1</h1>
