@@ -3,11 +3,12 @@
     <!-- Récupérer l'entete php -->
     <?php get_header(); ?>
     
-    <h1>FRONT-PAGE.PHP</h1>
+    <!-- <h1>FRONT-PAGE.PHP</h1> -->
     <div id="entete" class="global">
         <section class="entete__header">
+            <h1><?php echo get_bloginfo("name") ?></h1>
             <h1>Thème du groupe #1</h1>
-            <h2>4W4 - Conception d'interface <span>et développement Web</span></h2>
+            <h2><?php echo get_bloginfo("description")?></span></h2>
             <span>
             <h3>TIM - Collège de Maisonneuve</h3>
             <span>
@@ -91,5 +92,6 @@
         <?php  get_template_part('gabarits/vague'); ?>
     </div>
 
-    
+     <!-- Récupérer le footer php -->
+     <?php get_footer(); ?>
 
