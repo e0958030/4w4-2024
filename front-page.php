@@ -14,12 +14,6 @@
             <button id="btn-evnt" >Événements</button>
             <span>
         </section>
-            <!-- <button id="couleur-entete"><a href="https://color.adobe.com/create/color-wheel">Palette</a></button>
-            <button id="couleur-accueil">Palette</button>
-            <button id="couleur-evenement">Palette</button>
-            <button id="couleur-galerie">Palette</button>
-            <button id="couleur-footer">Palette</button> -->
-        </header>
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -68,45 +62,25 @@
             <div class="cours">             
             <!-- Boucle if while pour afficher le contenu de la base de données -->
             <?php
-                // if (have_posts()){
-                //     while(have_posts()){
-                //         the_post(); //extraire un article complet
-                //         the_title('<h3>', '</h3>'); //affiche tous les titres de l'article de la base de données sous forme de h3
-                //         //the_content(); //affiche le contenu/descriptions de chaque cours
-                //         echo wp_trim_words(get_the_content(), 30);  //affiche le contenu tronqué en 30 mots
-                //     }
-                // }
 
                 //Même chose mais standard wordpress .. le : équivault à une ouverture d'accolade
                 if(have_posts()):
                     while(have_posts()): the_post(); /* have post = extraire un enregistrement pour chercher ses attributs */
-                    $titre = get_the_title();
-                                    
+                    $titre = get_the_title();                                    
                     ?> 
                         <div class="carte">
-                            <h4><?php echo $titre; ?></h4>
-                            <p><?php the_content();?></p>                                     
+                            <h3><?php the_title()?></h3>
+                            <p><?php the_content(); ?></p>   
+                            
+                            <!-- Pour ajouter un lien vers l'article -->    
+                            <a href="<?php the_permalink(); ?>">Suite</a>
+                                                          
                         </div>        
                     <?php endwhile;?>
                     <?php endif; ?>  
             </div>     
             <span></span>         
             <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>
-<!--             
-            <div id="imagesTableau">
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-            </div> -->
         
         </section>
         <div class="vague-galerie">
@@ -114,24 +88,8 @@
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
             </svg>
         </div>
+        <?php  get_template_part('gabarits/vague'); ?>
     </div>
 
-    <?php  get_template_part('gabarits/vague'); ?>
+    
 
-    <div id="footer" class="global">   
-        <div class="motif-footer">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" style="fill:var(--couleur-arriere-galerie)"></path>
-            </svg>
-        </div>     
-        <footer>            
-            <h2>Footer</h2>
-            <span>
-            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aut, voluptas dolor, veniam harum beatae, quos nostrum obcaecati quibusdam ad porro. Dolorum voluptatum consequatur blanditiis earum tempora provident repellat!</blockquote>
-
-            <!-- Bouton pour retour en haut de page -->
-             <a href="#menu"><button id="hautPage">Retour</button></a>
-        </footer>
-    </div>
-</body>
-</html>
