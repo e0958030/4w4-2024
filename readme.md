@@ -14,7 +14,14 @@
 - Production de minimum 30 commits
 
 
-
+# Labo 5
+- Compléter l'utilisation du mapping de couleur avec boucle et mixin
+- Changer le titre et la description
+- Dans la page d'accueil on voit uniquement les destinations populaires
+- Chaque destination contient les catégories associées
+    - Améliorer l'apparence de la liste des catégories
+    - Améliorer l'apparence de chacune des cartes
+- Afficher des cartes de catégories pour l'ensemble des catégories
 
 
 
