@@ -14,19 +14,6 @@
         </section>
     </div>
 
-    <div id="evenement" class="global diagonal">
-        <section>
-            <h2>Événement</h2>
-            <h3>H3 test test test test</h3>
-            <span>
-            <span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus nulla magnam dolore distinctio vitae quo ipsum, dicta pariatur, quis eligendi. Distinctio necessitatibus autem possimus commodi fuga doloremque consectetur optio.</p>
-            <span>
-            <span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A unde quas delectus necessitatibus beatae consequatur maiores similique molestias animi debitis. Doloremque repellat ullam illo ad, ea culpa. Adipisci, explicabo laborum.</p>
-        </section>
-    </div>
-
     <div id="galerie" class="global">
         <section>
             <div class="custom-shape-divider-top-1707919064">
