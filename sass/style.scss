@@ -20,7 +20,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 
-@import "variables";
+/* Initialisation des variables Sass et CSS */
+@import "utile/couleurs";
+
+/* Création des classes de couleurs */
+@import "utile/couleurs-class";
 
 @import "layout";
 
@@ -48,6 +52,6 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 /* Composants */
 /* ///////////////////////////// */
 
-@import "composant/cours";
+@import "composant/carte";
 
 @import "composant/menu"

@@ -3,10 +3,10 @@ Feuille de style du menu principal
 */
 
 //nav
-.menu-principal-container{
-    background-color: var(--couleur-arriere-footer);
-    // margin-top: 5rem;
-}
+// .menu-principal-container{
+//     background-color: var(--couleur-arriere-footer);
+//     // margin-top: 5rem;
+// }
 
 //ul
 .menu{
@@ -19,7 +19,7 @@ Feuille de style du menu principal
     align-items: center;
     text-align: center;
     font-size: 1.2em;        
-    background-color: var(--couleur-arriere-footer);
+    //background-color: var(--couleur-arriere-footer);
     // transform: translateX(300%);
 
         @media (min-width: 550px){
@@ -27,7 +27,7 @@ Feuille de style du menu principal
         flex-direction: row;
         display : flex;
         transform: translateX(0); 
-        background-color: var(--couleur-arriere-footer);
+        //background-color: var(--couleur-arriere-footer);
         }
     }
 

@@ -1,4 +1,4 @@
-.cours{
+.destinations{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -14,9 +14,15 @@
     padding: 2em;
 }
 
+.post-categories{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:550px) {
-    .cours{
+    .destinations{
         display: flex;
         flex-direction: column;
     }

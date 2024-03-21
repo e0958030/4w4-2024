@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="menu__entete" class="global  clr-primaire-100  bck-primaire-400">
+    <div id="menu__entete" class="global  clr-agencement-primaire">
        <?php echo get_custom_logo(); ?>
         <input type="checkbox" name="" id="chk_burger">
         <label id="burger" for="chk_burger">

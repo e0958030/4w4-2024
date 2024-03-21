@@ -50,10 +50,6 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     align-items: center;
 }
 
-// #menu{
-
-// }
-
 #entete{
     background-color: var(--couleur-arriere-entete);
     padding-bottom: 10vh;
@@ -62,27 +58,6 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
     min-height: 50vh;
     padding-left: 10vw;
 }
-
-
-// button#couleur-entete{
-//     background-color: hsl(var(--u1), 100%, 30%);
-// }
-
-// button#couleur-accueil{
-//     background-color: hsl(var(--u1), 100%, 25%);
-// }
-
-// button#couleur-evenement{
-//     background-color: hsl(var(--u1), 100%, 20%);
-// }
-
-// button#couleur-galerie{
-//     background-color: hsl(var(--u1), 100%, 15%);
-// }
-
-// button#couleur-footer{
-//     background-color: hsl(var(--u1), 100%, 50%);
-// }
 
 button:hover{
     background-color: hsl(var(--u1), 100%, 50%);

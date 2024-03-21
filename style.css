@@ -19,10 +19,51 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
+/* Initialisation des variables Sass et CSS */
 /* Variables globales CSS et SASS de couleurs */
 /*À partir des variables de couleurs de la palette choisie,
 on crée un mapping en catégorisant les différentes couleurs.
 Ce map contient un map principal et plusieurs sous-maps */
+/* Agencement de couleurs */
+:root {
+  /*Calcul des teintes*/
+  --u1: 203; /*Couleur initiale*/
+  --u2: calc(var(--u1) + 203); /*Couleur complémentaire*/
+  --u3: calc(var(--u2) - 15); /*Couleur analogue gauche*/
+  --u4: calc(var(--u2) + 15); /*Couleur analogue droite*/
+  /*Saturation*/
+  --s-arriere: 100%;
+  --s-avant: 50%;
+  /*Luminosité*/
+  --l-arriere: 30%;
+  --l-avant: 20%;
+  /*Couleurs d'arrière-plan - background-color*/
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  /*Pour faire apparaître la diagonale*/
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
+  /*Couleurs monochromes*/
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 70%) ;
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
+  /*Couleurs monochromes*/
+  --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
+  --couleur-avant-footer: hsl(var(--u1), 100%, 50%);
+  /*Couleurs pour le bouton événement*/
+  --couleur1-bouton-evnt: hsl(var(--u1), 20%, 40%);
+  --couleur2-bouton-evnt: hsl(var(--u1), 80%, 90%);
+  /*Couleur pour la carte*/
+  --couleur-carte: hsl(var(--u1), 80%, 70%);
+}
+
+/* Création des classes de couleurs */
 /* Création de classes de couleurs avec une boucle SASS */
 .clr-primaire-100 {
   color: hsl(220, 100%, 85%);
@@ -152,43 +193,25 @@ Ce map contient un map principal et plusieurs sous-maps */
   background-color: hsl(70, 100%, 15%);
 }
 
-:root {
-  /*Calcul des teintes*/
-  --u1: 203; /*Couleur initiale*/
-  --u2: calc(var(--u1) + 203); /*Couleur complémentaire*/
-  --u3: calc(var(--u2) - 15); /*Couleur analogue gauche*/
-  --u4: calc(var(--u2) + 15); /*Couleur analogue droite*/
-  /*Saturation*/
-  --s-arriere: 100%;
-  --s-avant: 50%;
-  /*Luminosité*/
-  --l-arriere: 30%;
-  --l-avant: 20%;
-  /*Couleurs d'arrière-plan - background-color*/
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  /*Couleurs d'avant-plan - color*/
-  /*Pour faire apparaître la diagonale*/
-  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
-  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
-  /*Couleurs monochromes*/
-  --couleur-arriere-entete: hsl(var(--u1), 100%, 70%) ;
-  --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
-  --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
-  /*Couleurs monochromes*/
-  --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
-  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
-  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
-  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
-  --couleur-avant-footer: hsl(var(--u1), 100%, 50%);
-  /*Couleurs pour le bouton événement*/
-  --couleur1-bouton-evnt: hsl(var(--u1), 20%, 40%);
-  --couleur2-bouton-evnt: hsl(var(--u1), 80%, 90%);
-  /*Couleur pour la carte*/
-  --couleur-carte: hsl(var(--u1), 80%, 70%);
+/* Mixin pour agencer des couleurs */
+.clr-agencement-primaire {
+  color: hsl(220, 100%, 15%);
+  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-ternaire {
+  color: hsl(10, 100%, 15%);
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
 }
 
 * {
@@ -519,7 +542,7 @@ a:visited {
 /* ///////////////////////////// */
 /* Composants */
 /* ///////////////////////////// */
-.cours {
+.destinations {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -535,9 +558,15 @@ a:visited {
   padding: 2em;
 }
 
+.post-categories {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 550px) {
-  .cours {
+  .destinations {
     display: flex;
     flex-direction: column;
   }
@@ -549,10 +578,6 @@ a:visited {
 /*
 Feuille de style du menu principal
 */
-.menu-principal-container {
-  background-color: var(--couleur-arriere-footer);
-}
-
 .menu {
   z-index: 100;
   position: absolute;
@@ -562,7 +587,6 @@ Feuille de style du menu principal
   align-items: center;
   text-align: center;
   font-size: 1.2em;
-  background-color: var(--couleur-arriere-footer);
 }
 @media (min-width: 550px) {
   .menu {
@@ -570,7 +594,6 @@ Feuille de style du menu principal
     flex-direction: row;
     display: flex;
     transform: translateX(0);
-    background-color: var(--couleur-arriere-footer);
   }
 }
 

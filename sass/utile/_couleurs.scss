@@ -52,41 +52,16 @@ $defaut: (
     )
 );
 
-/* Création de classes de couleurs avec une boucle SASS */
-@each $nom, $couleurs in $defaut {
-    @each $valeur, $couleur in $couleurs {
-        .clr-#{$nom}-#{$valeur} {
-            color : #{$couleur};
-           
-        }
-            .bck-#{$nom}-#{$valeur} {
-          
-            background-color:  #{$couleur} ;
-        }
-    }
-    }
+/* Agencement de couleurs */
+$agencement-couleur :(
+    primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
+    secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
+    ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
+    vert: ($--clr-vert-fonce, $--clr-vert-pale)
+);
 
 //Variables CSS
-:root {
-
-    // --couleur-arriere-entete: #8fd2ff;
-    // --couleur-arriere-accueil: #a996ff;
-    // --couleur-arriere-evenement: #2a7689;
-    // --couleur-arriere-galerie: #ffbc76;
-    // --couleur-arriere-footer: #ffb3b35e;
-
-    // --couleur-sous-titres-autres: #000;
-
-    // /*Niveaux de transparence*/
-    // --transparence-h : 0.8;
-    // --transparence-h-sous-titres : 0.9;
-    // --transparence-section: 0.3;
-
-    // /*Tailles sections*/
-    // --largeur-conteneurs: 80vw;
-    // --hauteur-sections: 20vh;
-
-    
+:root {   
     /*Calcul des teintes*/
     --u1 : 203; /*Couleur initiale*/
     --u2 : calc(var(--u1) + 203); /*Couleur complémentaire*/
@@ -107,14 +82,7 @@ $defaut: (
     --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
     --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
     --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-
-    /*Couleurs d'avant-plan - color*/
-    //--couleur-avant-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
-    //--couleur-avant-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
-    //--couleur-avant-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-    //--couleur-avant-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-    //--couleur-avant-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
-
+    
     /*Pour faire apparaître la diagonale*/
     --couleur-arriere-evenement: var(--couleur-arriere-accueil);
     --couleur-arriere-galerie: var(--couleur-arriere-accueil);
@@ -138,6 +106,6 @@ $defaut: (
     --couleur2-bouton-evnt: hsl(var(--u1), 80%, 90%);
 
     /*Couleur pour la carte*/
-    --couleur-carte: hsl(var(--u1), 80%, 70%);
-    
+    --couleur-carte: hsl(var(--u1), 80%, 70%);    
 }
+
