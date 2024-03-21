@@ -3,7 +3,7 @@
     <!-- Récupérer l'entete php -->
     <?php get_header(); ?>
     
-   <h1>FRONT-PAGE.PHP</h1>
+   <!-- <h1>FRONT-PAGE.PHP</h1> -->
     <div id="entete" class="global">
         <section class="entete__header">
             <h1><?php echo get_bloginfo("name") ?></h1>
