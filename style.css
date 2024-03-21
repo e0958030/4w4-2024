@@ -284,11 +284,20 @@ button:hover {
   color: var(--couleur-avant-accueil);
 }
 
+h3#rectangleGalerie {
+  text-align: center;
+}
+
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-avant-evenement);
   border-top: 15px solid #fff;
   border-bottom: 15px solid #fff;
+}
+
+/* Enlever les puces sur la liste */
+#recompensesListe {
+  list-style-type: none;
 }
 
 #galerie {
@@ -357,7 +366,7 @@ button:hover {
 }
 /* Feuille de style pour l'entête */
 .entete__header {
-  background-image: url("images/github-octocat-logo-png-transparent.png");
+  background-image: url("images/ciel.jpg");
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: 95% 50%;
@@ -366,7 +375,7 @@ button:hover {
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 550px) {
   .entete__header {
-    background-image: url("images/github-octocat-logo-png-transparent.png");
+    background-image: url("images/ciel.jpg");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 50% 50%;
@@ -617,6 +626,10 @@ Feuille de style du menu principal
   #burger {
     display: none;
   }
+}
+
+#chk_burger {
+  display: none;
 }
 
 #chk_burger:checked ~ .menu {

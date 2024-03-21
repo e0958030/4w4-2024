@@ -14,21 +14,24 @@
 - Production de minimum 30 commits
 
 
-# Labo 5
-- Compléter l'utilisation du mapping de couleur avec boucle et mixin
-- Changer le titre et la description
+# Exercice 2
+- Compléter l'utilisation du mapping de couleur avec boucle et mixin (1 point)
+- Changer le titre et la description générale du site (,2 point)
 - Dans la page d'accueil on voit uniquement les destinations populaires
 - Chaque destination contient les catégories associées
-    - Améliorer l'apparence de la liste des catégories
-    - Améliorer l'apparence de chacune des cartes
-- Afficher des cartes de catégories pour l'ensemble des catégories
+    - Améliorer l'apparence de la liste des catégories (1 point)
+- Afficher des cartes de catégories pour l'ensemble des catégories (2 points)
     - Titre de la catégorie
     - 10 premiers mots de la description
     - Un lien qui permet d'accéder à la liste des destinations de cette catégorie
     - Le nombre d'articles pour cette catégorie
     - Ajouter des liens externes pour le footer
-    - Création d'une github page et mettre à jour la page index.htm
-        - Ajouter l'adresse de la github page dans le readme.me
+- Création d'une github page et mettre à jour la page index.htm (front-page.php) (1 point)
+    - Ajouter l'adresse de la github page dans le readme.me
+        - Dans le readme.md
+            - Le nom de l'auteur
+            - Courte description du tp1
+            - L'adresse du github page
 
 
 

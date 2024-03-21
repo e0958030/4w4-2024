@@ -1,52 +1,49 @@
 
-<!-- Page HTML pour l'exercice 1 par Camilia El Moustarih -->
+<!-- Page HTML pour le labo 4 par Camilia El Moustarih -->
 
-<!DOCTYPE html>
+    <!-- Récupérer l'entete php -->
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Importation des feuilles de styles et des polices Google -->
+    <title>Thème du groupe #1</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" 
-    rel="stylesheet">
-
-    <title>Thème du groupe #1</title>
+    <!-- link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"  -->
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="menu" class="global">
+    <div id="menu__entete" class="global  clr-agencement-primaire">
+       <a href="http://localhost:8080/4w4camilia/" class="custom-logo-link" rel="home" aria-current="page"><img width="127" height="152" src="http://localhost:8080/4w4camilia/wp-content/uploads/2024/03/logo-1.png" class="custom-logo" alt="Club de voyage" decoding="async" /></a>        <input type="checkbox" name="" id="chk_burger">
+        <label id="burger" for="chk_burger">
+            <svg   width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#fff"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </label>  
         <header class="menu__header">
-            <nav class="menu-principal-container">
-                <ul id="menu-principal" class="menu">
-                    <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="#accueil">Accueil</a></li>
-                    <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8080/4w4camilia/2020/10/07/582-4mb-animation-3d-75h/">Animation 3D</a></li>
-                    <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36"><a href="http://localhost:8080/4w4camilia/2020/10/07/582-3m5imagerie-3d-75h/">Imagerie 3D</a></li>
-                    <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-37"><a href="http://localhost:8080/4w4camilia/2020/10/07/582-2j2creation-de-jeu-2d-60h/" aria-current="page">Création de jeu 2D</a></li>
-                    <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="#footer">Pied de page</a></li>
-                </ul>
-            </nav> <!-- configuration wordpress pour afficher le menu -->
-        </header>
-    </nav>
+            <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-103"><a href="http://localhost:8080/4w4camilia/category/populaire/">Populaire</a></li>
+<li id="menu-item-91" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-91"><a href="http://localhost:8080/4w4camilia/category/sport/">Sport</a></li>
+<li id="menu-item-92" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-92"><a href="http://localhost:8080/4w4camilia/category/pleine-nature/">Pleine nature</a></li>
+<li id="menu-item-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a href="http://localhost:8080/4w4camilia/category/croisiere/">Croisière</a></li>
+<li id="menu-item-94" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94"><a href="http://localhost:8080/4w4camilia/category/aventure/">Aventure</a></li>
+<li id="menu-item-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a href="http://localhost:8080/4w4camilia/category/culturel/">Culturel</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96"><a href="http://localhost:8080/4w4camilia/category/repos/">Repos</a></li>
+<li id="menu-item-97" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97"><a href="http://localhost:8080/4w4camilia/category/zen/">Zen</a></li>
+</ul></nav>        </header>
+    </div>    
+   <!-- <h1>FRONT-PAGE.PHP</h1> -->
     <div id="entete" class="global">
         <section class="entete__header">
-            <h1>Thème du groupe #1</h1>
-            <h2>4W4 - Conception d'interface <span>et développement Web</span></h2>
+            <h1>Club de voyage</h1>
+            <!-- <h1>Thème du groupe #1</h1> -->
+            <h2>Une aventure exceptionnelle</span></h2>
             <span>
             <h3>TIM - Collège de Maisonneuve</h3>
             <span>
             <button id="btn-evnt" >Événements</button>
             <span>
         </section>
-            <!-- <button id="couleur-entete"><a href="https://color.adobe.com/create/color-wheel">Palette</a></button>
-            <button id="couleur-accueil">Palette</button>
-            <button id="couleur-evenement">Palette</button>
-            <button id="couleur-galerie">Palette</button>
-            <button id="couleur-footer">Palette</button> -->
-        </header>
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -92,34 +89,83 @@
             <h2>Galerie</h2>
             <span>
             <span>
-            <div class="cours">             
+            <div class="destinations">             
             <!-- Boucle if while pour afficher le contenu de la base de données -->
              
                         <div class="carte">
-                            <h3>582-2J2</h3>
-                            <h4>	Création de jeu 2D </h4>
-                            <h4>Durée : 60h</h4>
-                            <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie aux concepts de base d'un moteur de jeu. Le cours permet d'approfondir la maîtrise de la structure d'affichage ainsi que…</p>                                     
+                            <h3>Amazon Rainforest, Brésil</h3>
+                            <p><p>L&rsquo;Amazonie est la plus grande forêt tropicale du monde, abritant une biodiversité exceptionnelle et une beauté naturelle incomparable. Explorez des écosystèmes divers, des marécages et des rivières sinueuses, et découvrez une incroyable variété de plantes, d&rsquo;animaux et d&rsquo;oiseaux, dont des singes, des jaguars, des toucans et des perroquets. Partez en excursion en bateau dans la jungle, faites de la randonnée dans la canopée, rencontrez des communautés indigènes et découvrez la magie et la splendeur de cette forêt primaire.</p>
+</p>   
+                            
+                            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4camilia/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8080/4w4camilia/category/populaire/" rel="category tag">Populaire</a></li></ul>                            
+                            
+                            <!-- Pour ajouter un lien vers l'article -->    
+                            <a href="http://localhost:8080/4w4camilia/2024/03/21/amazon-rainforest-bresil/">Suite</a>
+                                                          
+                        </div>        
+                     
+                        <div class="carte">
+                            <h3>Costa Rica</h3>
+                            <p><p>Le Costa Rica, joyau d&rsquo;aventures en Amérique centrale, offre une biodiversité étonnante dans un écrin de forêts tropicales. Les aventuriers peuvent s&rsquo;engager dans des tyroliennes à travers la canopée, explorer des volcans actifs comme l&rsquo;Arenal, et surfer sur les vagues de la côte pacifique. Les sentiers de la réserve de Monteverde mènent à des ponts suspendus offrant des vues spectaculaires sur la canopée. Les amateurs de rafting peuvent affronter les rapides du Pacuare. Le Costa Rica propose une aventure à chaque coin de rue, du Pacifique à la mer des Caraïbes.</p>
+</p>   
+                            
+                            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4camilia/category/aventure/" rel="category tag">Aventure</a></li>
+	<li><a href="http://localhost:8080/4w4camilia/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8080/4w4camilia/category/populaire/" rel="category tag">Populaire</a></li></ul>                            
+                            
+                            <!-- Pour ajouter un lien vers l'article -->    
+                            <a href="http://localhost:8080/4w4camilia/2024/03/21/costa-rica/">Suite</a>
+                                                          
+                        </div>        
+                     
+                        <div class="carte">
+                            <h3>Fiordland National Park, Nouvelle-Zélande</h3>
+                            <p><p>Le parc national de Fiordland, situé dans le sud-ouest de l&rsquo;île du Sud de la Nouvelle-Zélande, est un paradis préservé de fjords spectaculaires, de montagnes escarpées et de forêts primaires. Explorez des fjords emblématiques comme le Milford Sound et le Doubtful Sound, où vous pourrez admirer des cascades vertigineuses, des falaises abruptes et une vie marine abondante. Partez en randonnée sur des sentiers isolés, comme le célèbre Milford Track, et découvrez une nature sauvage et préservée à chaque tournant.</p>
+</p>   
+                            
+                            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4camilia/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
+	<li><a href="http://localhost:8080/4w4camilia/category/populaire/" rel="category tag">Populaire</a></li></ul>                            
+                            
+                            <!-- Pour ajouter un lien vers l'article -->    
+                            <a href="http://localhost:8080/4w4camilia/2024/03/21/fiordland-national-park-nouvelle-zelande/">Suite</a>
+                                                          
+                        </div>        
+                     
+                        <div class="carte">
+                            <h3>Îles grecques</h3>
+                            <p><p>Une croisière dans les îles grecques vous transporte dans un monde de mythes et de légendes, avec des escales dans des îles emblématiques comme Mykonos, Santorin, Rhodes et Corfou. Imprégnez-vous du charme pittoresque des villages blancs aux toits bleus, explorez des sites archéologiques anciens comme le palais de Knossos et dégustez une cuisine méditerranéenne authentique dans des tavernes pittoresques au bord de la mer.</p>
+</p>   
+                            
+                            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4camilia/category/croisiere/" rel="category tag">croisière</a></li>
+	<li><a href="http://localhost:8080/4w4camilia/category/populaire/" rel="category tag">Populaire</a></li></ul>                            
+                            
+                            <!-- Pour ajouter un lien vers l'article -->    
+                            <a href="http://localhost:8080/4w4camilia/2024/03/21/iles-grecques/">Suite</a>
+                                                          
+                        </div>        
+                     
+                        <div class="carte">
+                            <h3>La Costa Brava, Espagne</h3>
+                            <p><p>La Costa Brava, le long de la côte nord-est de l&rsquo;Espagne, est un paradis pour les amateurs de sports nautiques. Avec ses eaux cristallines et ses paysages spectaculaires, la Costa Brava offre des possibilités infinies pour la voile, le kayak, la plongée sous-marine et le surf. Les visiteurs peuvent explorer les criques cachées, les grottes marines et les récifs colorés de cette magnifique région côtière.</p>
+</p>   
+                            
+                            <ul class="post-categories">
+	<li><a href="http://localhost:8080/4w4camilia/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost:8080/4w4camilia/category/sport/" rel="category tag">Sport</a></li></ul>                            
+                            
+                            <!-- Pour ajouter un lien vers l'article -->    
+                            <a href="http://localhost:8080/4w4camilia/2024/03/21/la-costa-brava-espagne/">Suite</a>
+                                                          
                         </div>        
                                           
             </div>     
             <span></span>         
             <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>
-<!--             
-            <div id="imagesTableau">
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-            </div> -->
         
         </section>
         <div class="vague-galerie">
@@ -127,9 +173,16 @@
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
             </svg>
         </div>
-    </div>
+        <div class="vague">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="remplissage"></path>
+    </svg>
+</div>    </div>
 
-    <div id="footer" class="global">   
+     <!-- Récupérer le footer php -->
+     <!-- Template de footer.php -->
+
+<div id="footer" class="global">   
         <div class="motif-footer">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" style="fill:var(--couleur-arriere-galerie)"></path>

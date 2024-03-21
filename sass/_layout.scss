@@ -71,11 +71,20 @@ button:hover{
     color: var(--couleur-avant-accueil);
 }
 
+h3#rectangleGalerie{
+    text-align: center;
+}
+
 #evenement{
     background-color: var(--couleur-arriere-evenement);
     color: var(--couleur-avant-evenement);
     border-top: 15px solid #fff;
     border-bottom: 15px solid #fff;
+}
+
+/* Enlever les puces sur la liste */
+#recompensesListe{
+    list-style-type: none;
 }
 
 #galerie{

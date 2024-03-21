@@ -18,7 +18,7 @@
  * Dans ce cas çi nous filtrons la requête de la page d'accueil
  * @param WP_query  $query la requête principal de WP
  */
-function cidweb_modifie_requete_principal( $query ) {
+function _4w4_modifie_requete_principal( $query ) {
     if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
       $query->set( 'category_name', 'populaire' );
       $query->set( 'orderby', 'title' );

@@ -12,7 +12,7 @@
             <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aut, voluptas dolor, veniam harum beatae, quos nostrum obcaecati quibusdam ad porro. Dolorum voluptatum consequatur blanditiis earum tempora provident repellat!</blockquote>
 
             <!-- Bouton pour retour en haut de page -->
-             <a href="#menu"><button id="hautPage">Retour</button></a>
+             <a href="#menu__entete"><button id="hautPage">Retour</button></a>
         </footer>
     </div>
 </body>

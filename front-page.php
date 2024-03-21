@@ -3,16 +3,16 @@
     <!-- Récupérer l'entete php -->
     <?php get_header(); ?>
     
-   <h1>FRONT-PAGE.PHP</h1>
+   <!-- <h1>FRONT-PAGE.PHP</h1> -->
     <div id="entete" class="global">
         <section class="entete__header">
             <h1><?php echo get_bloginfo("name") ?></h1>
-            <h1>Thème du groupe #1</h1>
+            <!-- <h1>Thème du groupe #1</h1> -->
             <h2><?php echo get_bloginfo("description")?></span></h2>
             <span>
             <h3>TIM - Collège de Maisonneuve</h3>
             <span>
-            <button id="btn-evnt" >Événements</button>
+            <a href="#evenement"><button id="btn-evnt">Promotion !</button></a>
             <span>
         </section>
         <div class="vague">
@@ -27,24 +27,41 @@
     <div id="accueil" class="global">
         <section>
             <h2>Accueil</h2> 
-            <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>   
-            <span></span>        
-            <p>Cupcake ipsum dolor sit amet cake cupcake. Ice cream I love chupa chups carrot cake gummies jelly beans I love apple pie. Candy canes donut danish sesame snaps cookie I love I love gummi bears I love.</p>
+            <h3 id="rectangleGalerie">TimVentures - L'Évasion à Portée de Main</h3>  
+            <span></span>                    
+            <p>Dans un monde où le temps est précieux et les désirs d'évasion omniprésents, nous sommes fiers de vous présenter TimVentures, une nouvelle ère dans le domaine des voyages. Avec une passion inébranlable pour l'aventure et une dévotion à créer des expériences inoubliables, nous nous engageons à ouvrir les portes d'un monde de découvertes infinies.</p>
             <span></span>
-            <p>Sweet lemon drops macaroon jujubes gingerbread dessert I love. Topping marshmallow toffee chocolate caramels bear claw donut. Dessert jelly-o lemon drops I love shortbread jelly beans soufflé tiramisu brownie.</p>
+            <p>Nous comprenons que chaque voyageur est unique, chaque désir de voyage est différent, c'est pourquoi nous nous efforçons de personnaliser chaque expérience, de transformer les rêves en réalité et de créer des souvenirs qui dureront toute une vie.</p>
+            <span></span>
+            <p>Fortifiés par une équipe d'experts passionnés et d'explorateurs chevronnés, nous vous offrons un service sur mesure, une attention aux détails inégalée et un réseau mondial de partenaires soigneusement sélectionnés.</p>
+            <span></span>
+            <p>Que ce soit pour une escapade de week-end, une lune de miel romantique, une aventure en famille ou un voyage d'affaires, laissez TimVentures être votre guide vers de nouveaux horizons.</p>
+            <span></span>
+            <p>Préparez-vous à découvrir un monde où les frontières s'effacent et où les possibilités sont infinies. Bienvenue chez TimVentures, où l'évasion n'est qu'à portée de main.</p>
+    </div>
         </section>
     </div>
 
     <div id="evenement" class="global diagonal">
         <section>
             <h2>Événement</h2>
-            <h3>H3 test test test test</h3>
+            <h3>Offre Spéciale pour les Premiers 100 Explorateurs !</h3>
+            <span></span>
+            <h4>&#x2708;	Vous êtes prêts à explorer le monde ? Alors ne manquez pas cette opportunité exclusive avec TimVentures ! Pour célébrer notre lancement, nous réservons une offre spéciale pour nos tout premiers 100 clients.</h4>
             <span>
             <span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus nulla magnam dolore distinctio vitae quo ipsum, dicta pariatur, quis eligendi. Distinctio necessitatibus autem possimus commodi fuga doloremque consectetur optio.</p>
-            <span>
-            <span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A unde quas delectus necessitatibus beatae consequatur maiores similique molestias animi debitis. Doloremque repellat ullam illo ad, ea culpa. Adipisci, explicabo laborum.</p>
+            <ul id="recompensesListe">
+                <li>&#x1F30D; Réductions Exceptionnelles : Profitez de tarifs réduits sur nos meilleures destinations.</li>
+                <li>&#x1F381; Cadeaux Surprise : Recevez des surprises spéciales pour rendre votre voyage encore plus mémorable.</li>
+                <li>&#x1F4DE; Assistance Personnalisée : Un service client dédié pour répondre à toutes vos questions et vous accompagner à chaque étape de votre voyage.</li>
+                <li>&#x1F31F; Accès Privilégié : Accédez à des offres exclusives et à des conseils de voyage réservés uniquement à nos premiers 100 clients.</li>
+            </ul>
+            <span></span>
+        <p>Ne laissez pas passer cette occasion unique de vivre une aventure inoubliable avec TimVentures. Réservez dès maintenant et faites partie des premiers à découvrir le monde avec nous !</p>
+        <span></span>
+        <p>Pour réserver ou pour plus d'informations, contactez-nous dès aujourd'hui. Dépêchez-vous, l'offre est valable uniquement pour les 100 premiers explorateurs !</p>
+        <span></span>
+        <h4><a href="">Contactez-nous maintenant !</a></h4>
         </section>
     </div>
 
@@ -83,7 +100,6 @@
                     <?php endif; ?>  
             </div>     
             <span></span>         
-            <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>
         
         </section>
         <div class="vague-galerie">

@@ -51,6 +51,10 @@ Feuille de style du menu principal
         }
 }
 
+#chk_burger{
+    display: none;
+}
+
 #chk_burger:checked ~ .menu {
     transform : translateX(-100);
 }
