@@ -28,6 +28,7 @@
     - Le nombre d'articles pour cette catégorie
     - Ajouter des liens externes pour le footer
     - Création d'une github page et mettre à jour la page index.htm
+        - Ajouter l'adresse de la github page dans le readme.me
 
 
 
