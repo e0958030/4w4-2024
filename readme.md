@@ -22,6 +22,13 @@
     - Améliorer l'apparence de la liste des catégories
     - Améliorer l'apparence de chacune des cartes
 - Afficher des cartes de catégories pour l'ensemble des catégories
+    - Titre de la catégorie
+    - 10 premiers mots de la description
+    - Un lien qui permet d'accéder à la liste des destinations de cette catégorie
+    - Le nombre d'articles pour cette catégorie
+    - Ajouter des liens externes pour le footer
+    - Création d'une github page et mettre à jour la page index.htm
+
 
 
 
