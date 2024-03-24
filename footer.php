@@ -9,7 +9,37 @@
         <footer>            
             <h2>Footer</h2>
             <span>
-            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aut, voluptas dolor, veniam harum beatae, quos nostrum obcaecati quibusdam ad porro. Dolorum voluptatum consequatur blanditiis earum tempora provident repellat!</blockquote>
+            <blockquote>Au plaisir de vous rencontrer !
+                <div id="iconesSociaux">
+                    <ul>
+                        <span class="material-symbols-outlined">ring_volume</span>
+                        123 456 7890
+                    </ul>
+                    <ul>
+                        <span class="material-symbols-outlined">pin_drop</span>
+                        555, rue Omnivox
+                        Montréal, Québec
+                        (H2W 1G2)
+                    </ul>
+                    <ul>
+                        <span class="material-symbols-outlined">verified_user</span>
+                        <a href="">Politique de confidentialité</a>
+                    </ul>
+                    <ul>
+                        <span class="material-symbols-outlined">contact_support</span>
+                        <a href="">Foire aux questions</a>
+                    </ul>
+                    <ul>
+                        <span class="material-symbols-outlined">stacked_email</span>
+                        <a href="">Écrivez-nous</a>
+                    </ul>
+                </div>
+            </blockquote>
+            <div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            </div>
+         
 
             <!-- Bouton pour retour en haut de page -->
              <a href="#menu__entete"><button id="hautPage">Retour</button></a>

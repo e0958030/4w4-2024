@@ -67,14 +67,6 @@
             <div class="cours">             
             <!-- Boucle if while pour afficher le contenu de la base de données -->
             <?php
-                // if (have_posts()){
-                //     while(have_posts()){
-                //         the_post(); //extraire un article complet
-                //         the_title('<h3>', '</h3>'); //affiche tous les titres de l'article de la base de données sous forme de h3
-                //         //the_content(); //affiche le contenu/descriptions de chaque cours
-                //         echo wp_trim_words(get_the_content(), 30);  //affiche le contenu tronqué en 30 mots
-                //     }
-                // }
 
                 //Même chose mais standard wordpress .. le : équivault à une ouverture d'accolade
                 if(have_posts()):
@@ -90,21 +82,6 @@
             </div>     
             <span></span>         
             <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>
-<!--             
-            <div id="imagesTableau">
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/react.png" alt="Image de la méthode agile" title="Logo react">
-                    <figcaption>Logo de React</figcaption>
-                </figure>
-            </div> -->
         
         </section>
         <div class="vague-galerie">

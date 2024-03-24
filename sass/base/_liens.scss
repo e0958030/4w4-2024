@@ -2,6 +2,7 @@
 
 a{
     color : var(--couleur-lien);
+    text-align: center;
 
     &:hover{
         color : var(--couleur-lien-hover);

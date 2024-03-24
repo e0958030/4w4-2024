@@ -1,3 +1,5 @@
+/* Feuille de styles SASS pour les éléments des cartes de destinations */
+
 .destinations{
     display: flex;
     flex-wrap: wrap;
@@ -16,6 +18,7 @@
 
 .post-categories{
     display: flex;
+    justify-content: center;
     list-style-type: none;
     gap: 1rem;
 }

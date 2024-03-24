@@ -474,6 +474,7 @@ button:hover {
 /*Feuille de style Sass pour les liens*/
 a {
   color: var(--couleur-lien);
+  text-align: center;
 }
 a:hover {
   color: var(--couleur-lien-hover);
@@ -551,6 +552,7 @@ a:visited {
 /* ///////////////////////////// */
 /* Composants */
 /* ///////////////////////////// */
+/* Feuille de styles SASS pour les éléments des cartes de destinations */
 .destinations {
   display: flex;
   flex-wrap: wrap;
@@ -569,6 +571,7 @@ a:visited {
 
 .post-categories {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   gap: 1rem;
 }
