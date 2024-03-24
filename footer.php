@@ -36,12 +36,7 @@
                         <a href="https://www.cmaisonneuve.qc.ca">Écrivez-nous</a>
                     </ul>
                 </div>
-            </blockquote>
-            <div>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            </div>
-         
+            </blockquote>        
 
             <!-- Bouton pour retour en haut de page -->
              <a href="#menu__entete"><button id="hautPage">Retour</button></a>
