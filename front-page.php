@@ -100,7 +100,30 @@
                     <?php endif; ?>  
             </div>     
             <span></span>         
-        
+
+
+            <!-- LES CATÉGORIES -->
+            <div id="cartesCategories" class="global">
+                <section>
+                    <h2>Catégories de destinations</h2>
+                    <span></span>
+                    <!-- Récupérer les catégories avec une boucle -->
+                        <?php $categories = get_categories();
+                        // Pour chaque catégorie, afficher le nom et la description en un maximum de 10 mots
+                            foreach ($categories as $category) {
+                                ?>
+                                <div class="carte-categorie">
+                                    <h3><?php echo $category->name; ?></h3>
+                                    <!-- Afficher seulement les premiers 10 mots de la description -->
+                                    <p><?php echo wp_trim_words($category->description, 10); ?></p> 
+                                </div>
+                                <span></span>
+                            <?php
+                            }
+                        ?>
+                </section>
+            </div>      
+
         </section>
         <div class="vague-galerie">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

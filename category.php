@@ -17,6 +17,7 @@
                 </svg>
             </div>
             <?php
+            // Code pour afficher le titre de la catégorie 
                 $categorie_courante = get_queried_object();
             ?>
             <h2><?php echo esc_html( $categorie_courante->name ); ?></h2>
