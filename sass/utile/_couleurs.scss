@@ -1,10 +1,10 @@
 /* Variables globales CSS et SASS de couleurs */
 
 //Variables SASS pour la palette de couleurs
-$--clr-bleu-pale    : hsl(220, 100%, 85%);
-$--clr-bleu-leger  : hsl(220, 100%, 60%);
-$--clr-bleu-moyen  : hsl(220, 100%, 30%);    
-$--clr-bleu-fonce  : hsl(220, 100%, 15%);
+$--clr-bleu-pale    : hsl(203, 100%, 85%);
+$--clr-bleu-leger  : hsl(203, 100%, 70%);
+$--clr-bleu-moyen  : hsl(203, 100%, 30%);    
+$--clr-bleu-fonce  : hsl(203, 100%, 15%);
 
 
 $--clr-orange-pale: hsl(40, 100%, 85%);
@@ -54,7 +54,7 @@ $defaut: (
 
 /* Agencement de couleurs */
 $agencement-couleur :(
-    primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
+    primaire: ($--clr-bleu-leger, ($--clr-bleu-moyen, $--clr-bleu-leger)),
     secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
     ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
     vert: ($--clr-vert-fonce, $--clr-vert-pale)

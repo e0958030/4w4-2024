@@ -4,14 +4,7 @@
     <?php get_header(); ?>
     
     <div id="accueil" class="global">
-        <section>
-            <h2>Accueil</h2> 
-            <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>   
-            <span></span>        
-            <p>Cupcake ipsum dolor sit amet cake cupcake. Ice cream I love chupa chups carrot cake gummies jelly beans I love apple pie. Candy canes donut danish sesame snaps cookie I love I love gummi bears I love.</p>
-            <span></span>
-            <p>Sweet lemon drops macaroon jujubes gingerbread dessert I love. Topping marshmallow toffee chocolate caramels bear claw donut. Dessert jelly-o lemon drops I love shortbread jelly beans soufflé tiramisu brownie.</p>
-        </section>
+        <!-- La section accueil disparaît lorsque les catgéories sont sélectionnées -->
     </div>
 
     <div id="galerie" class="global">
@@ -23,7 +16,10 @@
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <h2>Galerie</h2>
+            <?php
+                $categorie_courante = get_queried_object();
+            ?>
+            <h2><?php echo esc_html( $categorie_courante->name ); ?></h2>
             <span>
             <span>
             <div class="destinations">             
@@ -49,7 +45,7 @@
                     <?php endif; ?>  
             </div>     
             <span></span>         
-            <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>
+            <p id="rectangleGalerie">Découvrez nos destinations de rêve à des prix irrésistibles ! Parce que chacun mérite une escapade inoubliable, nous avons sélectionné pour vous des destinations exotiques et envoûtantes, accessibles à tous les budgets.</p>
         
         </section>
         <div class="vague-galerie">

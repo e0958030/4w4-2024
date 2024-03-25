@@ -66,35 +66,35 @@ Ce map contient un map principal et plusieurs sous-maps */
 /* Création des classes de couleurs */
 /* Création de classes de couleurs avec une boucle SASS */
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: hsl(203, 100%, 85%);
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: hsl(203, 100%, 85%);
 }
 
 .clr-primaire-200 {
-  color: hsl(220, 100%, 60%);
+  color: hsl(203, 100%, 70%);
 }
 
 .bck-primaire-200 {
-  background-color: hsl(220, 100%, 60%);
+  background-color: hsl(203, 100%, 70%);
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(203, 100%, 30%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(203, 100%, 30%);
 }
 
 .clr-primaire-400 {
-  color: hsl(220, 100%, 15%);
+  color: hsl(203, 100%, 15%);
 }
 
 .bck-primaire-400 {
-  background-color: hsl(220, 100%, 15%);
+  background-color: hsl(203, 100%, 15%);
 }
 
 .clr-secondaire-100 {
@@ -195,8 +195,8 @@ Ce map contient un map principal et plusieurs sous-maps */
 
 /* Mixin pour agencer des couleurs */
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+  color: hsl(203, 100%, 70%);
+  background-image: linear-gradient(90deg, hsl(203, 100%, 30%), hsl(203, 100%, 70%));
 }
 
 .clr-agencement-secondaire {
@@ -348,6 +348,7 @@ h3#rectangleGalerie {
   background-color: rgba(255, 255, 255, 0.308);
   color: #fff;
   padding: 5%;
+  border-radius: 25px;
 }
 
 blockquote #imgFooter {
@@ -605,9 +606,11 @@ Feuille de style du menu principal
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  height: 5rem;
   align-items: center;
   text-align: center;
   font-size: 1.2em;
+  border: 2px solid #fff;
 }
 @media (min-width: 550px) {
   .menu {
