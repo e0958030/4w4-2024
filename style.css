@@ -598,9 +598,8 @@ a:visited {
     box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   }
 }
-/*
-Feuille de style du menu principal
-*/
+/* Feuille de style du menu principal */
+/* Styles généraux du menu */
 .menu {
   z-index: 100;
   position: absolute;
@@ -613,15 +612,16 @@ Feuille de style du menu principal
   font-size: 1.2em;
   border: 2px solid #fff;
 }
+
+/* Pour les écrans larges */
 @media (min-width: 550px) {
   .menu {
     position: static;
     flex-direction: row;
-    display: flex;
     transform: translateX(0);
   }
 }
-
+/* Styles des éléments du menu */
 .menu-item {
   flex: 1 0 50px;
 }
@@ -630,7 +630,7 @@ Feuille de style du menu principal
   color: #fff;
 }
 
-/* Gestion du label burger*/
+/* Gestion du label burger */
 #burger {
   z-index: 5000;
   display: block;
@@ -638,16 +638,52 @@ Feuille de style du menu principal
   top: 10px;
   right: 10px;
 }
+
 @media (min-width: 550px) {
   #burger {
     display: none;
   }
 }
-
 #chk_burger {
   display: none;
 }
 
 #chk_burger:checked ~ .menu {
-  transform: translateX(-100);
+  transform: translateX(-100%);
+}
+
+/* CSS du menu burger pour media query */
+@media screen and (max-width: 550px) {
+  #burger {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #chk_burger:checked + #burger > svg {
+    transform: rotate(90deg);
+  }
+  #chk_burger:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+  }
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  .menu-item a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */

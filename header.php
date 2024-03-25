@@ -20,6 +20,7 @@
 
 </head>
 <body>
+    <!-- Menu burger -->
     <div id="menu__entete" class="global  clr-agencement-primaire">
        <?php echo get_custom_logo(); ?>
         <input type="checkbox" name="" id="chk_burger">
