@@ -344,9 +344,18 @@ h3#rectangleGalerie {
 }
 
 #footer blockquote {
+  display: flex;
   background-color: rgba(255, 255, 255, 0.308);
   color: #fff;
   padding: 5%;
+}
+
+blockquote #imgFooter {
+  width: 700px;
+  background-image: url("images/avion.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
 }
 
 /*Media query pour la version mobile responsive*/

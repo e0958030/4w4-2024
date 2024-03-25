@@ -9,15 +9,16 @@
         <footer>            
             <h2>Footer</h2>
             <span>
-            <blockquote>Au plaisir de vous rencontrer !
+            <blockquote>
                 <div id="iconesSociaux">
+                Au plaisir de vous rencontrer ! N'hésitez-pas à nous contacter.
                     <ul>
                         <span class="material-symbols-outlined">ring_volume</span>
                         123 456 7890
                     </ul>
                     <ul>
-                        <a href="https://www.google.ca/maps">
                         <span class="material-symbols-outlined">pin_drop</span>
+                        <a href="https://www.google.ca/maps">                        
                         555, rue Omnivox
                         Montréal, Québec
                         (H2W 1G2)
@@ -36,6 +37,7 @@
                         <a href="https://www.cmaisonneuve.qc.ca">Écrivez-nous</a>
                     </ul>
                 </div>
+                <div id="imgFooter"></div>
             </blockquote>        
 
             <!-- Bouton pour retour en haut de page -->
