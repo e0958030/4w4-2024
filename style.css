@@ -214,6 +214,7 @@ Ce map contient un map principal et plusieurs sous-maps */
   background-color: hsl(70, 100%, 85%);
 }
 
+/* Feuilles de styles généraux */
 * {
   margin: 0;
   padding: 0;

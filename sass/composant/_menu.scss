@@ -2,12 +2,6 @@
 Feuille de style du menu principal
 */
 
-//nav
-// .menu-principal-container{
-//     background-color: var(--couleur-arriere-footer);
-//     // margin-top: 5rem;
-// }
-
 //ul
 .menu{
     z-index: 100;
@@ -58,5 +52,3 @@ Feuille de style du menu principal
 #chk_burger:checked ~ .menu {
     transform : translateX(-100);
 }
-
-
