@@ -9,9 +9,9 @@
     list-style-type: none;
     height: 5rem;
     align-items: center;
+    justify-content: space-evenly;
     text-align: center;
     font-size: 1.2em;
-    border: 2px solid #fff;
 }
 
 /* Pour les écrans larges */
@@ -30,6 +30,7 @@
 
 .menu-item a {
     color: #fff;
+    text-decoration: none;
 }
 
 /* Gestion du label burger */
