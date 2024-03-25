@@ -1,3 +1,5 @@
+<!-- Fichier PHP pour l'entête -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

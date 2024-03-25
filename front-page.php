@@ -1,4 +1,4 @@
-<!-- Page HTML pour le labo 4 par Camilia El Moustarih -->
+<!-- Page HTML pour le TP1 par Camilia El Moustarih -->
 
     <!-- Récupérer l'entete php -->
     <?php get_header(); ?>
@@ -61,7 +61,7 @@
         <span></span>
         <p>Pour réserver ou pour plus d'informations, contactez-nous dès aujourd'hui. Dépêchez-vous, l'offre est valable uniquement pour les 100 premiers explorateurs !</p>
         <span></span>
-        <h4><a href="">Contactez-nous maintenant !</a></h4>
+        <h4><a href="#footer">Contactez-nous maintenant !</a></h4>
         </section>
     </div>
 
