@@ -44,6 +44,7 @@
 - Ajout de texte de contenu pour remplacer le Lorem Ipsum
 - Ajout de liens dans le pied de page
 - Le titre de la catégorie s'affiche selon la catégorie sélectionnée dans le menu nav
+- Ajout du nombre d'articles dans chaque catégorie
 - Affichage des destinations populaires en page d'accueil 
 - Ajout d'un logo qui retourne en page d'accueil
 
