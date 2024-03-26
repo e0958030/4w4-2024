@@ -117,12 +117,12 @@
                                     <!-- Afficher seulement les premiers 10 mots de la description -->
                                     <p><?php echo wp_trim_words($category->description, 10); ?></p>                                        
                                     
-                                    <h5>
+                                    <h4>
                                         <!-- Variable pour compter le nombre de catégories -->
                                         <?php $nbArticles = $category->count; ?>
-                                        <!-- Écrire ce nombre suivi du mot articles -->
-                                        <?php echo $nbArticles; ?> articles
-                                    </h5>
+                                        <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                        <a href="<?php echo get_category_link($category->term_id); ?>"><?php echo $nbArticles; ?> articles </a>
+                                    </h4>
                                     
                                     
                                 </div>
