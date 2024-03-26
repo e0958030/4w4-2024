@@ -155,10 +155,7 @@ blockquote #imgFooter{
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:1000px) {
     #btn-evnt{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: darkslateblue;
+        display: none;
     }
 
     h2{
@@ -167,5 +164,9 @@ blockquote #imgFooter{
 
     #rectangleGalerie{
         margin-top: 10%;
+    }
+
+    div#imgFooter{
+        display: none;
     }
 }
