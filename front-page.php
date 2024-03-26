@@ -115,16 +115,14 @@
                                 <div class="carte-categorie">
                                     <h3><?php echo $category->name; ?></h3>
                                     <!-- Afficher seulement les premiers 10 mots de la description -->
-                                    <p><?php echo wp_trim_words($category->description, 10); ?></p>                                        
+                                    <p><?php echo wp_trim_words($category->description, 10); ?></p>                                    
                                     
                                     <h4>
                                         <!-- Variable pour compter le nombre de catégories -->
                                         <?php $nbArticles = $category->count; ?>
                                         <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
                                         <a href="<?php echo get_category_link($category->term_id); ?>"><?php echo $nbArticles; ?> articles </a>
-                                    </h4>
-                                    
-                                    
+                                    </h4>                                 
                                 </div>
                                 <span></span>
                             <?php

@@ -7,19 +7,24 @@
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    height: 5rem;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
     font-size: 1.2em;
+    background-color: #fff; 
+    padding: 20px;
+    transition: transform 0.3s ease; 
 }
 
 /* Pour les écrans larges */
-@media (min-width: 550px) {
+@media (min-width: 1000px) {
     .menu {
         position: static;
         flex-direction: row;
-        transform: translateX(0);
+        transform: translateX(0%);
+        background-color: transparent;
+        padding: 0;     
+        height: 5rem;
     }
 }
 
@@ -42,7 +47,7 @@
     right: 10px;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 1000px) {
     #burger {
         display: none;
     }
@@ -52,12 +57,13 @@
     display: none;
 }
 
+/* Cacher */
 #chk_burger:checked ~ .menu {
-    transform: translateX(-100%);
+    display: none;
 }
 
 /* CSS du menu burger pour media query */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1000px) {
     #burger {
         display: block;
         cursor: pointer;
@@ -71,18 +77,54 @@
         transform: rotate(90deg);
     }
 
+    /* Cacher le menu */
     #chk_burger:checked ~ .menu {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        position: absolute;
-        top: 70px;
-        right: 0;
         background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
         width: 100%;
         padding: 20px;
-        z-index: 999;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item {
+        margin-bottom: 10px;
+    }
+
+    .menu-item a {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+/* CSS du menu burger pour media query */
+@media screen and (max-width: 1000px) {
+    /* Hide menu when burger is checked */
+    #chk_burger:checked ~ .menu__header nav {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+        cursor: pointer;
+        z-index: 1000;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #chk_burger:checked + #burger > svg {
+        transform: rotate(90deg);
+    }
+
+    /* Hide menu when burger is checked */
+    #chk_burger:checked ~ .menu__header nav {
+        display: none;
     }
 
     .menu-item {
