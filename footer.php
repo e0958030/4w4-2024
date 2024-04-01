@@ -38,6 +38,11 @@
                     </ul>
                 </div>
                 <div id="imgFooter"></div>
+
+                <!-- Menu personnalisé WP pour le footer -->
+                <div class="menu__footer">
+                    <?php wp_nav_menu(array("container" => "nav", "menu" => "piedgpage")); ?>
+                </div>
             </blockquote>        
 
             <!-- Bouton pour retour en haut de page -->

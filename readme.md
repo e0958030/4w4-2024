@@ -4,6 +4,9 @@
 
 <h2>Lien du Github Page : https://e0958030.github.io/4w4-2024/</h2>
 
+<h2>Lien du site WHC :  </h2>
+
+
 ## Résumé des étapes éxécutées
 
 - Création d'une github-page à partir de index.htm
