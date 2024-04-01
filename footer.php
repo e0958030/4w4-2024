@@ -39,12 +39,13 @@
                 </div>
                 <div id="imgFooter"></div>
 
+            </blockquote>        
+
                 <!-- Menu personnalisé WP pour le footer -->
                 <div class="menu__footer">
                     <?php wp_nav_menu(array("container" => "nav", "menu" => "piedgpage")); ?>
                 </div>
-            </blockquote>        
-
+                
             <!-- Bouton pour retour en haut de page -->
              <a href="#menu__entete"><button id="hautPage">Retour</button></a>
         </footer>

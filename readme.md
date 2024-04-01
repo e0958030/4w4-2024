@@ -45,7 +45,7 @@
 - Mise à jour du fichier .htm
 - Optimisation du code scss
 - Ajout de texte de contenu pour remplacer le Lorem Ipsum
-- Ajout de liens dans le pied de page
+- Ajout de liens dans le pied de page avec l'option menus de Wordpress
 - Le titre de la catégorie s'affiche selon la catégorie sélectionnée dans le menu nav
 - Ajout du nombre d'articles dans chaque catégorie
 - Affichage des destinations populaires en page d'accueil 
