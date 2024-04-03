@@ -26,9 +26,12 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 /* Création des classes de couleurs */
 @import "utile/couleurs-class";
 
+/* Styles généraux */
 @import "layout";
 
 @import "_entete";
+
+@import "_footer";
 
 /* ///////////////////////////// */
 /* Base */
