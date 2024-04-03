@@ -320,10 +320,6 @@ h3#rectangleGalerie {
   border-top: 2px solid #000;
 }
 
-.carte-categorie {
-  border: 2px solid #000;
-}
-
 /*Vague test*/
 .custom-shape-divider-top-1707919064 {
   z-index: -1;
@@ -587,6 +583,7 @@ a:visited {
   flex: 1 0 250px; /*ne grossit pas mais se comprime*/
   border: 2px solid #fff; /*changer pour une variable de couleur*/
   padding: 2em;
+  box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #0084ff, 5px 5px 15px 5px rgba(51, 158, 255, 0);
 }
 
 .post-categories {
@@ -594,6 +591,11 @@ a:visited {
   justify-content: center;
   list-style-type: none;
   gap: 1rem;
+}
+
+.carte-categorie {
+  background-color: var(--couleur-carte);
+  border: solid 2px #fff;
 }
 
 /*Media query pour la version mobile responsive*/
