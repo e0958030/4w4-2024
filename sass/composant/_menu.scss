@@ -11,9 +11,16 @@
     justify-content: space-around;
     text-align: center;
     font-size: 1.2em;
-    background-color: #fff; 
+    background-color: hsl(var(--u1), 100%, 30%);
+    color: #fff;
+    transform: translateX(100%);
     padding: 20px;
     transition: transform 0.3s ease; 
+}
+
+#menu__entete > header > nav{
+    background-color: hsl(var(--u1), 100%, 30%);
+    border-radius: 25px 25px;
 }
 
 /* Pour les écrans larges */
