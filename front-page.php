@@ -39,32 +39,6 @@
             <span></span>
             <p>Préparez-vous à découvrir un monde où les frontières s'effacent et où les possibilités sont infinies. Bienvenue chez TimVentures, où l'évasion n'est qu'à portée de main.</p>
             <span></span>
-            
-            <div id="listeTypeVoyage">
-            <ul>
-                <h4>Grandeur du Groupe :</h4>
-                    <ul>
-                        <li>Voyage en groupe</li>
-                        <li>Voyage en petit comité</li>
-                        <li>Voyage en solo</li>
-                    </ul>
-                                   
-                <span></span>
-                <h4>Type de voyage :</h4>
-                    <ul>
-                        <li>Aventure</li>
-                        <li>Culturel</li>
-                        <li>Repos</li>
-                        <li>Intime</li>
-                        <li>Sportif</li>
-                        <li>Économique</li>
-                        <li>Luxueux</li>
-                        <li>Paysage</li>
-                        <li>Pleine nature</li>
-                    </ul>                    
-             </ul>
-             
-    </div>
         </section>
     </div>
 

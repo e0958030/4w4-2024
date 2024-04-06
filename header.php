@@ -31,6 +31,9 @@
         </label>  
         <header class="menu__header">
         <?php wp_nav_menu(array("container" => "nav", "menu" => "principal")); ?>
+
+        <!-- Récupérer le formulaire de recherche -->
+        <?php  get_search_form(); ?>   
         </header>
     </div>
 
