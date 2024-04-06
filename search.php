@@ -2,22 +2,14 @@
 
     <!-- Récupérer l'entete php -->
     <?php get_header(); ?>
-    <h1>index.php</h1>
+    <!-- <h1>index.php</h1> -->
     <div id="entete" class="global">
         <section class="entete__header">
-            <h1>Thème du groupe #1</h1>
-            <h2>4W4 - Conception d'interface <span>et développement Web</span></h2>
-            <span>
+            <h1><?php echo get_bloginfo("name") ?></h1>
+            <h2><?php echo get_bloginfo("description")?></span></h2>
             <h3>TIM - Collège de Maisonneuve</h3>
             <span>
-            <button id="btn-evnt" >Événements</button>
-            <span>
         </section>
-            <!-- <button id="couleur-entete"><a href="https://color.adobe.com/create/color-wheel">Palette</a></button>
-            <button id="couleur-accueil">Palette</button>
-            <button id="couleur-evenement">Palette</button>
-            <button id="couleur-galerie">Palette</button>
-            <button id="couleur-footer">Palette</button> -->
         </header>
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -26,30 +18,6 @@
                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
-    </div>
-
-    <div id="accueil" class="global">
-        <section>
-            <h2>Accueil</h2> 
-            <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>   
-            <span></span>        
-            <p>Cupcake ipsum dolor sit amet cake cupcake. Ice cream I love chupa chups carrot cake gummies jelly beans I love apple pie. Candy canes donut danish sesame snaps cookie I love I love gummi bears I love.</p>
-            <span></span>
-            <p>Sweet lemon drops macaroon jujubes gingerbread dessert I love. Topping marshmallow toffee chocolate caramels bear claw donut. Dessert jelly-o lemon drops I love shortbread jelly beans soufflé tiramisu brownie.</p>
-        </section>
-    </div>
-
-    <div id="evenement" class="global diagonal">
-        <section>
-            <h2>Événement</h2>
-            <h3>H3 test test test test</h3>
-            <span>
-            <span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus nulla magnam dolore distinctio vitae quo ipsum, dicta pariatur, quis eligendi. Distinctio necessitatibus autem possimus commodi fuga doloremque consectetur optio.</p>
-            <span>
-            <span>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A unde quas delectus necessitatibus beatae consequatur maiores similique molestias animi debitis. Doloremque repellat ullam illo ad, ea culpa. Adipisci, explicabo laborum.</p>
-        </section>
     </div>
 
     <div id="galerie" class="global">
@@ -61,7 +29,8 @@
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <h2>Galerie</h2>
+            <!-- ucfirst pour afficher la première lettre en majuscule -->
+            <h2><?php echo ucfirst(get_search_query()); ?></h2>
             <span>
             <span>
             <div class="cours">             
@@ -81,7 +50,6 @@
                     <?php endif; ?>  
             </div>     
             <span></span>         
-            <p id="rectangleGalerie">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, beatae eligendi delectus saepe molestias amet ad corporis alias officiis reprehenderit excepturi aliquid eaque nostrum magnam impedit laboriosam asperiores soluta. Veniam?</p>
         
         </section>
         <div class="vague-galerie">
@@ -90,23 +58,10 @@
             </svg>
         </div>
     </div>
-
-    <?php  get_template_part('gabarits/vague'); ?>
-
-    <div id="footer" class="global">   
-        <div class="motif-footer">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" style="fill:var(--couleur-arriere-galerie)"></path>
-            </svg>
-        </div>     
-        <footer>            
-            <h2>Footer</h2>
-            <span>
-            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quae aut, voluptas dolor, veniam harum beatae, quos nostrum obcaecati quibusdam ad porro. Dolorum voluptatum consequatur blanditiis earum tempora provident repellat!</blockquote>
-
-            <!-- Bouton pour retour en haut de page -->
-             <a href="#menu"><button id="hautPage">Retour</button></a>
-        </footer>
+    <?php  get_template_part('gabarits/vague'); ?>           
     </div>
+
+    <!-- Récupérer le footer php -->
+    <?php get_footer(); ?>
 </body>
 </html>
