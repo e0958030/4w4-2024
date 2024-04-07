@@ -71,6 +71,19 @@
                             href="http://localhost:8080/4w4camilia/category/zen/">Zen</a></li>
                 </ul>
             </nav>
+            <span></span>
+            <!-- Récupérer le formulaire de recherche -->
+            <!-- Fichier pour la barre de recherche -->
+
+            <form class="recherche" role="search" method="get" action="http://localhost:8080/4w4camilia/">
+                <label>
+                    <input class="recherche__input" type="search" class="search-field" placeholder="Recherchez ..."
+                        value="" name="s" />
+                </label>
+                <button class="recherche__bouton" type="submit" class="search-submit">
+                    <span class="recherche__icone">&#x1F50D;</span>
+                </button>
+            </form>
         </header>
     </div>
 
@@ -128,32 +141,6 @@
             <p>Préparez-vous à découvrir un monde où les frontières s'effacent et où les possibilités sont infinies.
                 Bienvenue chez TimVentures, où l'évasion n'est qu'à portée de main.</p>
             <span></span>
-
-            <div id="listeTypeVoyage">
-                <ul>
-                    <h4>Grandeur du Groupe :</h4>
-                    <ul>
-                        <li>Voyage en groupe</li>
-                        <li>Voyage en petit comité</li>
-                        <li>Voyage en solo</li>
-                    </ul>
-
-                    <span></span>
-                    <h4>Type de voyage :</h4>
-                    <ul>
-                        <li>Aventure</li>
-                        <li>Culturel</li>
-                        <li>Repos</li>
-                        <li>Intime</li>
-                        <li>Sportif</li>
-                        <li>Économique</li>
-                        <li>Luxueux</li>
-                        <li>Paysage</li>
-                        <li>Pleine nature</li>
-                    </ul>
-                </ul>
-
-            </div>
         </section>
     </div>
 
@@ -212,7 +199,6 @@
 
                         <div class="carte">
                             <h3>Amazon Rainforest, Brésil</h3>
-                            <p>
                             <p>L&rsquo;Amazonie est la plus grande forêt tropicale du monde, abritant une biodiversité
                                 exceptionnelle et une beauté naturelle incomparable. Explorez des écosystèmes divers,
                                 des marécages et des rivières sinueuses, et découvrez une incroyable variété de plantes,
@@ -220,7 +206,7 @@
                                 perroquets. Partez en excursion en bateau dans la jungle, faites de la randonnée dans la
                                 canopée, rencontrez des communautés indigènes et découvrez la magie et la splendeur de
                                 cette forêt primaire.</p>
-                            </p>
+
 
                             <ul class="post-categories">
                                 <li><a href="http://localhost:8080/4w4camilia/category/pleine-nature/"
@@ -236,7 +222,6 @@
 
                         <div class="carte">
                             <h3>Costa Rica</h3>
-                            <p>
                             <p>Le Costa Rica, joyau d&rsquo;aventures en Amérique centrale, offre une biodiversité
                                 étonnante dans un écrin de forêts tropicales. Les aventuriers peuvent s&rsquo;engager
                                 dans des tyroliennes à travers la canopée, explorer des volcans actifs comme
@@ -244,7 +229,7 @@
                                 réserve de Monteverde mènent à des ponts suspendus offrant des vues spectaculaires sur
                                 la canopée. Les amateurs de rafting peuvent affronter les rapides du Pacuare. Le Costa
                                 Rica propose une aventure à chaque coin de rue, du Pacifique à la mer des Caraïbes.</p>
-                            </p>
+
 
                             <ul class="post-categories">
                                 <li><a href="http://localhost:8080/4w4camilia/category/aventure/"
@@ -262,7 +247,6 @@
 
                         <div class="carte">
                             <h3>Fiordland National Park, Nouvelle-Zélande</h3>
-                            <p>
                             <p>Le parc national de Fiordland, situé dans le sud-ouest de l&rsquo;île du Sud de la
                                 Nouvelle-Zélande, est un paradis préservé de fjords spectaculaires, de montagnes
                                 escarpées et de forêts primaires. Explorez des fjords emblématiques comme le Milford
@@ -270,7 +254,7 @@
                                 falaises abruptes et une vie marine abondante. Partez en randonnée sur des sentiers
                                 isolés, comme le célèbre Milford Track, et découvrez une nature sauvage et préservée à
                                 chaque tournant.</p>
-                            </p>
+
 
                             <ul class="post-categories">
                                 <li><a href="http://localhost:8080/4w4camilia/category/pleine-nature/"
@@ -287,14 +271,13 @@
 
                         <div class="carte">
                             <h3>Îles grecques</h3>
-                            <p>
                             <p>Une croisière dans les îles grecques vous transporte dans un monde de mythes et de
                                 légendes, avec des escales dans des îles emblématiques comme Mykonos, Santorin, Rhodes
                                 et Corfou. Imprégnez-vous du charme pittoresque des villages blancs aux toits bleus,
                                 explorez des sites archéologiques anciens comme le palais de Knossos et dégustez une
                                 cuisine méditerranéenne authentique dans des tavernes pittoresques au bord de la mer.
                             </p>
-                            </p>
+
 
                             <ul class="post-categories">
                                 <li><a href="http://localhost:8080/4w4camilia/category/croisiere/"
@@ -310,7 +293,6 @@
 
                         <div class="carte">
                             <h3>Kyoto, Japon</h3>
-                            <p>
                             <p>Kyoto incarne l&rsquo;essence même de la tradition japonaise. En tant qu&rsquo;ancienne
                                 capitale impériale, la ville regorge de temples bouddhistes, de jardins zen et de
                                 quartiers préservés, offrant une immersion dans la culture et l&rsquo;histoire du Japon.
@@ -320,7 +302,7 @@
                                 également réputée pour ses arts traditionnels tels que la cérémonie du thé, la cérémonie
                                 des fleurs de cerisier et la cérémonie du kaiseki, offrant une expérience authentique de
                                 la culture japonaise.</p>
-                            </p>
+
 
                             <ul class="post-categories">
                                 <li><a href="http://localhost:8080/4w4camilia/category/culturel/"
@@ -340,13 +322,12 @@
 
                         <div class="carte">
                             <h3>La Costa Brava, Espagne</h3>
-                            <p>
                             <p>La Costa Brava, le long de la côte nord-est de l&rsquo;Espagne, est un paradis pour les
                                 amateurs de sports nautiques. Avec ses eaux cristallines et ses paysages spectaculaires,
                                 la Costa Brava offre des possibilités infinies pour la voile, le kayak, la plongée
                                 sous-marine et le surf. Les visiteurs peuvent explorer les criques cachées, les grottes
                                 marines et les récifs colorés de cette magnifique région côtière.</p>
-                            </p>
+
 
                             <ul class="post-categories">
                                 <li><a href="http://localhost:8080/4w4camilia/category/populaire/"

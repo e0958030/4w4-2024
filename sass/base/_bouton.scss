@@ -19,10 +19,13 @@ button:hover{
     transform: scale(110%);
 }
 
+.recherche__input{
+    border-radius: 15px;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:550px) {
     button{
-        margin-top: 40%;
         float: left;
         margin-left: 35%;
     }
