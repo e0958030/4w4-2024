@@ -51,7 +51,10 @@
 - Affichage des destinations populaires en page d'accueil 
 - Ajout d'un logo qui retourne en page d'accueil
 
-
+# À lire SVP problématiques
+- Je n'ai pas réussi à afficher mon site sur WHC même après avoir importé la base de données
+- SASS m'affichait des messages d'erreurs dans les fichiers wp plugins alors je n'ai pas pu compléter mes styles scss
+    - Je n'ai pas osé réinitialiser Live Sass par peur de bousiller les dossiers wp et le projet
 
 
 
