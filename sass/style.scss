@@ -1,5 +1,6 @@
 /*
-Theme Name: Camilia
+Theme Name: TP2
+Author : Camilia El Moustarih
 Theme URI: https://wordpress.org/themes/twentytwenty/
 Author: the WordPress team
 Author URI: https://wordpress.org/
@@ -29,9 +30,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 /* Styles généraux */
 @import "layout";
 
-@import "_entete";
+@import "entete";
 
-@import "_footer";
+@import "footer";
 
 /* ///////////////////////////// */
 /* Base */
@@ -39,7 +40,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 @import "base/h";
 
-@import "base/_bouton";
+@import "base/bouton";
 
 @import "base/liens";
 

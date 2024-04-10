@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*
-Theme Name: Camilia
+Theme Name: TP2
+Author : Camilia El Moustarih
 Theme URI: https://wordpress.org/themes/twentytwenty/
 Author: the WordPress team
 Author URI: https://wordpress.org/
@@ -214,6 +215,7 @@ Ce map contient un map principal et plusieurs sous-maps */
   background-color: hsl(70, 100%, 85%);
 }
 
+/* Styles généraux */
 /* Feuilles de styles généraux */
 * {
   margin: 0;
@@ -479,10 +481,13 @@ button:hover {
   transform: scale(110%);
 }
 
+.recherche__input {
+  border-radius: 15px;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 550px) {
   button {
-    margin-top: 40%;
     float: left;
     margin-left: 35%;
   }
@@ -593,14 +598,8 @@ a:visited {
   gap: 1rem;
 }
 
-.post-categories li {
-  border: 1px solid black;
-  padding: 0.5em;
-}
-
 .carte-categorie {
   background-color: var(--couleur-carte);
-  border: solid 2px #fff;
 }
 
 /*Media query pour la version mobile responsive*/
