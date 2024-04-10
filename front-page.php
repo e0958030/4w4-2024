@@ -87,6 +87,8 @@
                     $titre = get_the_title();                                    
                     ?> 
                         <div class="carte">
+                            <!-- Pour afficher une image de l'article qui a été mise en avant -->
+                            <?php the_post_thumbnail('thumbnail'); ?>
                             <h3><?php the_title()?></h3>
                             <?php the_content(); ?>   
                             
