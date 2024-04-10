@@ -14,6 +14,8 @@
                         <div class="carte">
                             <h3><?php echo $titre; ?></h3>
                             <span></span>
+                            <!-- Ajouter l'image de mise à l'avant -->
+                            <?php the_post_thumbnail('large'); ?>
                             <p><?php the_content();?></p>                                     
                         </div>        
             <?php endif; ?>  
