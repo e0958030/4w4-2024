@@ -30,7 +30,7 @@
     </section>
         
         <!-- Image de la librairie médias -->
-        <a href="<?php echo get_bloginfo('url'); ?>"><img src="http://localhost:8080/4w4camilia/wp-content/uploads/2024/04/logoIntra.png"></a>
+        <a href="<?php echo get_bloginfo('url'); ?>"><img src="https://gftnth00.mywhc.ca/tim14/wp-content/uploads/2024/04/logoIntra.png"></a>
         
 </div>
 
