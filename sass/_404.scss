@@ -2,7 +2,31 @@
 
 /* Styles pour la div contenant le message d'erreur */
 #erreur_404{
-    background-color: #58aeff;
-    border: 5px solid black;
+    background-color: hsl(203, 100%, 70%);
     box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #0084ff, 5px 5px 15px 5px rgba(51,158,255,0);
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width:1000px) {
+    #erreur_404 img{
+        display: none;
+    }
+
+    .menu .liensCatFooter{
+        z-index: 100;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 1.2em;
+        background-color: white;
+        color: #fff;
+        transform: translateX(100%);
+        padding: 20px;
+        transition: transform 0.3s ease; 
+    }
+
 }
