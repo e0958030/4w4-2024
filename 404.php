@@ -8,9 +8,9 @@
     <section>
         <h2>Erreur 404</h2>
         <span></span>
-        <h3>Vous essayez d'accéder à une page qui n'existe pas...</h3>
+        <h4>Vous essayez d'accéder à une page qui n'existe pas...</h4>
         <span></span>
-        <p>Pour revenir à la page d'accueil, cliquez sur le lien suivant :</p>
+        <h4>Pour revenir à la page d'accueil, cliquez sur le lien suivant :</h4>
         <span></span>
 
         <!-- Bouton pour retourner à la page d'accueil -->
@@ -18,6 +18,7 @@
         <a href="#entete"><button id="retourAccueil"> <a href="<?php echo get_bloginfo('url'); ?>"> <?php echo get_bloginfo('name'); ?></a> </button></a>
 
         <!-- Récupérer le formulaire de recherche -->
+        <span></span>
         <?php  get_search_form(); ?>  
 
     </section>

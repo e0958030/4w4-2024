@@ -416,8 +416,15 @@ blockquote #imgFooter {
 }
 /* Styles pour la div contenant le message d'erreur */
 #erreur_404 {
+  display: flex;
+  justify-content: center;
   background-color: hsl(203, 100%, 70%);
   box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #0084ff, 5px 5px 15px 5px rgba(51, 158, 255, 0);
+  text-align: center;
+}
+
+#erreur_404 #retourAccueil {
+  margin-bottom: 0vh;
 }
 
 /*Media query pour la version mobile responsive*/
@@ -661,7 +668,7 @@ a:visited {
   z-index: 100;
   position: absolute;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style-type: none;
   align-items: center;
   justify-content: space-around;
@@ -669,8 +676,6 @@ a:visited {
   font-size: 1.2em;
   background-color: hsl(var(--u1), 100%, 30%);
   color: #fff;
-  transform: translateX(100%);
-  padding: 20px;
   transition: transform 0.3s ease;
 }
 

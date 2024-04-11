@@ -5,7 +5,7 @@
     z-index: 100;
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     list-style-type: none;
     align-items: center;
     justify-content: space-around;
@@ -13,8 +13,8 @@
     font-size: 1.2em;
     background-color: hsl(var(--u1), 100%, 30%);
     color: #fff;
-    transform: translateX(100%);
-    padding: 20px;
+    // transform: translateX(100%);
+    // padding: 20px;
     transition: transform 0.3s ease; 
 }
 
