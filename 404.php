@@ -21,17 +21,20 @@
         <span></span>
         <?php  get_search_form(); ?>  
 
+        
+        <!-- Ajouter le menu avec toutes les catégories -->
+        <div id="liensCatFooter">
+            <?php wp_nav_menu(array("container" => "nav", "menu" => "principal")); ?>
+        </div>
+
     </section>
         
         <!-- Image de la librairie médias -->
         <a href="<?php echo get_bloginfo('url'); ?>"><img src="http://localhost:8080/4w4camilia/wp-content/uploads/2024/04/logoIntra.png"></a>
+        
 </div>
 
 <!-- Pied de page -->
 <!-- Récupérer le footer php -->
 <?php get_footer(); ?>
 
-<!-- Ajouter le menu avec toutes les catégories -->
-<div id="liensCatFooter">
-    <?php wp_nav_menu(array("container" => "nav", "menu" => "principal")); ?>
-</div>

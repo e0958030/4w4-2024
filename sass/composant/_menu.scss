@@ -3,17 +3,17 @@
 /* Styles généraux du menu */
 .menu {
     z-index: 100;
-    position: absolute;
+    // position: absolute;
     display: flex;
     flex-direction: row;
     list-style-type: none;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    font-size: 1.2em;
-    background-color: hsl(var(--u1), 100%, 30%);
+    font-size: 0.5em;
+    // background-color: hsl(var(--u1), 100%, 30%);
     color: #fff;
-    // transform: translateX(100%);
+    transform: translateX(0%);
     // padding: 20px;
     transition: transform 0.3s ease; 
 }
@@ -143,5 +143,16 @@
         color: #000;
         text-decoration: none;
         font-size: 18px;
+        justify-content: space-around;
     }
+}
+
+/* Styles pour les liens des catégories pour l'examen intra tp2 */
+#liensCatFooter{
+    background-color: hsl(203, 100%, 70%);;
+}
+
+#liensCatFooter a{
+    color: #000;
+    justify-content: space-around;
 }
