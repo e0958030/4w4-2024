@@ -432,6 +432,12 @@ blockquote #imgFooter {
   #erreur_404 img {
     display: none;
   }
+  #erreur_404 section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .liensCatFooter .menu {
     z-index: 100;
     position: absolute;
