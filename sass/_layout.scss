@@ -152,6 +152,16 @@ blockquote #imgFooter{
     background-position-x: right;
 }
 
+/* Styles pour les liens des catégories pour l'examen intra tp2 */
+#liensCatFooter{
+    border-top: 5px solid black;
+    background-color: hsl(var(--u1), 100%, 80%);
+}
+
+#liensCatFooter a{
+    color: #000;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:1000px) {
     #btn-evnt{
