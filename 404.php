@@ -15,15 +15,12 @@
 
         <!-- Bouton pour retourner à la page d'accueil -->
         <span></span>
-        <a href="#evenement"><button id="btn-evnt"> <a href="<?php echo get_bloginfo('url'); ?>"> <?php echo get_bloginfo('name'); ?></a> </button></a>
-        </section>
+        <a href="#entete"><button id="btn-evnt"> <a href="<?php echo get_bloginfo('url'); ?>"> <?php echo get_bloginfo('name'); ?></a> </button></a>
+    </section>
 
-        <!-- Image de la librairie médias -->
-        <a href=""><img src="http://localhost:8080/4w4camilia/wp-content/uploads/2024/04/logoIntra.png"></a>
-
-        
-
-        </div>
+    <!-- Image de la librairie médias -->
+    <a href="<?php echo get_bloginfo('url'); ?>"><img src="http://localhost:8080/4w4camilia/wp-content/uploads/2024/04/logoIntra.png"></a>
+</div>
 
 <!-- Pied de page -->
 <!-- Récupérer le footer php -->
