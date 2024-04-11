@@ -12,7 +12,7 @@
         display: none;
     }
 
-    .menu .liensCatFooter{
+    .liensCatFooter .menu{
         z-index: 100;
         position: absolute;
         display: flex;
@@ -27,6 +27,11 @@
         transform: translateX(100%);
         padding: 20px;
         transition: transform 0.3s ease; 
+    }
+
+    #retourAccueil{
+        display: flex;
+        margin: auto;
     }
 
 }
