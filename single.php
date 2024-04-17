@@ -1,9 +1,4 @@
-<!-- Page HTML pour le labo 4 par Camilia El Moustarih -->
-
-    <!-- Récupérer l'entete php -->
-    <?php get_header(); ?>
-    
-   
+<?php get_header(); ?>  
    <section id="accueil">
     <!-- <h2>single.php</h2>  -->
     <span></span>

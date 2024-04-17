@@ -1,5 +1,3 @@
-<!-- Fichier PHP pour l'entête -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +18,8 @@
     <!-- Icônes Font Awesome pour les réseaux sociaux -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Fonction pour ajouter du code avec enqueue_style -->
+    <?php wp_head(); ?>
 </head>
 <body>
     <!-- Menu burger -->

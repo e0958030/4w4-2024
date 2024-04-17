@@ -1,5 +1,3 @@
-<!-- Template de footer.php -->
-
 <div id="footer" class="global  clr-agencement-primaire">   
         <div class="motif-footer">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -50,5 +48,6 @@
              <a href="#menu__entete"><button id="hautPage">Retour</button></a>
         </footer>
     </div>
-</body>
-</html>
+
+    <!-- Ajouter les script de notre plugin -->
+    <?php wp_footer(); ?>

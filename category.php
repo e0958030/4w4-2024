@@ -1,8 +1,4 @@
-<!-- Page HTML pour le labo 4 par Camilia El Moustarih -->
-
-    <!-- Récupérer l'entete php -->
-    <?php get_header(); ?>
-    
+<?php get_header(); ?>    
     <div id="accueil" class="global">
         <!-- La section accueil disparaît lorsque les catgéories sont sélectionnées -->
     </div>

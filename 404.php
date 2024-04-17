@@ -1,9 +1,4 @@
-<!-- Fichier PHP pour la page d'erreur -->
-
-<!-- Récupérer l'entete php -->
 <?php get_header(); ?>
-
-<!-- Contenu principal -->
 <div id="erreur_404" class="global">
     <section>
         <h2>Erreur 404</h2>
