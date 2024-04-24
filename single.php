@@ -5,7 +5,7 @@
         <div class="cours">             
             <?php
                 if (have_posts()): the_post(); 
-                    $titre = get_the_title(); ?> 
+                    $titre = the_title(); ?> 
                         <div class="carte">
                             <h3><?php echo $titre; ?></h3>
                             <span></span>

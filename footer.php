@@ -51,3 +51,5 @@
 
     <!-- Ajouter les script de notre plugin -->
     <?php wp_footer(); ?>
+    </body>
+    </html>
