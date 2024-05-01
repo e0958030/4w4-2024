@@ -91,7 +91,7 @@
                             <?php the_category(); ?>                            
                             
                             <!-- Pour ajouter un lien vers l'article -->    
-                            <a href="<?php the_permalink(); ?>">SUITE</a>
+                            <a style="font-size: 2rem" href ="<?php the_permalink(); ?>">SUITE</a>
                                                           
                         </div>        
                     <?php endwhile;?>

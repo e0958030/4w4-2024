@@ -35,7 +35,7 @@
                             <?php the_category(); ?>                            
                             
                             <!-- Pour ajouter un lien vers l'article -->    
-                            <a href="<?php the_permalink(); ?>">Suite</a>
+                            <a style="font-size: 2rem" href="<?php the_permalink(); ?>">Suite</a>
                                                           
                         </div>        
                     <?php endwhile;?>

@@ -41,7 +41,8 @@
                     ?> 
                         <div class="carte">
                             <h4><?php echo $titre; ?></h4>
-                            <p><?php the_content();?></p>                                     
+                            <p><?php the_content();?></p>   
+                            <a href="<?php the_permalink()?>">Lire la suite</a>                             
                         </div>        
                     <?php endwhile;?>
                     <?php endif; ?>  
