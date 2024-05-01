@@ -44,6 +44,15 @@
                     <?php wp_nav_menu(array("container" => "nav", "menu" => "piedgpage")); ?>
                 </div>
                 
+                <!-- Icônes des réseaux sociaux -->
+                <div class="iconesSociaux">
+                    <ul>
+                        <li><a href="#"><i class="material-icons">facebook</i></a>asd</li>
+                        <li><a href="#"><i class="material-icons">twitter</i></a>ddfs45</li>
+                        <li><a href="#"><i class="material-icons">instagram</i>sds</a></li>
+                        <li><a href="#"><i class="material-icons">linkedin</i></a>asdasd</li>
+                    </ul>
+                </div>
             <!-- Bouton pour retour en haut de page -->
              <a href="#menu__entete"><button id="hautPage">Retour</button></a>
         </footer>

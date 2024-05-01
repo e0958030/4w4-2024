@@ -377,6 +377,27 @@ blockquote #imgFooter {
     display: none;
   }
 }
+.iconesSociaux {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.iconesSociaux li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.iconesSociaux li:last-child {
+  margin-right: 0;
+}
+
+.iconesSociaux a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px; /* Adjust size as needed */
+}
+
 /* Feuille de style pour l'entête */
 .entete__header {
   background-image: url("images/ciel.jpg");

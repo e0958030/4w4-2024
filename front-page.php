@@ -76,18 +76,18 @@
             <div class="destinations">             
             <!-- Boucle if while pour afficher le contenu de la base de données -->
             <?php
-
                 //Même chose mais standard wordpress .. le : équivault à une ouverture d'accolade
                 if(have_posts()):
                     while(have_posts()): the_post(); /* have post = extraire un enregistrement pour chercher ses attributs */
-                    $titre = get_the_title();                                    
+                    $titre = get_the_title();      
+                    $categorie = get_the_category();                    
+                    $text = get_the_content();
                     ?> 
                         <div class="carte">
                             <!-- Pour afficher une image de l'article qui a été mise en avant -->
                             <?php the_post_thumbnail('thumbnail'); ?>
                             <h3><?php the_title()?></h3>
-                            <?php the_content(); ?>   
-                            
+                            <?php echo wp_trim_words(get_the_excerpt(), 15); ?>                          
                             <?php the_category(); ?>                            
                             
                             <!-- Pour ajouter un lien vers l'article -->    
@@ -98,7 +98,6 @@
                     <?php endif; ?>  
             </div>     
             <span></span>         
-
 
             <!-- LES CATÉGORIES -->
             <div id="cartesCategories" class="global">

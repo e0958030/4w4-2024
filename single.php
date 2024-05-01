@@ -4,10 +4,9 @@
     <span></span>
         <div class="cours">             
             <?php
-                if (have_posts()): the_post(); 
-                    $titre = the_title(); ?> 
+                if (have_posts()): the_post(); ?> 
                         <div class="carte">
-                            <h3><?php echo $titre; ?></h3>
+                            <h3><?php the_title() ?></h3>
                             <span></span>
                             <!-- Ajouter l'image de mise à l'avant -->
                             <?php the_post_thumbnail('medium'); ?>
