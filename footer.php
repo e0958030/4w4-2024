@@ -5,7 +5,7 @@
             </svg>
         </div>     
         <footer>            
-            <h2>Footer</h2>
+            <h2>À propos de nous</h2>
             <span>
             <blockquote>
                 <div id="iconesSociaux">
@@ -17,9 +17,7 @@
                     <ul>
                         <span class="material-symbols-outlined">pin_drop</span>
                         <a href="https://www.google.ca/maps">                        
-                        555, rue Omnivox
-                        Montréal, Québec
-                        (H2W 1G2)
+                        3 800, rue Sherbrooke Est Montréal  H1X 2A2 
                         </a>
                     </ul>
                     <ul>
@@ -45,14 +43,21 @@
                 </div>
                 
                 <!-- Icônes des réseaux sociaux -->
-                <div class="iconesSociaux">
+                <div class="iconesReseauxSociaux">
                     <ul>
-                        <li><a href="#"><i class="material-icons">facebook</i></a>asd</li>
+                        <li><a href="#"><i class="material-icons">facebook</i></a></li>
                         <li><a href="#"><i class="material-icons">twitter</i></a>ddfs45</li>
                         <li><a href="#"><i class="material-icons">instagram</i>sds</a></li>
                         <li><a href="#"><i class="material-icons">linkedin</i></a>asdasd</li>
                     </ul>
                 </div>
+
+                <blockquote id="txtFooter">
+                    <h4>Site fait par Camilia El Moustarih lors du cours de 4W4 - </h4>
+                </blockquote>
+                
+                <!-- Récupérer le formulaire de recherche -->
+                <?php  get_search_form(); ?> 
             <!-- Bouton pour retour en haut de page -->
              <a href="#menu__entete"><button id="hautPage">Retour</button></a>
         </footer>

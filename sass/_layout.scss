@@ -171,20 +171,24 @@ blockquote #imgFooter{
     }
 }
 
-.iconesSociaux {
-    list-style: none;
+/* Styles pour les réseaux sociaux du footer */
+.iconesReseauxSociaux {
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    }
-    .iconesSociaux li {
+}
+
+.iconesReseauxSociaux li {
     display: inline-block;
     margin-right: 10px;
-    }
-    .iconesSociaux li:last-child {
+}
+
+.iconesReseauxSociaux li:last-child {
     margin-right: 0;
-    }
-    .iconesSociaux a {
+}
+
+.iconesReseauxSociaux a {
     text-decoration: none;
     color: #333;
-    font-size: 24px; /* Adjust size as needed */
-    }
+    font-size: 24px; 
+}
