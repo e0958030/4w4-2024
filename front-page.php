@@ -61,6 +61,14 @@
         </section>
     </div>
 
+    <!-- Section du plugin voyage -->
+    <section class="filtres">
+        <span></span>
+        <span></span>
+        <h2>Voyage</h2>
+        <?php echo do_shortcode('[em_destination]'); ?>
+    </section>
+
     <div id="galerie" class="global">
         <section>
             <div class="custom-shape-divider-top-1707919064">
@@ -81,19 +89,15 @@
                     while(have_posts()): the_post(); /* have post = extraire un enregistrement pour chercher ses attributs */
                     $titre = get_the_title();      
                     $categorie = get_the_category();                    
-                    $text = get_the_content();
-                    ?> 
-                        <div class="carte">
-                            <!-- Pour afficher une image de l'article qui a été mise en avant -->
-                            <?php the_post_thumbnail('thumbnail'); ?>
-                            <h3><?php the_title()?></h3>
-                            <?php echo wp_trim_words(get_the_excerpt(), 15); ?>                          
-                            <?php the_category(); ?>                            
-                            
-                            <!-- Pour ajouter un lien vers l'article -->    
-                            <a style="font-size: 2rem" href ="<?php the_permalink(); ?>">SUITE</a>
-                                                          
-                        </div>        
+                    $text = get_the_content();                    
+            ?> 
+                    <?php
+                        $ma_carte = "carte";
+                        if(in_category('galerie')){
+                            $ma_carte = "galerie";
+                        }                    
+                        get_template_part("gabarits/categorie", $ma_carte); ?>
+                        <!-- div carte anciennement ici -->
                     <?php endwhile;?>
                     <?php endif; ?>  
             </div>     
