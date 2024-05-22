@@ -267,6 +267,10 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 }
 
 #entete {
+  background-image: url("images/nuages.jpg");
+  background-position: 100%;
+  background-size: cover;
+  background-blend-mode: soft-light;
   background-color: var(--couleur-arriere-entete);
   padding-bottom: 10vh;
   color: var(--couleur-avant-entete);
@@ -282,13 +286,11 @@ button:hover {
 }
 
 #accueil {
+  /*background-image: url("../images/avion.jpg");*/
   background-color: var(--couleur-arriere-accueil);
+  background-position: 100%;
   max-height: var(--hauteur-sections);
   color: var(--couleur-avant-accueil);
-}
-
-#accueil .videoFond {
-  z-index: 100;
 }
 
 h3#rectangleGalerie {
@@ -405,7 +407,7 @@ blockquote #imgFooter {
 
 /* Feuille de style pour l'entête */
 .entete__header {
-  background-image: url("images/ciel.jpg");
+  /*background-image: url("images/ciel.jpg");*/
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: 95% 50%;

@@ -23,9 +23,6 @@
 
     <div id="accueil" class="global">
         <section>
-                        
-            <video autoplay muted loop ="/4w4camilia/wp-content/themes/tp2/images/videoNuages.mp4">sfsdfsfsfsd</video>
-
             <h2>Bienvenue - Votre nouvelle aventure commence ici !</h2> 
             <h3 id="rectangleGalerie">TimVentures - L'Évasion à Portée de Main</h3>  
             <span></span>                    
