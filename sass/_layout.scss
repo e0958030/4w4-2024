@@ -73,6 +73,10 @@ button:hover{
     color: var(--couleur-avant-accueil);
 }
 
+#accueil .videoFond{
+    z-index: 100;
+}
+
 h3#rectangleGalerie{
     text-align: center;
 }

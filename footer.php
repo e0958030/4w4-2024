@@ -30,7 +30,7 @@
                     </ul>
                     <ul>
                         <span class="material-symbols-outlined">stacked_email</span>
-                        <a href="https://www.cmaisonneuve.qc.ca">Écrivez-nous</a>
+                        <a href="mailto:communic@cmaisonneuve.qc.ca">Écrivez-nous</a>
                     </ul>
                 </div>
                 <div id="imgFooter"></div>
