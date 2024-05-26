@@ -34,7 +34,6 @@
                     </ul>
                 </div>
                 <div id="imgFooter"></div>
-
             </blockquote>
 
             <!-- Menu personnalisé WP pour le footer -->
@@ -42,6 +41,7 @@
                 <?php wp_nav_menu(array("container" => "nav", "menu" => "piedgpage")); ?>
             </div>
 
+            <span></span>
             <blockquote id="txtFooter">
                 <h4>Site fait par Camilia El Moustarih lors du cours de 582-4W4-MA - Hiver 2024</h4>
                 <span></span>

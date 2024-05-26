@@ -387,6 +387,17 @@ blockquote #imgFooter {
   div#imgFooter {
     display: none;
   }
+  /* Styles pour les réseaux sociaux du footer */
+  .iconesReseauxSociaux {
+    display: flex;
+    flex-direction: column;
+  }
+  #hautPage {
+    position: relative;
+    margin: 40%;
+    text-align: center;
+    margin-bottom: 40vh;
+  }
 }
 /* Styles pour les réseaux sociaux du footer */
 .iconesReseauxSociaux {
