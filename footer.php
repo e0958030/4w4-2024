@@ -40,24 +40,30 @@
                 <!-- Menu personnalisé WP pour le footer -->
                 <div class="menu__footer">
                     <?php wp_nav_menu(array("container" => "nav", "menu" => "piedgpage")); ?>
-                </div>
+                </div>              
                 
-                <!-- Icônes des réseaux sociaux -->
-                <div class="iconesReseauxSociaux">
-                    <ul>
-                        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-                        <li><a href="#"><i class="material-icons">twitter</i></a>ddfs45</li>
-                        <li><a href="#"><i class="material-icons">instagram</i>sds</a></li>
-                        <li><a href="#"><i class="material-icons">linkedin</i></a>asdasd</li>
-                    </ul>
-                </div>
-
                 <blockquote id="txtFooter">
-                    <h4>Site fait par Camilia El Moustarih lors du cours de 4W4 - </h4>
+                    <h4>Site fait par Camilia El Moustarih lors du cours de 582-4W4-MA Conception d'interfaces et de développement web - Hiver 2024</h4>
+                    <span></span>
+                    <h3><a href="https://e0958030.github.io/4w4-2024/">>>> Lien GitHub Page <<<</a></h3>
+                    <span></span>
+                    <h3><a href="https://github.com/e0958030/4w4-2024/tree/tp2">>>> Lien GitHub de la branche TP2 <<<</a></h3>
+                    <span></span>
+                    <!-- Icônes des réseaux sociaux -->
+                    <div class="iconesReseauxSociaux">
+                        <ul>
+                            <li><a href="#"><i class="material-icons">facebook</i></a>Facebook</li>
+                            <li><a href="#"><i class="material-icons">twitter</i></a>Twitter</li>
+                            <li><a href="#"><i class="material-icons">instagram</i>Instagram</a></li>
+                            <li><a href="#"><i class="material-icons">linkedin</i></a>LinkedIn</li>
+                        </ul>
+                        <span></span>
+                        <!-- Récupérer le formulaire de recherche -->
+                        <?php  get_search_form(); ?> 
+                    </div>
                 </blockquote>
                 
-                <!-- Récupérer le formulaire de recherche -->
-                <?php  get_search_form(); ?> 
+                
             <!-- Bouton pour retour en haut de page -->
              <a href="#menu__entete"><button id="hautPage">Retour</button></a>
         </footer>

@@ -158,6 +158,10 @@ blockquote #imgFooter{
     background-position-x: right;
 }
 
+#txtFooter{
+    flex-direction: column;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:1000px) {
     #btn-evnt{
