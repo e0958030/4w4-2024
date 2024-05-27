@@ -10,7 +10,9 @@
                             <span></span>
                             <!-- Ajouter l'image de mise à l'avant -->
                             <?php the_post_thumbnail('medium'); ?>
+                            <span></span>
                             <p><?php the_content();?></p>      
+                            <span></span>
                             <p>Température minimum : <?php the_field('temperature_minimum'); ?></p>
                             <p>Température maximum : <?php the_field('temperature_maximum'); ?></p>
                             <p>Ville avoisinante : <?php the_field('ville_avoisinante'); ?></p>
