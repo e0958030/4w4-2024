@@ -570,12 +570,6 @@ button:hover {
 }
 
 /*Media query pour la version mobile responsive*/
-@media screen and (max-width: 550px) {
-  button {
-    float: left;
-    margin-left: 35%;
-  }
-}
 /*Feuille de style Sass pour les liens*/
 a {
   color: var(--couleur-lien);
