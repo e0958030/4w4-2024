@@ -16,7 +16,7 @@
                     </ul>
                     <ul>
                         <span class="material-symbols-outlined">pin_drop</span>
-                        <a href="https://www.google.ca/maps">
+                        <a href="https://maps.app.goo.gl/RjgTih8oXfMGS9iF8">
                             3 800, rue Sherbrooke Est Montréal H1X 2A2
                         </a>
                     </ul>
