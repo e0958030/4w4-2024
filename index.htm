@@ -1,41 +1,565 @@
+<!-- Page HTML pour le TP1 par Camilia El Moustarih -->
+
+<!-- Récupérer l'entete php -->
+<!-- Fichier PHP pour l'entête -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thème du groupe #1</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Police Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <!-- Material Icons Google -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- Icônes Font Awesome pour les réseaux sociaux -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
-    <div id="entete" class="global">
-        <header>
-            <h1>Thème du groupe #1</h1>
-            <link rel="stylesheet" href="normalize.css">
-            <link rel="stylesheet" href="style.css">
+    <!-- Menu burger -->
+    <div id="menu__entete" class="global  clr-agencement-primaire">
+        <a href="https://gftnth00.mywhc.ca/tim14/" class="custom-logo-link" rel="home" aria-current="page"><img
+                width="127" height="152" src="https://gftnth00.mywhc.ca/tim14/wp-content/uploads/2024/04/logo-2.png"
+                class="custom-logo" alt="Agence de voyage Timventures" decoding="async" /></a> <input type="checkbox"
+            name="" id="chk_burger">
+        <label id="burger" for="chk_burger">
+            <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                color="#fff">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </label>
+        <header class="menu__header">
+            <nav class="menu-principal-container">
+                <ul id="menu-principal" class="menu">
+                    <li id="menu-item-97"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97"><a
+                            href="https://gftnth00.mywhc.ca/tim14/category/sport/">🏀 Sport</a></li>
+                    <li id="menu-item-98"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-98"><a
+                            href="https://gftnth00.mywhc.ca/tim14/category/pleine-nature/">🌲 Pleine nature</a></li>
+                    <li id="menu-item-99"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99"><a
+                            href="https://gftnth00.mywhc.ca/tim14/category/croisiere/">🚢 Croisière</a></li>
+                    <li id="menu-item-100"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-100"><a
+                            href="https://gftnth00.mywhc.ca/tim14/category/aventure/">🗻 Aventure</a></li>
+                    <li id="menu-item-101"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101"><a
+                            href="https://gftnth00.mywhc.ca/tim14/category/repos/">&#x2615; Repos</a></li>
+                    <li id="menu-item-102"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-102"><a
+                            href="https://gftnth00.mywhc.ca/tim14/category/culturel/">&#x1F483; Culturel</a></li>
+                    <li id="menu-item-103"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-103"><a
+                            href="https://gftnth00.mywhc.ca/tim14/category/populaire/">&#x1F30E; Populaire</a></li>
+                    <li id="menu-item-104"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104"><a
+                            href="https://gftnth00.mywhc.ca/tim14/category/zen/">&#x1F6C1; Zen</a></li>
+                </ul>
+            </nav>
+            <span></span>
+            <!-- Récupérer le formulaire de recherche -->
+            <!-- Fichier pour la barre de recherche -->
+
+            <form class="recherche" role="search" method="get" action="https://gftnth00.mywhc.ca/tim14/">
+                <label>
+                    <input class="recherche__input" type="search" class="search-field" placeholder="Recherchez ..."
+                        value="" name="s" />
+                </label>
+                <button class="recherche__bouton" type="submit" class="search-submit">
+                    <span class="recherche__icone">&#x1F50D;</span>
+                </button>
+            </form>
         </header>
+    </div>
+
+
+
+    <!-- <h1>FRONT-PAGE.PHP</h1> -->
+    <div id="entete" class="global">
+        <section class="entete__header">
+            <h1>Agence de voyage Timventures</h1>
+            <!-- <h1>Thème du groupe #1</h1> -->
+            <h2>Une aventure exceptionnelle </span></h2>
+            <span>
+                <h3>TIM - Collège de Maisonneuve</h3>
+                <span>
+                    <a href="#evenement"><button id="btn-evnt">Promotion !</button></a>
+                    <span>
+        </section>
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
     </div>
 
     <div id="accueil" class="global">
         <section>
             <h2>Accueil</h2>
+            <h3 id="rectangleGalerie">TimVentures - L'Évasion à Portée de Main</h3>
+            <span></span>
+            <p>Dans un monde où le temps est précieux et les désirs d'évasion omniprésents, nous sommes fiers de vous
+                présenter TimVentures, une nouvelle ère dans le domaine des voyages. Avec une passion inébranlable pour
+                l'aventure et une dévotion à créer des expériences inoubliables, nous nous engageons à ouvrir les portes
+                d'un monde de découvertes infinies.</p>
+            <span></span>
+            <p>Nous comprenons que chaque voyageur est unique, chaque désir de voyage est différent, c'est pourquoi nous
+                nous efforçons de personnaliser chaque expérience, de transformer les rêves en réalité et de créer des
+                souvenirs qui dureront toute une vie.</p>
+            <span></span>
+            <p>Fortifiés par une équipe d'experts passionnés et d'explorateurs chevronnés, nous vous offrons un service
+                sur mesure, une attention aux détails inégalée et un réseau mondial de partenaires soigneusement
+                sélectionnés.</p>
+            <span></span>
+            <p>Que ce soit pour une escapade de week-end, une lune de miel romantique, une aventure en famille ou un
+                voyage d'affaires, laissez TimVentures être votre guide vers de nouveaux horizons.</p>
+            <span></span>
+            <p>Préparez-vous à découvrir un monde où les frontières s'effacent et où les possibilités sont infinies.
+                Bienvenue chez TimVentures, où l'évasion n'est qu'à portée de main.</p>
+            <span></span>
         </section>
     </div>
 
-    <div id="evenement" class="global">
+    <div id="evenement" class="global diagonal clr-agencement-primaire">
         <section>
             <h2>Événement</h2>
+            <h3>Offre Spéciale pour les Premiers 100 Explorateurs !</h3>
+            <span></span>
+            <h4>&#x2708; Vous êtes prêts à explorer le monde ? Alors ne manquez pas cette opportunité exclusive avec
+                TimVentures ! Pour célébrer notre lancement, nous réservons une offre spéciale pour nos tout premiers
+                100 clients.</h4>
+            <span>
+                <span>
+                    <ul id="recompensesListe">
+                        <li>&#x1F30D; Réductions Exceptionnelles : Profitez de tarifs réduits sur nos meilleures
+                            destinations.</li>
+                        <li>&#x1F381; Cadeaux Surprise : Recevez des surprises spéciales pour rendre votre voyage encore
+                            plus mémorable.</li>
+                        <li>&#x1F4DE; Assistance Personnalisée : Un service client dédié pour répondre à toutes vos
+                            questions et vous accompagner à chaque étape de votre voyage.</li>
+                        <li>&#x1F31F; Accès Privilégié : Accédez à des offres exclusives et à des conseils de voyage
+                            réservés uniquement à nos premiers 100 clients.</li>
+                    </ul>
+                    <span></span>
+                    <p>Ne laissez pas passer cette occasion unique de vivre une aventure inoubliable avec TimVentures.
+                        Réservez dès maintenant et faites partie des premiers à découvrir le monde avec nous !</p>
+                    <span></span>
+                    <p>Pour réserver ou pour plus d'informations, contactez-nous dès aujourd'hui. Dépêchez-vous, l'offre
+                        est valable uniquement pour les 100 premiers explorateurs !</p>
+                    <span></span>
+                    <h4><a href="#footer">Contactez-nous maintenant !</a></h4>
         </section>
     </div>
 
     <div id="galerie" class="global">
         <section>
-            <h2>Galerie</h2>
+            <div class="custom-shape-divider-top-1707919064">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <h2>Destinations populaires</h2>
+            <span>
+                <span>
+                    <div class="destinations">
+                        <!-- Boucle if while pour afficher le contenu de la base de données -->
+
+                        <div class="carte">
+                            <!-- Pour afficher une image de l'article qui a été mise en avant -->
+                            <img width="150" height="150"
+                                src="https://gftnth00.mywhc.ca/tim14/wp-content/uploads/2024/04/amazonBrazil-150x150.jpeg"
+                                class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" />
+                            <h3>Amazon Rainforest, Brésil</h3>
+                            <p>L&rsquo;Amazonie est la plus grande forêt tropicale du monde, abritant une biodiversité
+                                exceptionnelle et une beauté naturelle incomparable. Explorez des écosystèmes divers,
+                                des marécages et des rivières sinueuses, et découvrez une incroyable variété de plantes,
+                                d&rsquo;animaux et d&rsquo;oiseaux, dont des singes, des jaguars, des toucans et des
+                                perroquets. Partez en excursion en bateau dans la jungle, faites de la randonnée dans la
+                                canopée, rencontrez des communautés indigènes et découvrez la magie et la splendeur de
+                                cette forêt primaire.</p>
+
+
+                            <ul class="post-categories">
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/pleine-nature/"
+                                        rel="category tag">Pleine nature</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/populaire/"
+                                        rel="category tag">Populaire</a></li>
+                            </ul>
+
+                            <!-- Pour ajouter un lien vers l'article -->
+                            <a href="https://gftnth00.mywhc.ca/tim14/amazon-rainforest-bresil/">Suite</a>
+
+                        </div>
+
+                        <div class="carte">
+                            <!-- Pour afficher une image de l'article qui a été mise en avant -->
+                            <img width="150" height="150"
+                                src="https://gftnth00.mywhc.ca/tim14/wp-content/uploads/2024/04/pexels-chiaroscuro-10832933-150x150.jpg"
+                                class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" />
+                            <h3>Costa Rica</h3>
+                            <p>Le Costa Rica, joyau d&rsquo;aventures en Amérique centrale, offre une biodiversité
+                                étonnante dans un écrin de forêts tropicales. Les aventuriers peuvent s&rsquo;engager
+                                dans des tyroliennes à travers la canopée, explorer des volcans actifs comme
+                                l&rsquo;Arenal, et surfer sur les vagues de la côte pacifique. Les sentiers de la
+                                réserve de Monteverde mènent à des ponts suspendus offrant des vues spectaculaires sur
+                                la canopée. Les amateurs de rafting peuvent affronter les rapides du Pacuare. Le Costa
+                                Rica propose une aventure à chaque coin de rue, du Pacifique à la mer des Caraïbes.</p>
+
+
+                            <ul class="post-categories">
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/aventure/"
+                                        rel="category tag">Aventure</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/pleine-nature/"
+                                        rel="category tag">Pleine nature</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/populaire/"
+                                        rel="category tag">Populaire</a></li>
+                            </ul>
+
+                            <!-- Pour ajouter un lien vers l'article -->
+                            <a href="https://gftnth00.mywhc.ca/tim14/costa-rica/">Suite</a>
+
+                        </div>
+
+                        <div class="carte">
+                            <!-- Pour afficher une image de l'article qui a été mise en avant -->
+                            <img width="150" height="150"
+                                src="https://gftnth00.mywhc.ca/tim14/wp-content/uploads/2024/04/kyoto-150x150.jpg"
+                                class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" />
+                            <h3>Kyoto, Japon</h3>
+                            <p>Kyoto incarne l&rsquo;essence même de la tradition japonaise. En tant qu&rsquo;ancienne
+                                capitale impériale, la ville regorge de temples bouddhistes, de jardins zen et de
+                                quartiers préservés, offrant une immersion dans la culture et l&rsquo;histoire du Japon.
+                                Les visiteurs peuvent découvrir des trésors architecturaux tels que le Temple
+                                Kinkaku-ji, recouvert d&rsquo;or, le Pavillon d&rsquo;Argent du Temple Ginkaku-ji et le
+                                célèbre sanctuaire Fushimi Inari-taisha, avec ses milliers de torii vermillon. Kyoto est
+                                également réputée pour ses arts traditionnels tels que la cérémonie du thé, la cérémonie
+                                des fleurs de cerisier et la cérémonie du kaiseki, offrant une expérience authentique de
+                                la culture japonaise.</p>
+
+
+                            <ul class="post-categories">
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/culturel/"
+                                        rel="category tag">Culturel</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/populaire/"
+                                        rel="category tag">Populaire</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/repos/"
+                                        rel="category tag">Repos</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/zen/" rel="category tag">Zen</a>
+                                </li>
+                            </ul>
+
+                            <!-- Pour ajouter un lien vers l'article -->
+                            <a href="https://gftnth00.mywhc.ca/tim14/kyoto-japon/">Suite</a>
+
+                        </div>
+
+                        <div class="carte">
+                            <!-- Pour afficher une image de l'article qui a été mise en avant -->
+                            <img width="150" height="150"
+                                src="https://gftnth00.mywhc.ca/tim14/wp-content/uploads/2024/04/pexels-gvantsa-gongadze-12643220-150x150.jpg"
+                                class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"
+                                loading="lazy" />
+                            <h3>La Costa Brava, Espagne</h3>
+                            <p>La Costa Brava, le long de la côte nord-est de l&rsquo;Espagne, est un paradis pour les
+                                amateurs de sports nautiques. Avec ses eaux cristallines et ses paysages spectaculaires,
+                                la Costa Brava offre des possibilités infinies pour la voile, le kayak, la plongée
+                                sous-marine et le surf. Les visiteurs peuvent explorer les criques cachées, les grottes
+                                marines et les récifs colorés de cette magnifique région côtière.</p>
+
+
+                            <ul class="post-categories">
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/populaire/"
+                                        rel="category tag">Populaire</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/sport/"
+                                        rel="category tag">Sport</a></li>
+                            </ul>
+
+                            <!-- Pour ajouter un lien vers l'article -->
+                            <a href="https://gftnth00.mywhc.ca/tim14/la-costa-brava-espagne/">Suite</a>
+
+                        </div>
+
+                        <div class="carte">
+                            <!-- Pour afficher une image de l'article qui a été mise en avant -->
+                            <img width="150" height="150"
+                                src="https://gftnth00.mywhc.ca/tim14/wp-content/uploads/2024/04/banff-150x150.jpg"
+                                class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"
+                                loading="lazy" />
+                            <h3>Parc national de Banff, Canada</h3>
+                            <p>Niché au cœur des Rocheuses canadiennes, le parc national de Banff est un véritable joyau
+                                naturel. Admirez des sommets enneigés, des lacs d&rsquo;un bleu azur, des glaciers
+                                imposants et des vallées verdoyantes. Explorez des sentiers de randonnée, des pistes de
+                                ski et des pistes cyclables, et découvrez une faune sauvage variée, dont des ours, des
+                                wapitis, des loups et des orignaux. Visitez des attractions emblématiques comme le lac
+                                Louise, le lac Moraine et la ville pittoresque de Banff.</p>
+
+
+                            <ul class="post-categories">
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/pleine-nature/"
+                                        rel="category tag">Pleine nature</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/populaire/"
+                                        rel="category tag">Populaire</a></li>
+                            </ul>
+
+                            <!-- Pour ajouter un lien vers l'article -->
+                            <a href="https://gftnth00.mywhc.ca/tim14/parc-national-de-banff-canada/">Suite</a>
+
+                        </div>
+
+                        <div class="carte">
+                            <!-- Pour afficher une image de l'article qui a été mise en avant -->
+                            <img width="150" height="150"
+                                src="https://gftnth00.mywhc.ca/tim14/wp-content/uploads/2024/04/santorini-150x150.jpg"
+                                class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"
+                                loading="lazy" />
+                            <h3>Santorin, Grèce</h3>
+                            <p>Santorin, au-delà de ses couchers de soleil romantiques, offre une aventure unique. Les
+                                randonneurs peuvent explorer les sentiers côtiers de la caldera, révélant des vues
+                                panoramiques sur les villages blancs perchés. Les explorateurs sous-marins peuvent
+                                plonger dans les eaux cristallines pour découvrir les vestiges de l&rsquo;Atlantide
+                                antique, tandis que les amateurs de vent peuvent naviguer autour de l&rsquo;île en
+                                catamaran.</p>
+
+
+                            <ul class="post-categories">
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/aventure/"
+                                        rel="category tag">Aventure</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/populaire/"
+                                        rel="category tag">Populaire</a></li>
+                                <li><a href="https://gftnth00.mywhc.ca/tim14/category/repos/"
+                                        rel="category tag">Repos</a></li>
+                            </ul>
+
+                            <!-- Pour ajouter un lien vers l'article -->
+                            <a href="https://gftnth00.mywhc.ca/tim14/santorin-grece/">Suite</a>
+
+                        </div>
+
+                    </div>
+                    <span></span>
+
+
+                    <!-- LES CATÉGORIES -->
+                    <div id="cartesCategories" class="global">
+                        <section>
+                            <h2>Catégories de destinations</h2>
+                            <span></span>
+                            <!-- Récupérer les catégories avec une boucle -->
+                            <div class="carte-categorie">
+                                <h3>Aventure</h3>
+                                <!-- Afficher seulement les premiers 10 mots de la description -->
+                                <p>Partez à la découverte de destinations exaltantes et d'expériences uniques…</p>
+
+                                <h4>
+                                    <!-- Variable pour compter le nombre de catégories -->
+                                    <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                    <a href="https://gftnth00.mywhc.ca/tim14/category/aventure/">9 articles </a>
+                                </h4>
+                            </div>
+                            <span></span>
+                            <div class="carte-categorie">
+                                <h3>Croisière</h3>
+                                <!-- Afficher seulement les premiers 10 mots de la description -->
+                                <p>La catégorie de voyage "croisière" offre une expérience de voyage…</p>
+
+                                <h4>
+                                    <!-- Variable pour compter le nombre de catégories -->
+                                    <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                    <a href="https://gftnth00.mywhc.ca/tim14/category/croisiere/">10 articles </a>
+                                </h4>
+                            </div>
+                            <span></span>
+                            <div class="carte-categorie">
+                                <h3>Culturel</h3>
+                                <!-- Afficher seulement les premiers 10 mots de la description -->
+                                <p>Immergez-vous dans la richesse culturelle et historique de lieux fascinants…</p>
+
+                                <h4>
+                                    <!-- Variable pour compter le nombre de catégories -->
+                                    <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                    <a href="https://gftnth00.mywhc.ca/tim14/category/culturel/">8 articles </a>
+                                </h4>
+                            </div>
+                            <span></span>
+                            <div class="carte-categorie">
+                                <h3>Pleine nature</h3>
+                                <!-- Afficher seulement les premiers 10 mots de la description -->
+                                <p>Échappez à l'agitation urbaine et reconnectez-vous avec la nature sauvage…</p>
+
+                                <h4>
+                                    <!-- Variable pour compter le nombre de catégories -->
+                                    <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                    <a href="https://gftnth00.mywhc.ca/tim14/category/pleine-nature/">13 articles </a>
+                                </h4>
+                            </div>
+                            <span></span>
+                            <div class="carte-categorie">
+                                <h3>Populaire</h3>
+                                <!-- Afficher seulement les premiers 10 mots de la description -->
+                                <p>Les destinations les plus populaires depuis les derniers 3 mois</p>
+
+                                <h4>
+                                    <!-- Variable pour compter le nombre de catégories -->
+                                    <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                    <a href="https://gftnth00.mywhc.ca/tim14/category/populaire/">6 articles </a>
+                                </h4>
+                            </div>
+                            <span></span>
+                            <div class="carte-categorie">
+                                <h3>Repos</h3>
+                                <!-- Afficher seulement les premiers 10 mots de la description -->
+                                <p>Offrez-vous une escapade relaxante dans des destinations tranquilles où le…</p>
+
+                                <h4>
+                                    <!-- Variable pour compter le nombre de catégories -->
+                                    <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                    <a href="https://gftnth00.mywhc.ca/tim14/category/repos/">8 articles </a>
+                                </h4>
+                            </div>
+                            <span></span>
+                            <div class="carte-categorie">
+                                <h3>Sport</h3>
+                                <!-- Afficher seulement les premiers 10 mots de la description -->
+                                <p>Entraînez-vous, défiez-vous et repoussez vos limites dans des destinations offrant…
+                                </p>
+
+                                <h4>
+                                    <!-- Variable pour compter le nombre de catégories -->
+                                    <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                    <a href="https://gftnth00.mywhc.ca/tim14/category/sport/">13 articles </a>
+                                </h4>
+                            </div>
+                            <span></span>
+                            <div class="carte-categorie">
+                                <h3>Zen</h3>
+                                <!-- Afficher seulement les premiers 10 mots de la description -->
+                                <p>Retrouvez l'harmonie intérieure et la paix de l'esprit dans des…</p>
+
+                                <h4>
+                                    <!-- Variable pour compter le nombre de catégories -->
+                                    <!-- Écrire ce nombre suivi du mot articles et incorporer un lien qui va à cette catégorie -->
+                                    <a href="https://gftnth00.mywhc.ca/tim14/category/zen/">5 articles </a>
+                                </h4>
+                            </div>
+                            <span></span>
+                        </section>
+                    </div>
+
         </section>
+        <div class="vague-galerie">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
     </div>
 
-    <div id="footer" class="global">
+    <!-- Récupérer le footer php -->
+    <!-- Template de footer.php -->
+
+    <div id="footer" class="global  clr-agencement-primaire">
+        <div class="motif-footer">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z"
+                    style="fill:var(--couleur-arriere-galerie)"></path>
+            </svg>
+        </div>
         <footer>
             <h2>Footer</h2>
+            <span>
+                <blockquote>
+                    <div id="iconesSociaux">
+                        Au plaisir de vous rencontrer ! N'hésitez-pas à nous contacter.
+                        <ul>
+                            <span class="material-symbols-outlined">ring_volume</span>
+                            123 456 7890
+                        </ul>
+                        <ul>
+                            <span class="material-symbols-outlined">pin_drop</span>
+                            <a href="https://www.google.ca/maps">
+                                555, rue Omnivox
+                                Montréal, Québec
+                                (H2W 1G2)
+                            </a>
+                        </ul>
+                        <ul>
+                            <span class="material-symbols-outlined">verified_user</span>
+                            <a href="">Politique de confidentialité</a>
+                        </ul>
+                        <ul>
+                            <span class="material-symbols-outlined">contact_support</span>
+                            <a href="">Foire aux questions</a>
+                        </ul>
+                        <ul>
+                            <span class="material-symbols-outlined">stacked_email</span>
+                            <a href="https://www.cmaisonneuve.qc.ca">Écrivez-nous</a>
+                        </ul>
+                    </div>
+                    <div id="imgFooter"></div>
+
+                </blockquote>
+
+                <!-- Menu personnalisé WP pour le footer -->
+                <div class="menu__footer">
+                    <nav class="menu-piedpage-container">
+                        <ul id="menu-piedpage" class="menu">
+                            <li id="menu-item-105"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105"><a
+                                    href="https://www.banqueducanada.ca/taux/taux-de-change/">💲 Taux de change</a></li>
+                            <li id="menu-item-106"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106"><a
+                                    href="https://www.booking.com/index.fr.html?label=gen173bo-1DCAEoggI46AdIDVgDaCeIAQGYAQ24ARfIAQzYAQPoAQH4AQOIAgGYAgKoAgO4AvKlrLAGwAIB0gIkNWY5M2Q5NDYtYjgzOC00MTE1LTliMmMtMjAxZGVhMjEzNWU12AIE4AIB&#038;sid=3a70ae8dc57992711488589d7dcd73e2&#038;aid=304142">🛌
+                                    Réservez un hôtel</a></li>
+                            <li id="menu-item-107"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107"><a
+                                    href="https://www.skyscanner.ca/?locale=fr-FR">🛫 Trouvez un vol</a></li>
+                            <li id="menu-item-108"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108"><a
+                                    href="https://www.lonelyplanet.fr">🌍 Guides de voyage</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Bouton pour retour en haut de page -->
+                <a href="#menu__entete"><button id="hautPage">Retour</button></a>
         </footer>
     </div>
 </body>
+
 </html>

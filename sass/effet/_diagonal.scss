@@ -1,0 +1,24 @@
+/*Feuille de style sass pour les effets de diagonales*/
+
+.diagonal{
+    position: relative;
+    z-index: 1;
+    isolation: isolate;
+}
+
+.diagonal::after{
+    position: absolute;
+    /*Zone vide pour récupérer tout l'espace de la diagonale*/
+    content: "";
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // bottom: 0;
+    /*inset est l'équivalent du code ci-haut*/
+    inset: 0;
+    background-color: hsl(var(--u1), 100%, 50%);
+    z-index: -1;
+    transform: skewY(-5deg);
+    /*opacity: 0.5;*/
+    
+}

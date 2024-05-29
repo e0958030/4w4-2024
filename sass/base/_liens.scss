@@ -1,0 +1,14 @@
+/*Feuille de style Sass pour les liens*/
+
+a{
+    color : var(--couleur-lien);
+    text-align: center;
+
+    &:hover{
+        color : var(--couleur-lien-hover);
+    }
+
+    &:visited{
+        color : var(--couleur-lien-visited);
+    }
+}

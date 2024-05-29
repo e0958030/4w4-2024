@@ -1,45 +1,229 @@
+/* Feuilles de styles généraux */
+
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    scroll-behavior: smooth;
 }
 
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Protest Riot', sans-serif;
 }
 
+/* Prend tout le contenu de la page */
 .global{
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /*min-height: 40vh; /*chaque division prend 40%*/
+    padding: 5vh 0;
 }
 
 /*
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
+
 /*Largeurs des sections*/
 .global > section,
 .global > header, 
 .global > footer{
-    /*Peut grandir jusqu'à 1100px*/
+    /*0 = Ne peut pas grandir en haut de 900px*/
+    /*1 = Peut rapetisser en bas de 900px*/
     flex: 0 1 1100px;
-    border: 1px solid cornflowerblue;
+    /*border: 3px dotted darkslateblue;*/
+    padding: 3rem 1rem;
+    background-color: rgba(purple, var(--transparence-section));    
+    min-height: var(--hauteur-sections);    
+    min-width: var(--largeur-conteneurs);
+    //padding-top: 3vh;
+   // padding-bottom: 3vh;
+    padding : 3vh 0;
+}
+
+.global > .entete__header{
+    /*Flex à 1 prendra toute la largeur*/
+    flex: 1;
+    min-height: auto;
+}
+
+#entete, #footer{    
+    display: flex;
+    align-items: center;
 }
 
 #entete{
+    background-image: url("images/nuages.jpg");
+    background-position: 100%;
+    background-size: cover;
+    background-blend-mode: soft-light;
     background-color: var(--couleur-arriere-entete);
+    padding-bottom: 10vh;
+    color: var(--couleur-avant-entete);
+    position: relative;
+    min-height: 50vh;
+    padding-left: 10vw;
 }
 
-#accueil{
+button:hover{
+    background-color: hsl(var(--u1), 100%, 50%);
+    cursor: pointer;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+#accueil{    
+    /*background-image: url("../images/avion.jpg");*/
     background-color: var(--couleur-arriere-accueil);
+    background-position: 100%;
+    max-height: var(--hauteur-sections);
+    color: var(--couleur-avant-accueil);
+}
+
+h3#rectangleGalerie{
+    text-align: center;
 }
 
 #evenement{
     background-color: var(--couleur-arriere-evenement);
+    color: var(--couleur-avant-evenement);
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid #fff;
+}
+
+/* Enlever les puces sur la liste */
+#recompensesListe{
+    list-style-type: none;
 }
 
 #galerie{
+    display: flex;
     background-color: var(--couleur-arriere-galerie);
+    color: var(--couleur-avant-galerie);
+}
+
+#accueil #rectangleGalerie{
+    background-color: hsl(var(--u1), 100%, 30%);
+    color: #fff;
+    padding: 2em;
+}
+
+#galerie p{
+    padding: .5rem;
+    color: #fff;
+    font-weight: 100;
+    border-top: 2px solid #000;
+}
+
+// .carte-categorie{
+//     border: 2px solid #000;
+// }
+
+/*Vague test*/
+.custom-shape-divider-top-1707919064 {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    opacity: 30%;
 }
 
 #footer{
     background-color: var(--couleur-arriere-footer);
+    padding-top: 3vh;
+    color: var(--couleur-avant-footer);
+    position: relative;
 }
+
+#footer #hautPage{
+    float: right;
+    margin-top: 1.8rem;
+}
+
+#footer blockquote{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.308);
+    color: #fff;
+    padding: 5%;
+    border-radius: 25px;
+}
+
+blockquote #imgFooter{
+    width: 700px;
+    background-image: url("images/avion.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}
+
+#txtFooter{
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width:1000px) {
+    #btn-evnt{
+        display: none;
+    }
+
+    h2{
+        text-decoration: underline;
+    }
+
+    #rectangleGalerie{
+        margin-top: 10%;
+    }
+
+    div#imgFooter{
+        display: none;
+    }
+
+    /* Styles pour les réseaux sociaux du footer */
+    .iconesReseauxSociaux {
+        display: flex;
+        flex-direction: column;
+    }   
+
+    #hautPage {
+        position: relative;
+        margin: 40%;
+        text-align: center;
+        margin-bottom: 40vh;
+    }
+}
+
+/* Styles pour les réseaux sociaux du footer */
+.iconesReseauxSociaux {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.iconesReseauxSociaux li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.iconesReseauxSociaux a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;    
+    font-size: 24px; 
+}
+
+.iconesReseauxSociaux svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+

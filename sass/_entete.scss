@@ -1,0 +1,30 @@
+/* Feuille de style pour l'entête */
+
+.entete__header{
+    /*background-image: url("images/ciel.jpg");*/
+    background-repeat: no-repeat;   
+    background-size: 20%;
+    background-position: 95% 50%;
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width:550px) {
+    .entete__header{
+        background-image: url("images/avion.jpg");
+        background-repeat: no-repeat;   
+        background-size: 80%;
+        background-position: 50% 50%;
+        background-color: transparent;
+        align-items: center;
+        color: white;
+    }
+
+    .entete__header h1{
+        color: white;
+    }
+
+    .global{
+        padding: 2em;
+        text-align: center;
+    }
+}

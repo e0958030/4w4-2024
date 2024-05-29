@@ -4,29 +4,50 @@ h1{
     https://chrisburnell.com/clamp-calculator/
     */
     /*clamp(dimension minimum, % de la taille de la police, dimension minimum)*/
-    font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+    font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: underline;
+    /*text-shadow: #4b7a00e5;*/
 }
 
 h2{
-
+    font-size: clamp(1.333rem, 0.722rem + 3.333vw, 3rem);
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(rgb(0, 43, 92), var(--transparence-h-sous-titres));
 }
 
 h3{
-
+    font-size: clamp(1rem, 0.7vw + 1.2rem, 3.75rem);
+    font-style: normal;
+    font-weight: 100;
+    color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
 }
 
 h4{
-
+    font-size: clamp(0.833rem, 0.6rem + 1.2vw, 1.167rem);
+    font-style: normal;
+    font-weight: 200;
+    color: rgba(red, (var(--transparence-h)));
 }
 
 h5{
-
+    font-size: clamp(0.3rem, 1rem, 1.143rem);
+    font-style: normal;
+    color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
 }
 
 h6{
-
+    font-size: clamp(0.2rem, 0.6vw, 3.75rem);
+    /*font-style: normal;*/
+    font-weight: 300;
+    color: rgba(#4b7a00e5, var(--transparence-h-sous-titres));
 }
 
-h7{
-    
+span{
+    display: block;
+    margin-top: 2vh;
 }

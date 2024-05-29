@@ -1,0 +1,837 @@
+@charset "UTF-8";
+/*
+Theme Name: TP2
+Author : Camilia El Moustarih
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: TP2
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+*/
+/* Initialisation des variables Sass et CSS */
+/* Variables globales CSS et SASS de couleurs */
+/*À partir des variables de couleurs de la palette choisie,
+on crée un mapping en catégorisant les différentes couleurs.
+Ce map contient un map principal et plusieurs sous-maps */
+/* Agencement de couleurs */
+:root {
+  /*Calcul des teintes*/
+  --u1: 203; /*Couleur initiale*/
+  --u2: calc(var(--u1) + 203); /*Couleur complémentaire*/
+  --u3: calc(var(--u2) - 15); /*Couleur analogue gauche*/
+  --u4: calc(var(--u2) + 15); /*Couleur analogue droite*/
+  /*Saturation*/
+  --s-arriere: 100%;
+  --s-avant: 50%;
+  /*Luminosité*/
+  --l-arriere: 30%;
+  --l-avant: 20%;
+  /*Couleurs d'arrière-plan - background-color*/
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  /*Pour faire apparaître la diagonale*/
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
+  /*Couleurs monochromes*/
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 70%) ;
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
+  /*Couleurs monochromes*/
+  --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
+  --couleur-avant-footer: hsl(var(--u1), 100%, 50%);
+  /*Couleurs pour le bouton événement*/
+  --couleur1-bouton-evnt: hsl(var(--u1), 20%, 40%);
+  --couleur2-bouton-evnt: hsl(var(--u1), 80%, 90%);
+  /*Couleur pour la carte*/
+  --couleur-carte: hsl(var(--u1), 80%, 70%);
+}
+
+/* Création des classes de couleurs */
+/* Création de classes de couleurs avec une boucle SASS */
+.clr-primaire-100 {
+  color: hsl(203, 100%, 85%);
+}
+
+.bck-primaire-100 {
+  background-color: hsl(203, 100%, 85%);
+}
+
+.clr-primaire-200 {
+  color: hsl(203, 100%, 70%);
+}
+
+.bck-primaire-200 {
+  background-color: hsl(203, 100%, 70%);
+}
+
+.clr-primaire-300 {
+  color: hsl(203, 100%, 30%);
+}
+
+.bck-primaire-300 {
+  background-color: hsl(203, 100%, 30%);
+}
+
+.clr-primaire-400 {
+  color: hsl(203, 100%, 15%);
+}
+
+.bck-primaire-400 {
+  background-color: hsl(203, 100%, 15%);
+}
+
+.clr-secondaire-100 {
+  color: hsl(40, 100%, 85%);
+}
+
+.bck-secondaire-100 {
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-secondaire-200 {
+  color: hsl(40, 100%, 50%);
+}
+
+.bck-secondaire-200 {
+  background-color: hsl(40, 100%, 50%);
+}
+
+.clr-secondaire-300 {
+  color: hsl(40, 100%, 30%);
+}
+
+.bck-secondaire-300 {
+  background-color: hsl(40, 100%, 30%);
+}
+
+.clr-secondaire-400 {
+  color: hsl(40, 100%, 15%);
+}
+
+.bck-secondaire-400 {
+  background-color: hsl(40, 100%, 15%);
+}
+
+.clr-ternaire-100 {
+  color: hsl(10, 100%, 85%);
+}
+
+.bck-ternaire-100 {
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-ternaire-200 {
+  color: hsl(10, 100%, 50%);
+}
+
+.bck-ternaire-200 {
+  background-color: hsl(10, 100%, 50%);
+}
+
+.clr-ternaire-300 {
+  color: hsl(10, 100%, 30%);
+}
+
+.bck-ternaire-300 {
+  background-color: hsl(10, 100%, 30%);
+}
+
+.clr-ternaire-400 {
+  color: hsl(10, 100%, 15%);
+}
+
+.bck-ternaire-400 {
+  background-color: hsl(10, 100%, 15%);
+}
+
+.clr-vert-100 {
+  color: hsl(70, 100%, 85%);
+}
+
+.bck-vert-100 {
+  background-color: hsl(70, 100%, 85%);
+}
+
+.clr-vert-200 {
+  color: hsl(70, 100%, 50%);
+}
+
+.bck-vert-200 {
+  background-color: hsl(70, 100%, 50%);
+}
+
+.clr-vert-300 {
+  color: hsl(70, 100%, 30%);
+}
+
+.bck-vert-300 {
+  background-color: hsl(70, 100%, 30%);
+}
+
+.clr-vert-400 {
+  color: hsl(70, 100%, 15%);
+}
+
+.bck-vert-400 {
+  background-color: hsl(70, 100%, 15%);
+}
+
+/* Mixin pour agencer des couleurs */
+.clr-agencement-primaire {
+  color: hsl(203, 100%, 70%);
+  background-image: linear-gradient(90deg, hsl(203, 100%, 30%), hsl(203, 100%, 70%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-ternaire {
+  color: hsl(10, 100%, 15%);
+  background-color: hsl(10, 100%, 85%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
+}
+
+/* Styles généraux */
+/* Feuilles de styles généraux */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Protest Riot", sans-serif;
+}
+
+/* Prend tout le contenu de la page */
+.global {
+  display: flex;
+  justify-content: center;
+  /*min-height: 40vh; /*chaque division prend 40%*/
+  padding: 5vh 0;
+}
+
+/*
+https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+*/
+/*Largeurs des sections*/
+.global > section,
+.global > header,
+.global > footer {
+  /*0 = Ne peut pas grandir en haut de 900px*/
+  /*1 = Peut rapetisser en bas de 900px*/
+  flex: 0 1 1100px;
+  /*border: 3px dotted darkslateblue;*/
+  padding: 3rem 1rem;
+  background-color: rgba(128, 0, 128, var(--transparence-section));
+  min-height: var(--hauteur-sections);
+  min-width: var(--largeur-conteneurs);
+  padding: 3vh 0;
+}
+
+.global > .entete__header {
+  /*Flex à 1 prendra toute la largeur*/
+  flex: 1;
+  min-height: auto;
+}
+
+#entete, #footer {
+  display: flex;
+  align-items: center;
+}
+
+#entete {
+  background-image: url("images/nuages.jpg");
+  background-position: 100%;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: var(--couleur-arriere-entete);
+  padding-bottom: 10vh;
+  color: var(--couleur-avant-entete);
+  position: relative;
+  min-height: 50vh;
+  padding-left: 10vw;
+}
+
+button:hover {
+  background-color: hsl(var(--u1), 100%, 50%);
+  cursor: pointer;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+#accueil {
+  /*background-image: url("../images/avion.jpg");*/
+  background-color: var(--couleur-arriere-accueil);
+  background-position: 100%;
+  max-height: var(--hauteur-sections);
+  color: var(--couleur-avant-accueil);
+}
+
+h3#rectangleGalerie {
+  text-align: center;
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-avant-evenement);
+  border-top: 15px solid #fff;
+  border-bottom: 15px solid #fff;
+}
+
+/* Enlever les puces sur la liste */
+#recompensesListe {
+  list-style-type: none;
+}
+
+#galerie {
+  display: flex;
+  background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-avant-galerie);
+}
+
+#accueil #rectangleGalerie {
+  background-color: hsl(var(--u1), 100%, 30%);
+  color: #fff;
+  padding: 2em;
+}
+
+#galerie p {
+  padding: 0.5rem;
+  color: #fff;
+  font-weight: 100;
+  border-top: 2px solid #000;
+}
+
+/*Vague test*/
+.custom-shape-divider-top-1707919064 {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  opacity: 30%;
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+  padding-top: 3vh;
+  color: var(--couleur-avant-footer);
+  position: relative;
+}
+
+#footer #hautPage {
+  float: right;
+  margin-top: 1.8rem;
+}
+
+#footer blockquote {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.308);
+  color: #fff;
+  padding: 5%;
+  border-radius: 25px;
+}
+
+blockquote #imgFooter {
+  width: 700px;
+  background-image: url("images/avion.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+}
+
+#txtFooter {
+  flex-direction: column;
+  text-align: center;
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 1000px) {
+  #btn-evnt {
+    display: none;
+  }
+  h2 {
+    text-decoration: underline;
+  }
+  #rectangleGalerie {
+    margin-top: 10%;
+  }
+  div#imgFooter {
+    display: none;
+  }
+  /* Styles pour les réseaux sociaux du footer */
+  .iconesReseauxSociaux {
+    display: flex;
+    flex-direction: column;
+  }
+  #hautPage {
+    position: relative;
+    margin: 40%;
+    text-align: center;
+    margin-bottom: 40vh;
+  }
+}
+/* Styles pour les réseaux sociaux du footer */
+.iconesReseauxSociaux {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.iconesReseauxSociaux li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.iconesReseauxSociaux a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.iconesReseauxSociaux svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Feuille de style pour l'entête */
+.entete__header {
+  /*background-image: url("images/ciel.jpg");*/
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 95% 50%;
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 550px) {
+  .entete__header {
+    background-image: url("images/avion.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 50%;
+    background-color: transparent;
+    align-items: center;
+    color: white;
+  }
+  .entete__header h1 {
+    color: white;
+  }
+  .global {
+    padding: 2em;
+    text-align: center;
+  }
+}
+/* Styles pour la div contenant le message d'erreur */
+#erreur_404 {
+  display: flex;
+  align-items: center;
+  background-color: hsl(203, 100%, 70%);
+  box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #0084ff, 5px 5px 15px 5px rgba(51, 158, 255, 0);
+  text-align: center;
+}
+
+#erreur_404 #retourAccueil {
+  margin-bottom: 0vh;
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 1000px) {
+  #erreur_404 img {
+    display: none;
+  }
+  #erreur_404 section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu-piedpage {
+    display: none;
+  }
+  #retourAccueil {
+    margin: auto;
+  }
+}
+/* ///////////////////////////// */
+/* Base */
+/* ///////////////////////////// */
+h1 {
+  /*utiliser un calculateur de valeurs clamp*/
+  /*
+  https://chrisburnell.com/clamp-calculator/
+  */
+  /*clamp(dimension minimum, % de la taille de la police, dimension minimum)*/
+  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 3px;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
+  /*text-shadow: #4b7a00e5;*/
+}
+
+h2 {
+  font-size: clamp(1.333rem, 0.722rem + 3.333vw, 3rem);
+  font-weight: 500;
+  font-style: normal;
+  color: rgba(0, 43, 92, var(--transparence-h-sous-titres));
+}
+
+h3 {
+  font-size: clamp(1rem, 0.7vw + 1.2rem, 3.75rem);
+  font-style: normal;
+  font-weight: 100;
+  color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
+}
+
+h4 {
+  font-size: clamp(0.833rem, 0.6rem + 1.2vw, 1.167rem);
+  font-style: normal;
+  font-weight: 200;
+  color: rgba(255, 0, 0, var(--transparence-h));
+}
+
+h5 {
+  font-size: 1rem;
+  font-style: normal;
+  color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
+}
+
+h6 {
+  font-size: clamp(0.2rem, 0.6vw, 3.75rem);
+  /*font-style: normal;*/
+  font-weight: 300;
+  color: rgba(75, 122, 0, var(--transparence-h-sous-titres));
+}
+
+span {
+  display: block;
+  margin-top: 2vh;
+}
+
+/* Feuille de styles sass pour les boutons */
+button {
+  font-size: clamp(1.143rem, 1.024rem + 0.333vw, 1.286rem);
+  /*padding: 12px 24px;*/
+  background-image: linear-gradient(120deg, var(--couleur2-bouton-evnt), var(--couleur1-bouton-evnt));
+  margin-bottom: 10vh;
+  width: auto;
+  padding: 0 2vw;
+  height: 5vh;
+  border-radius: 15px 50px 15px 50px;
+  border: none;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  background-image: linear-gradient(120deg, --couleur-arriere-entete, darkslateblue);
+  transform: scale(110%);
+}
+
+.recherche__input {
+  border-radius: 15px;
+  padding-left: 0.5em;
+}
+
+/*Media query pour la version mobile responsive*/
+/*Feuille de style Sass pour les liens*/
+a {
+  color: var(--couleur-lien);
+  text-align: center;
+}
+a:hover {
+  color: var(--couleur-lien-hover);
+}
+a:visited {
+  color: var(--couleur-lien-visited);
+}
+
+/* ///////////////////////////// */
+/* Effets */
+/* ///////////////////////////// */
+/* Code SASS pour l'effet de vague */
+/* Référence https://www.shapedivider.app/ */
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 177px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.motif-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.motif-footer svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 80px;
+}
+
+.motif-footer .shape-fill {
+  fill: hsl(var(--u1), 100%, 30%);
+}
+
+/*Feuille de style sass pour les effets de diagonales*/
+.diagonal {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  /*Zone vide pour récupérer tout l'espace de la diagonale*/
+  content: "";
+  /*inset est l'équivalent du code ci-haut*/
+  inset: 0;
+  background-color: hsl(var(--u1), 100%, 50%);
+  z-index: -1;
+  transform: skewY(-5deg);
+  /*opacity: 0.5;*/
+}
+
+/* ///////////////////////////// */
+/* Composants */
+/* ///////////////////////////// */
+/* Feuille de styles SASS pour les éléments des cartes de destinations */
+.destinations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex: 1 0 250px; /*ne grossit pas mais se comprime*/
+  border: 2px solid #fff; /*changer pour une variable de couleur*/
+  padding: 2em;
+  box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #0084ff, 5px 5px 15px 5px rgba(51, 158, 255, 0);
+  width: 60%;
+}
+
+.post-categories {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.carte-categorie {
+  background-color: var(--couleur-carte);
+}
+
+/*Media query pour la version mobile responsive*/
+@media screen and (max-width: 550px) {
+  .destinations {
+    display: flex;
+    flex-direction: column;
+  }
+  .carte {
+    background-color: var(--couleur-carte);
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  }
+}
+/* Feuille de style du menu principal */
+/* Styles généraux du menu */
+.menu {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff;
+  transform: translateX(0%);
+  transition: transform 0.3s ease;
+}
+
+#menu__entete > header > nav {
+  background-color: hsl(var(--u1), 100%, 30%);
+  border-radius: 25px 25px;
+}
+
+/* Pour les écrans larges */
+@media (min-width: 1000px) {
+  .menu {
+    position: static;
+    flex-direction: row;
+    transform: translateX(0%);
+    background-color: transparent;
+    padding: 0;
+    height: 5rem;
+  }
+}
+/* Styles des éléments du menu */
+.menu-item {
+  flex: 1 0 50px;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Gestion du label burger */
+#burger {
+  z-index: 5000;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (min-width: 1000px) {
+  #burger {
+    display: none;
+  }
+}
+#chk_burger {
+  display: none;
+}
+
+/* Cacher */
+#chk_burger:checked ~ .menu {
+  display: none;
+}
+
+/* CSS du menu burger pour media query */
+@media screen and (max-width: 1000px) {
+  #burger {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #chk_burger:checked + #burger > svg {
+    transform: rotate(90deg);
+  }
+  /* Cacher le menu */
+  #chk_burger:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(150%);
+  }
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  .menu-item a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+/* CSS du menu burger pour media query */
+@media screen and (max-width: 1000px) {
+  /* Hide menu when burger is checked */
+  #chk_burger:checked ~ .menu__header nav {
+    display: none;
+  }
+  #burger {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #chk_burger:checked + #burger > svg {
+    transform: rotate(90deg);
+  }
+  /* Hide menu when burger is checked */
+  #chk_burger:checked ~ .menu__header nav {
+    display: none;
+  }
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  .menu-item a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    justify-content: space-around;
+  }
+}
+/* Styles pour les liens des catégories pour l'examen intra tp2 */
+#liensCatFooter {
+  background-color: hsl(203, 100%, 70%);
+}
+
+#liensCatFooter a {
+  color: #000;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */
