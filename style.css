@@ -307,6 +307,7 @@ h3#rectangleGalerie {
 /* Enlever les puces sur la liste */
 #recompensesListe {
   list-style-type: none;
+  line-height: 2em;
 }
 
 #galerie {
@@ -321,10 +322,15 @@ h3#rectangleGalerie {
   padding: 2em;
 }
 
+#accueil p {
+  line-height: 2em;
+}
+
 #galerie p {
   padding: 0.5rem;
   color: #fff;
   font-weight: 100;
+  line-height: 2em;
   border-top: 2px solid #000;
 }
 
