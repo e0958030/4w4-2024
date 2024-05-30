@@ -8,6 +8,13 @@
             <span>
             <h3>TIM - Collège de Maisonneuve</h3>
             <span>
+            <h3>Description du TP2 : Création d'un site pour un club de voyage avec HTML, SASS, PHP, JavaScript et WordPress.</h3>
+            <span></span>
+            <h4>Le TP2 vise à créer un site de voyage en ajoutant plusieurs fonctionnalités: un carrousel d'images pour les galeries, des champs personnalisés pour les descriptions des destinations, des filtres dynamiques utilisant la REST API de WordPress, des animations pour améliorer l'interactivité, et de nouveaux gabarits pour organiser le contenu.</h4>
+            <span></span>
+            <span></span>
+            
+            <?php get_template_part('gabarits/liens-logos'); ?>
             <a href="#evenement"><button id="btn-evnt">Promotion !</button></a>
             <button><a href="http://localhost:8080/4w4camilia/conference/" class="bouton">Conférence</a></button>
             <span>
