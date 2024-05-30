@@ -51,7 +51,7 @@ h2{
 //     }
 // }
 
-@keyframes shakeX {
+@keyframes secouerTitre {
     0%, 100% {
         transform: translateX(0); 
     }
@@ -64,7 +64,7 @@ h2{
 }
 
 #h2Anim{
-    animation: changerCouleur 2s infinite, shakeX 5s infinite;
+    animation: changerCouleur 2s infinite, secouerTitre 5s infinite;
 }
 
 h3{

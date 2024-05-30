@@ -165,6 +165,14 @@ blockquote #imgFooter{
     text-align: center;
 }
 
+blockquote ul, blockquote h4:hover{
+    transition: color 0.3s ease; 
+}
+
+blockquote ul:hover, blockquote h4:hover{
+    color: orange;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:1000px) {
     #btn-evnt{
@@ -211,6 +219,7 @@ blockquote #imgFooter{
 .iconesReseauxSociaux li {
     display: inline-block;
     margin: 0 10px;
+    transition: transform 0.3s ease; 
 }
 
 .iconesReseauxSociaux a {
@@ -225,6 +234,10 @@ blockquote #imgFooter{
     width: 24px;
     height: 24px;
     margin-right: 8px;
+}
+
+.iconesReseauxSociaux li:hover{
+    transform: scale(1.2);
 }
 
 

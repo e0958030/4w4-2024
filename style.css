@@ -379,6 +379,14 @@ blockquote #imgFooter {
   text-align: center;
 }
 
+blockquote ul, blockquote h4:hover {
+  transition: color 0.3s ease;
+}
+
+blockquote ul:hover, blockquote h4:hover {
+  color: orange;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 1000px) {
   #btn-evnt {
@@ -419,6 +427,7 @@ blockquote #imgFooter {
 .iconesReseauxSociaux li {
   display: inline-block;
   margin: 0 10px;
+  transition: transform 0.3s ease;
 }
 
 .iconesReseauxSociaux a {
@@ -433,6 +442,10 @@ blockquote #imgFooter {
   width: 24px;
   height: 24px;
   margin-right: 8px;
+}
+
+.iconesReseauxSociaux li:hover {
+  transform: scale(1.2);
 }
 
 /* Feuille de style pour l'entête */
@@ -529,7 +542,7 @@ h2 {
     color: rgb(255, 191, 107);
   }
 }
-@keyframes shakeX {
+@keyframes secouerTitre {
   0%, 100% {
     transform: translateX(0);
   }
@@ -541,7 +554,7 @@ h2 {
   }
 }
 #h2Anim {
-  animation: changerCouleur 2s infinite, shakeX 5s infinite;
+  animation: changerCouleur 2s infinite, secouerTitre 5s infinite;
 }
 
 h3 {
@@ -773,11 +786,17 @@ a:visited {
 /* Styles des éléments du menu */
 .menu-item {
   flex: 1 0 50px;
+  transition: transform 0.3s ease;
 }
 
 .menu-item a {
   color: #fff;
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.2);
 }
 
 /* Gestion du label burger */
