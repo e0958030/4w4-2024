@@ -32,7 +32,18 @@
     padding: 2em;
     box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #0084ff, 5px 5px 15px 5px rgba(51,158,255,0);
     width: 60%;
-    animation: grossirCarte 5s linear 2s infinite alternate;    
+}
+
+@keyframes grossirCarte {
+    from {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(0.95); 
+    }
+    100% {
+        transform: scale(1); 
+    }
 }
 
 .post-categories{
