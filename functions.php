@@ -27,3 +27,10 @@ function _4w4_modifie_requete_principal( $query ) {
       }
      }
      add_action( 'pre_get_posts', '_4w4_modifie_requete_principal' );
+
+     //Tentative pour corriger l'erreur CORS dans la console
+     function add_cors_http_header(){
+        header("Access-Control-Allow-Origin: *");
+    }
+    add_action('init','add_cors_http_header');
+    

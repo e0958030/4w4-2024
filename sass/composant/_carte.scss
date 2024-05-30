@@ -7,7 +7,33 @@
     gap: 2rem;
 }
 
+@keyframes grossirCarte {
+    from{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.95);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
 .carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex: 1 0 calc(1000px/4); /*ne grossit pas mais se comprime*/
+    border: 2px solid #fff; /*changer pour une variable de couleur*/
+    padding: 2em;
+    box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #0084ff, 5px 5px 15px 5px rgba(51,158,255,0);
+    width: 60%;
+    animation: grossirCarte 5s linear 2s infinite alternate;    
+}
+
+.cartePasAnim{
     display: flex;
     flex-direction: column;
     justify-content: space-between;

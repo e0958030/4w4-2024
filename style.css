@@ -307,6 +307,7 @@ h3#rectangleGalerie {
 /* Enlever les puces sur la liste */
 #recompensesListe {
   list-style-type: none;
+  line-height: 2em;
 }
 
 #galerie {
@@ -321,10 +322,15 @@ h3#rectangleGalerie {
   padding: 2em;
 }
 
+#accueil p {
+  line-height: 2em;
+}
+
 #galerie p {
   padding: 0.5rem;
   color: #fff;
   font-weight: 100;
+  line-height: 2em;
   border-top: 2px solid #000;
 }
 
@@ -373,6 +379,14 @@ blockquote #imgFooter {
   text-align: center;
 }
 
+blockquote ul, blockquote h4:hover {
+  transition: color 0.3s ease;
+}
+
+blockquote ul:hover, blockquote h4:hover {
+  color: orange;
+}
+
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 1000px) {
   #btn-evnt {
@@ -413,6 +427,7 @@ blockquote #imgFooter {
 .iconesReseauxSociaux li {
   display: inline-block;
   margin: 0 10px;
+  transition: transform 0.3s ease;
 }
 
 .iconesReseauxSociaux a {
@@ -429,6 +444,27 @@ blockquote #imgFooter {
   margin-right: 8px;
 }
 
+.iconesReseauxSociaux li:hover {
+  transform: scale(1.2);
+}
+
+.site__main {
+  background-image: url("images/nuages.jpg");
+  background-position: 100%;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: var(--couleur-arriere-entete);
+  padding-bottom: 10vh;
+  color: var(--couleur-avant-entete);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2em;
+  width: 100%;
+}
+
 /* Feuille de style pour l'entête */
 .entete__header {
   /*background-image: url("images/ciel.jpg");*/
@@ -440,10 +476,6 @@ blockquote #imgFooter {
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width: 550px) {
   .entete__header {
-    background-image: url("images/avion.jpg");
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: 50% 50%;
     background-color: transparent;
     align-items: center;
     color: white;
@@ -512,11 +544,51 @@ h2 {
   color: rgba(0, 43, 92, var(--transparence-h-sous-titres));
 }
 
+@keyframes changerCouleur {
+  from, to {
+    color: rgb(253, 255, 142);
+  }
+  25%, 75% {
+    color: rgb(22, 72, 182);
+  }
+  50% {
+    color: rgb(255, 191, 107);
+  }
+}
+@keyframes wiggleTitre {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes secouerTitre {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+#h2Anim {
+  animation: changerCouleur 2s infinite, secouerTitre 5s infinite;
+}
+
 h3 {
   font-size: clamp(1rem, 0.7vw + 1.2rem, 3.75rem);
   font-style: normal;
   font-weight: 100;
   color: rgba(var(--couleur-sous-titres-autres), var(--transparence-h-sous-titres));
+}
+
+#animH3 {
+  animation: wiggleTitre 6s infinite;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 h4 {
@@ -659,7 +731,32 @@ a:visited {
   gap: 2rem;
 }
 
+@keyframes grossirCarte {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 .carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex: 1 0 250px; /*ne grossit pas mais se comprime*/
+  border: 2px solid #fff; /*changer pour une variable de couleur*/
+  padding: 2em;
+  box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #0084ff, 5px 5px 15px 5px rgba(51, 158, 255, 0);
+  width: 60%;
+  animation: grossirCarte 5s linear 2s infinite alternate;
+}
+
+.cartePasAnim {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -729,11 +826,17 @@ a:visited {
 /* Styles des éléments du menu */
 .menu-item {
   flex: 1 0 50px;
+  transition: transform 0.3s ease;
 }
 
 .menu-item a {
   color: #fff;
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.2);
 }
 
 /* Gestion du label burger */
@@ -797,7 +900,7 @@ a:visited {
 }
 /* CSS du menu burger pour media query */
 @media screen and (max-width: 1000px) {
-  /* Hide menu when burger is checked */
+  /* Cacher menu burger */
   #chk_burger:checked ~ .menu__header nav {
     display: none;
   }
@@ -812,7 +915,7 @@ a:visited {
   #chk_burger:checked + #burger > svg {
     transform: rotate(90deg);
   }
-  /* Hide menu when burger is checked */
+  /* Cacher menu burger */
   #chk_burger:checked ~ .menu__header nav {
     display: none;
   }

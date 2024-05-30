@@ -5,7 +5,7 @@
         <div class="cours">             
             <?php
                 if (have_posts()): the_post(); ?> 
-                        <div class="carte">
+                        <div class="cartePasAnim">
                             <h3><?php the_title() ?></h3>
                             <span></span>
                             <!-- Ajouter l'image de mise à l'avant -->
@@ -16,6 +16,7 @@
                             <p>Température minimum : <?php the_field('temperature_minimum'); ?></p>
                             <p>Température maximum : <?php the_field('temperature_maximum'); ?></p>
                             <p>Ville avoisinante : <?php the_field('ville_avoisinante'); ?></p>
+                            <p>Appréciation : <?php the_field('appreciation'); ?></p>
                         </div>        
             <?php endif; ?>  
             </div>     

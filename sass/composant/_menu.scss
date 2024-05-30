@@ -38,11 +38,17 @@
 /* Styles des éléments du menu */
 .menu-item {
     flex: 1 0 50px;
+    transition: transform 0.3s ease; 
 }
 
 .menu-item a {
     color: #fff;
     text-decoration: none;
+    transition: transform 0.3s ease; 
+}
+
+.menu-item:hover {
+    transform: scale(1.2);
 }
 
 /* Gestion du label burger */
@@ -112,7 +118,7 @@
 
 /* CSS du menu burger pour media query */
 @media screen and (max-width: 1000px) {
-    /* Hide menu when burger is checked */
+    /* Cacher menu burger */
     #chk_burger:checked ~ .menu__header nav {
         display: none;
     }
@@ -130,7 +136,7 @@
         transform: rotate(90deg);
     }
 
-    /* Hide menu when burger is checked */
+    /* Cacher menu burger */
     #chk_burger:checked ~ .menu__header nav {
         display: none;
     }

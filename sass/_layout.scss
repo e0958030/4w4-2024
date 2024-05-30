@@ -93,6 +93,7 @@ h3#rectangleGalerie{
 /* Enlever les puces sur la liste */
 #recompensesListe{
     list-style-type: none;
+    line-height: 2em;
 }
 
 #galerie{
@@ -107,16 +108,17 @@ h3#rectangleGalerie{
     padding: 2em;
 }
 
+#accueil p{
+    line-height: 2em;
+}
+
 #galerie p{
     padding: .5rem;
     color: #fff;
     font-weight: 100;
+    line-height: 2em;
     border-top: 2px solid #000;
 }
-
-// .carte-categorie{
-//     border: 2px solid #000;
-// }
 
 /*Vague test*/
 .custom-shape-divider-top-1707919064 {
@@ -161,6 +163,14 @@ blockquote #imgFooter{
 #txtFooter{
     flex-direction: column;
     text-align: center;
+}
+
+blockquote ul, blockquote h4:hover{
+    transition: color 0.3s ease; 
+}
+
+blockquote ul:hover, blockquote h4:hover{
+    color: orange;
 }
 
 /*Media query pour la version mobile responsive*/
@@ -209,6 +219,7 @@ blockquote #imgFooter{
 .iconesReseauxSociaux li {
     display: inline-block;
     margin: 0 10px;
+    transition: transform 0.3s ease; 
 }
 
 .iconesReseauxSociaux a {
@@ -225,5 +236,30 @@ blockquote #imgFooter{
     margin-right: 8px;
 }
 
+.iconesReseauxSociaux li:hover{
+    transform: scale(1.2);
+}
 
+.site__main{
+    background-image: url("images/nuages.jpg");
+    background-position: 100%;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: var(--couleur-arriere-entete);
+    padding-bottom: 10vh;
+    color: var(--couleur-avant-entete);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+}
+
+
+// - logos entete
+// - avoir image déjà ouverte dans carrousel
+// - cliquer sur image pour ouvrir carrousel
+// - menu burger
 

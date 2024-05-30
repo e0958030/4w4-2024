@@ -10,10 +10,11 @@
 /*Media query pour la version mobile responsive*/
 @media screen and (max-width:550px) {
     .entete__header{
-        background-image: url("images/avion.jpg");
-        background-repeat: no-repeat;   
-        background-size: 80%;
-        background-position: 50% 50%;
+        // background-image: url("images/avion.jpg");
+        // background-repeat: no-repeat;   
+        // background-size: 80%;
+        // background-blend-mode: soft-light;
+        // background-position: 50% 50%;
         background-color: transparent;
         align-items: center;
         color: white;

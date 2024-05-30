@@ -7,7 +7,14 @@
             <h2><?php echo get_bloginfo("description")?></span></h2>
             <span>
             <h3>TIM - Collège de Maisonneuve</h3>
-            <span>
+            <span>  
+            <h3 id="animH3">Description du TP2 : Création d'un site pour un club de voyage avec HTML, SASS, PHP, JavaScript et WordPress.</h3>
+            <span></span>
+            <h4>Le TP2 vise à créer un site de voyage en ajoutant plusieurs fonctionnalités: un carrousel d'images pour les galeries, des champs personnalisés pour les descriptions des destinations, des filtres dynamiques utilisant la REST API de WordPress, des animations pour améliorer l'interactivité, et de nouveaux gabarits pour organiser le contenu.</h4>
+            <span></span>
+               
+            <span></span>      
+                   
             <a href="#evenement"><button id="btn-evnt">Promotion !</button></a>
             <button><a href="http://localhost:8080/4w4camilia/conference/" class="bouton">Conférence</a></button>
             <span>
@@ -23,7 +30,7 @@
 
     <div id="accueil" class="global">
         <section>
-            <h2>Bienvenue - Votre nouvelle aventure commence ici !</h2> 
+            <h2 id="h2Anim">Bienvenue - Votre nouvelle aventure commence ici !</h2> 
             <h3 id="rectangleGalerie">TimVentures - L'Évasion à Portée de Main</h3>  
             <span></span>                    
             <p>Dans un monde où le temps est précieux et les désirs d'évasion omniprésents, nous sommes fiers de vous présenter TimVentures, une nouvelle ère dans le domaine des voyages. Avec une passion inébranlable pour l'aventure et une dévotion à créer des expériences inoubliables, nous nous engageons à ouvrir les portes d'un monde de découvertes infinies.</p>

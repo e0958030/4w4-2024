@@ -33,12 +33,13 @@
         </label>  
         <header class="menu__header">
         <?php wp_nav_menu(array("container" => "nav", "menu" => "principal")); ?>
-
         <span></span>
         <!-- Récupérer le formulaire de recherche -->
         <?php  get_search_form(); ?>   
+        <span></span>       
         </header>
     </div>
+
 
     
     
