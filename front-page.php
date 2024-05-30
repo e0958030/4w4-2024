@@ -23,7 +23,7 @@
 
     <div id="accueil" class="global">
         <section>
-            <h2>Bienvenue - Votre nouvelle aventure commence ici !</h2> 
+            <h2 id="h2Anim">Bienvenue - Votre nouvelle aventure commence ici !</h2> 
             <h3 id="rectangleGalerie">TimVentures - L'Évasion à Portée de Main</h3>  
             <span></span>                    
             <p>Dans un monde où le temps est précieux et les désirs d'évasion omniprésents, nous sommes fiers de vous présenter TimVentures, une nouvelle ère dans le domaine des voyages. Avec une passion inébranlable pour l'aventure et une dévotion à créer des expériences inoubliables, nous nous engageons à ouvrir les portes d'un monde de découvertes infinies.</p>

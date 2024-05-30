@@ -20,6 +20,53 @@ h2{
     color: rgba(rgb(0, 43, 92), var(--transparence-h-sous-titres));
 }
 
+//Animation pour le titre spécifique 
+@keyframes changerCouleur {
+    from, to{
+        color: rgb(253, 255, 142);
+    }
+    25%,75%{
+        color: rgb(22, 72, 182);
+    }
+    50%{
+        color: rgb(255, 191, 107);
+    }
+}
+
+// @keyframes translateTitre {
+//     from {
+//         transform: translateX(0%); 
+//     }
+//     25%{
+//         transform: translateX(25%);
+//     }
+//     50% {
+//         transform: translateX(0%); 
+//     }
+//     75%{
+//         transform: translateX(-25%);
+//     }
+//     100%{
+//         transform: translateX(0%);
+//     }
+// }
+
+@keyframes shakeX {
+    0%, 100% {
+        transform: translateX(0); 
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px); 
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px); 
+    }
+}
+
+#h2Anim{
+    animation: changerCouleur 2s infinite, shakeX 5s infinite;
+}
+
 h3{
     font-size: clamp(1rem, 0.7vw + 1.2rem, 3.75rem);
     font-style: normal;
