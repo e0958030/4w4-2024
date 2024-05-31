@@ -11,6 +11,7 @@
 - Générer dynamiquement des boutons avec la fonction REST API pour chaque catégorie
 - Bouton pour une destination spéciale/événement
 - Ajout d'animations pour les cartes de destinations
+- Complétion du carrousel d'images
 - Galerie d'image avec un plugin carrousel
 - Correction du menu burger
 - Mise à jour du fichier .htm
