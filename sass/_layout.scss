@@ -240,7 +240,7 @@ blockquote ul:hover, blockquote h4:hover{
     transform: scale(1.2);
 }
 
-.site__main{
+.site__main, .main__pays{
     background-image: url("images/nuagesAnim.gif");
     background-position: 100%;
     background-size: cover;
@@ -257,3 +257,12 @@ blockquote ul:hover, blockquote h4:hover{
     width: 100%;
 }
 
+.main__pays #description_cat{
+    width: 40%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.main__pays p{
+    line-height: 2em;
+}
