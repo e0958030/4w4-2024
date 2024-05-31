@@ -17,6 +17,7 @@
                    
             <a href="#evenement"><button id="btn-evnt">Promotion !</button></a>
             <button><a href="http://localhost:8080/4w4camilia/conference/" class="bouton">Conférence</a></button>
+            <button><a href="http://localhost:8080/4w4camilia/pays/" class="bouton">Pays</a></button>
             <span>
         </section>
         <div class="vague">
