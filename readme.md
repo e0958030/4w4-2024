@@ -18,6 +18,7 @@
 - Optimisation du code scss
 - Amélioration du style/design
 - Correction du footer
+- Problématique animations non existantes dans whc
 
 
 
